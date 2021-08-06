@@ -8,7 +8,7 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
         meta(name='DC.title', content='Website Refresh 2021')
         meta(name='author', content='Amrinder Sandhu')
         meta(name='description', content='Website Refresh Sandbox')
-        meta#viewport(name='viewport', content='width=device-width, initial-scale=1')
+        meta#viewport(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
 
         link(rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png')
         link(rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png')
@@ -33,4 +33,10 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
 
 
     body
-        h1 Website Refresh Sandbox
+        .container.mt-5
+            .col-6
+                h1.mb-4 Welcome to the Postman website refresh sandbox
+
+                p.mb-4.intro Workspaces allow you to organize your API work and collaborate with teammates. They act as a common working area where you can group your API projects together and use API builder to start defining APIs or generate API elements.
+
+                button.btn-primary Sign Up

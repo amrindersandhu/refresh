@@ -29,5 +29,8 @@
     "gulp-sass": "^4.1.0",
     "pug": "^3.0.0",
     "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.0"
   }
 }

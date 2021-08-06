@@ -1,1 +1,1 @@
-# Sandbox for Aether – Postman’s Design System
+# Sandbox for Postman Website

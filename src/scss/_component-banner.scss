@@ -1,0 +1,71 @@
+//////////////////
+// #BANNER ///////
+//////////////////
+
+// LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+
+
+// 
+.banner {
+  align-items: center;
+  background-color: var(--background-color-tertiary);
+  border-radius: var(--border-radius-default);
+  display: flex;
+  padding: var(--spacing-m);
+}
+
+.banner--success {
+  background-color: var(--background-color-success);
+
+  .banner__figure {
+    svg {
+      fill: var(--content-color-success);
+    }
+  }
+}
+
+.banner--warning {
+  background-color: var(--background-color-warning);
+
+  .banner__figure {
+    svg {
+      fill: var(--content-color-warning);
+    }
+  }
+}
+
+.banner--error {
+  background-color: var(--background-color-error);
+
+  .banner__figure {
+    svg {
+      fill: var(--content-color-error);
+    }
+  }
+}
+
+.banner--info {
+  background-color: var(--background-color-info);
+
+  .banner__figure {
+    svg {
+      fill: var(--content-color-info);
+    }
+  }
+}
+
+
+.banner__figure {
+  align-items: center;
+  display: flex;
+  margin-right: var(--spacing-s);
+}
+
+
+.banner__content {
+  margin-right: var(--spacing-m);
+  
+  p {
+    color: var(--content-color-primary);
+  }
+}

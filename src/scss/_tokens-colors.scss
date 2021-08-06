@@ -1,0 +1,176 @@
+////////////////////
+// #COLOR #TOKENS //
+////////////////////
+
+
+
+// GLOBAL TOKENS
+////////////////
+
+// NEUTRALS
+$grey-90: #212121;
+$grey-85: #262626;
+$grey-80: #2B2B2B;
+$grey-70: #303030;
+$grey-60: #3B3B3B;
+$grey-50: #707070;
+$grey-40: #A6A6A6;
+$grey-30: #E6E6E6;
+$grey-20: #EDEDED;
+$grey-10: #F2F2F2;
+$grey-05: #F9F9F9;
+$grey-00: #FFFFFF;
+
+// ORANGE
+$orange-90: #553326;
+$orange-80: #A12700;
+$orange-70: #D23F0E;
+$orange-60: #E05320;
+$orange-50: #FF6C37;
+$orange-40: #FF8E64;
+$orange-30: #FFB091;
+$orange-20: #FFD1BE;
+$orange-10: #FFF1EB;
+
+// RED
+$red-90: #591B08;
+$red-80: #9C0400;
+$red-70: #B70700;
+$red-60: #D10D03;
+$red-50: #EB2013;
+$red-40: #F37264;
+$red-30: #F79A8E;
+$red-20: #FBC3BA;
+$red-10: #FFEBE7;
+
+// GREEN
+$green-90: #013614;
+$green-80: #006024;
+$green-70: #007F31;
+$green-60: #049D40;
+$green-50: #0CBB52;
+$green-40: #38CC74;
+$green-30: #6BDD9A;
+$green-20: #A4EEC4;
+$green-10: #E5FFF1;
+
+// BLUE
+$blue-90: #002D70;
+$blue-80: #00439D;
+$blue-70: #0053B8;
+$blue-60: #0265D2;
+$blue-50: #097BED;
+$blue-40: #3E92F2;
+$blue-30: #74AEF6;
+$blue-20: #ADCDFB;
+$blue-10: #E7F0FF;
+
+// YELLOW
+$yellow-80: #523A03;
+$yellow-90: #886000;
+$yellow-70: #AD7A03;
+$yellow-60: #DE9C00;
+$yellow-50: #FFB400;
+$yellow-40: #FFCF3F;
+$yellow-30: #FFE47E;
+$yellow-20: #FFF4BE;
+$yellow-10: #FFF9E0;
+
+
+
+
+// ALIAS TOKENS
+///////////////
+$color-primary-stronger: $orange-70;
+$color-primary-strong: $orange-60;
+$color-primary-base: $orange-50;
+$color-primary-subtle: $orange-20;
+$color-primary-subtler: $orange-10;
+
+$color-secondary-stronger: $blue-70;
+$color-secondary-strong: $blue-60;
+$color-secondary-base: $blue-50;
+$color-secondary-subtle: $blue-20;
+$color-secondary-subtler: $blue-10;
+
+
+// BACKGROUND COLORS
+$background-color-primary: $grey-00;
+$background-color-secondary: $grey-05;
+$background-color-tertiary: $grey-10;
+
+$background-color-info: $blue-10;
+$background-color-error: $red-10;
+$background-color-success: $green-10;
+$background-color-warning: $yellow-10;
+
+$background-color-destructive: $red-50;
+$background-color-destructive-active: $red-60;
+
+$background-modal-backdrop: rgba($grey-90, 0.6);
+
+
+// TEXT COLORS
+$text-color-stronger: $grey-90;
+$text-color-strong: $grey-80;
+$text-color-base: $grey-70;
+$text-color-subtle: $grey-60;
+$text-color-subtler: $grey-50;
+
+
+$text-color-heading: $text-color-stronger;
+$text-color-body: $text-color-strong;
+$text-color-metadata: $text-color-subtle;
+
+$input-text-color-label: $text-color-base;
+$input-text-color-placeholder: $text-color-subtler;
+
+$text-color-info: $blue-60;
+$text-color-success: $green-60;
+$text-color-error: $yellow-60;
+$text-color-warning: $red-60;
+
+$text-color-interactive: $color-primary-strong;
+
+
+// BORDER COLORS
+$border-color-subtle: $grey-10;
+$border-color-base: $grey-20;
+$border-color-strong: $grey-30;
+$border-color-stronger: $grey-40;
+
+
+// ICON COLORS
+$icon-color-default: $grey-70;
+$icon-color-light: $grey-60;
+$icon-color-base: $grey-70;
+$icon-color-hover: $grey-80;
+$icon-color-active: $grey-90;
+
+$icon-color-info: $blue-60;
+$icon-color-success: $green-60;
+$icon-color-warning: $yellow-60;
+$icon-color-error: $red-60;
+
+
+// SHADOW COLORS
+$focus-shadow-color: $blue-20;
+
+
+
+
+// COMPONENT-SPECIFIC TOKENS
+////////////////////////////
+
+// FORM INPUTS
+$input-border-color: $border-color-strong;
+$input-border-color-active: $border-color-stronger;
+
+
+// HEADER
+$header-background-color: $grey-80;
+$header-button-background-color: $grey-70;
+$header-button-background-color-highlight: $grey-60;
+
+$header-button-text-color: $text-color-subtler;
+$header-button-icon-color: $icon-color-light;

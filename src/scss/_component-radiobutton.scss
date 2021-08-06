@@ -1,0 +1,112 @@
+///////////////////
+// #RADIO-BUTTON //
+///////////////////
+
+
+// LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+$input-label-text-color: var(--content-color-primary);
+$input-label-text-size: var(--text-size-m);
+$input-transition-timing: $transition-delay-default;
+$input-transition-type: $transition-timing-default;
+$input-size: 14px;
+$input-border-size: var(--border-width-default);
+$input-border-color: var(--grey-40);
+$input-selected-border-color: var(--blue-60);
+$input-focus-border-color: var(--blue-20);
+$input-disabled-text-color: var(--content-color-tertiary);
+$input-disabled-border-color: var(--grey-30);
+$input-focus-box-shadow: 0 0 0 3px rgba(var(--blue-20), 1);
+
+$radio-border-radius: $border-radius-max;
+
+
+
+
+@import "component-inputs.scss";
+
+
+.input-wrap--radiobutton {
+  margin-bottom: var(--spacing-s);
+}
+
+
+.input-radio {
+    // Hide the default radio button
+    height: 0.1px;
+    opacity: 0; 
+    overflow: hidden;
+    position: absolute;
+    width: 0.1px;
+    
+    + label {
+      color: $input-label-text-color;
+      display: flex;
+      font-size: $input-label-text-size;
+      margin-bottom: var(--spacing-xs);
+      padding-left: 22px;
+      position: relative;
+      
+      &:before {
+        border: $input-border-size solid $input-border-color;
+        border-radius: $radio-border-radius;
+        //box-shadow: 0 0 0 3px white inset;
+        content: "";
+        display: inline-block;
+        height: $input-size;
+        width: $input-size;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: box-shadow $input-transition-timing $input-transition-type;
+      }
+      
+      &:after {
+        background-color: white;
+        border-radius: 100%;
+        content: "";
+        display: inline-block;
+        height: 6px;
+        width: 6px;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        transform: translate(0%, 0%) scale(0);
+        transform-origin: 50% 50%;
+        transition: transform $input-transition-timing $input-transition-type;
+      }
+    }
+    
+    
+    &:checked + label:before {
+    //&:checked:hover + label:before {
+      background-color: var(--blue-60);
+      border-color: var(--blue-60);
+    }
+    
+    &:checked + label:after,
+    &:checked:hover + label:after {
+      transform: translate(0%, 0%) scale(1);
+    }
+    
+    // &:hover + label:before {
+    //   border-color: $input-hover-border-color;
+    // }
+    
+    &:focus + label:before {
+      //border-color: $input-focus-border-color;
+      box-shadow: 0 0 0 2px var(--blue-20);;
+    }
+
+    &:disabled + label {
+      color: $input-disabled-text-color;
+      cursor: not-allowed;
+    }
+
+    &:disabled + label:before {
+      border-color: $input-disabled-border-color;
+    }
+
+    // &:disabled:hover + label:before {
+    //   box-shadow: none;
+    // }
+  }

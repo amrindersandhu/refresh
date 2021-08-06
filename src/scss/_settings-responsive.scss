@@ -1,0 +1,37 @@
+//////////////////
+// #RESPONSIVE ///
+//////////////////
+
+
+
+@mixin for-phone-only {
+    @media (max-width: 599px) { 
+
+    }
+}
+
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { 
+        
+    }
+}
+
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { 
+        
+    }
+  }
+  
+@mixin for-desktop-up {
+    @media (min-width: 1200px) { 
+
+    }
+}
+  
+
+@mixin for-big-desktop-up {
+    @media (min-width: 1800px) { 
+
+    }
+}
+  

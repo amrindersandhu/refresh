@@ -1,0 +1,27 @@
+//////////////////
+// #TABS /////////
+//////////////////
+
+
+// LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;       /* Remove default arrow */
+  line-height: 14px;
+  padding-right: var(--spacing-xl);
+}
+
+
+.input-control--select {
+  position: relative;
+
+  > svg {
+    fill: var(--content-color-primary);
+    margin-top: -10px;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+  }
+}

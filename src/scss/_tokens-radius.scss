@@ -1,0 +1,16 @@
+/////////////////////////
+// #TYPOGRAPHY #TOKENS //
+/////////////////////////
+
+
+
+// GLOBAL TOKENS
+$border-radius-xs: 2px;
+$border-radius-s: 4px;
+$border-radius-m: 8px;
+$border-radius-max: 100%;
+
+
+// COMPONENT-SPECIFIC TOKENS
+$controls-border-radius: $border-radius-s;
+$modal-border-radius: $border-radius-m;

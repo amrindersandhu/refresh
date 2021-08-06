@@ -1,0 +1,105 @@
+//////////////////
+// #TABS /////////
+//////////////////
+
+
+// LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+$text-field-border-size: $border-thin;
+$text-field-border-color: $border-color-strong;
+$text-field-border-radius: $controls-border-radius;
+$text-field-text-size: $text-size-s;
+$text-field-inset-spacing: var(--spacing-s) var(--spacing-m);
+$text-field-small-inset-spacing: var(--spacing-s) var(--spacing-s);
+$text-field-hover-border-color: $input-border-color-active;
+$text-field-active-border-color: $color-primary-base;
+$text-field-active-shadow: 0 0 0 1px rgba($color-primary-base, 1);
+$text-field-transition-timings: $transition-delay-default;
+$text-field-transition-type: $transition-timing-default;
+
+
+
+.input-wrap--text {
+    margin-bottom: $spacing-xl;
+}
+
+
+.input-control.is-small {
+  input {
+    height: 24px;
+    line-height: 24px;
+    padding: $text-field-small-inset-spacing;
+  }
+}
+
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="url"],
+  input[type="number"],
+  input[type="search"],
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="week"],
+  select,
+  textarea {
+    border: 1px solid var(--grey-40);
+    border-radius: var(--border-radius-default);
+    box-sizing: border-box;
+    font-size: var(--text-size-m);
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: var(--spacing-xs);
+    padding: $text-field-inset-spacing;
+    transition: border-color $text-field-transition-timings $text-field-transition-type, box-shadow $text-field-transition-timings $text-field-transition-type;
+    width: 100%;
+
+    &::placeholder {
+      color: var(--content-color-tertiary);
+    }
+    
+    &:active,
+    &:focus {
+      border: 1px solid var(--blue-30);
+      box-shadow: 0 0 0 2px var(--blue-30);
+      //outline-color: var(--color-interactive);
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: var(--background-color-secondary);
+      border-color: var(--grey-30);
+      color: var(--content-color-tertiary);
+      cursor: not-allowed;
+    }
+  }
+  
+  textarea {
+    height: auto;
+    line-height: $line-height-xs;
+    min-height: 64px;
+    overflow: auto;
+    resize: vertical;
+  }
+
+
+// input[type=number]::-webkit-inner-spin-button,
+// input[type=number]::-webkit-outer-spin-button
+// {
+//   //-webkit-appearance: none;
+//   //margin: 0;
+//    transform: translateX(10px);
+// }
+
+// input[type=number] {
+//   //-moz-appearance: textfield;
+// }
+
+// .input-control--number {
+//   position: relative;
+// }
+
+

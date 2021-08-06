@@ -1,0 +1,125 @@
+//////////////////
+// #FLEX /////////
+//////////////////
+
+
+// DISPLAYING
+.flex {
+    display: flex;
+}
+
+.flex--inline {
+    display: inline-flex;
+}
+
+
+// DIRECTION & GAP
+.flex-direction--row {
+    flex-direction: row;
+
+    &.flex-gap--xs > :not(:last-child) {
+        margin-right: var(--spacing-xs);
+    }
+
+    &.flex-gap--s > :not(:last-child) {
+        margin-right: var(--spacing-s);
+    }
+
+    &.flex-gap--m > :not(:last-child) {
+        margin-right: var(--spacing-m);
+    }
+
+    &.flex-gap--l > :not(:last-child) {
+        margin-right: var(--spacing-l);
+    }
+
+    &.flex-gap--xl > :not(:last-child) {
+        margin-right: var(--spacing-xl);
+    }
+}
+
+.flex-direction--column {
+    flex-direction: column;
+
+    &.flex-gap--xs > :not(:last-child) {
+        margin-bottom: var(--spacing-xs);
+    }
+
+    &.flex-gap--s > :not(:last-child) {
+        margin-bottom: var(--spacing-s);
+    }
+
+    &.flex-gap--m > :not(:last-child) {
+        margin-bottom: var(--spacing-m);
+    }
+
+    &.flex-gap--l > :not(:last-child) {
+        margin-bottom: var(--spacing-l);
+    }
+
+    &.flex-gap--xl > :not(:last-child) {
+        margin-bottom: var(--spacing-xl);
+    }
+}
+
+.flex-direction--horizontal--reverse {
+    flex-direction: row-reverse;
+}
+
+
+
+// CHILDREN VERTICAL ALIGNMENT
+.flex-justify--start {
+    justify-content: flex-start;
+}
+
+.flex-justify--end {
+    justify-content: flex-end;
+}
+
+.flex-justify--center {
+    justify-content: center;
+}
+
+.flex-justify--stretch {
+    justify-content: stretch;
+}
+
+.flex-justify--space_between {
+    justify-content: space-between;
+}
+
+
+.flex-align--start {
+    justify-content: flex-start;
+}
+
+.flex-align--end {
+    align-self: flex-end;
+}
+
+.flex-align--center {
+    justify-content: flex-start;
+}
+
+.flex-align--end {
+    justify-content: flex-end;
+}
+
+
+.flex-align-items--center {
+    align-items: center;
+}
+
+
+
+
+.flex-space--between {
+    justify-content: space-between;
+}
+
+.flex-space--around {
+    justify-content: space-around;
+}
+
+

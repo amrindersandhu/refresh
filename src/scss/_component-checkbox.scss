@@ -1,0 +1,90 @@
+//////////////////
+// #CHECKBOX /////////
+//////////////////
+
+
+// LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+$input-label-text-color: $text-color-base;
+$input-label-text-size: $text-size-s;
+$input-transition-timing: $transition-delay-default;
+$input-transition-type: $transition-timing-default;
+$input-size: 14px;
+$input-border-size: $border-thin;
+$input-border-color: var(--grey-40);
+$input-selected-border-color: var(--blue-60);
+$input-focus-border-color: var(--blue-60);
+$input-disabled-text-color: var(--content-color-tertiary);
+$input-disabled-border-color: var(--grey-30);;
+$input-focus-box-shadow: 0 0 0 2px rgba(var(--blue-60), 1);
+
+$checkbox-border-radius: $border-radius-xs;
+
+
+
+
+@import "component-inputs.scss";
+
+
+
+.input-checkbox {
+  // Hide the default checkbox
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 0.1px;
+
+  + label {
+    color: var(--content-color-primary);
+    display: flex;
+    font-size: var(--text-size-m);
+    margin-bottom: 0;
+    padding-left: 22px;
+    position: relative;
+
+    &:before {
+      background: url('../icons/check.svg') no-repeat center center;
+      background-size: 0;
+      border: $input-border-size solid $input-border-color;
+      border-radius: var(--border-radius-s);
+      //box-shadow: 0 0 0 1px rgba(black, 0.2);
+      content: "";
+      display: inline-block;
+      height: $input-size;
+      width: $input-size;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: background-size $input-transition-timing $input-transition-type;
+    }
+  }
+
+  &:checked + label:before {
+  //&:checked:hover + label:before {
+    background-color: var(--blue-60);
+    border-color: $input-selected-border-color;
+    background-size: 10px;
+  }
+
+  // &:hover + label:before {
+  //   border-color: $input-hover-border-color;
+  // }
+
+  &:focus + label:before {
+    border-color: $input-focus-border-color;
+    box-shadow: 0 0 0 2px var(--blue-20);
+  }
+
+  &:disabled + label {
+    color: $input-disabled-text-color;
+    cursor: not-allowed;
+  }
+
+  &:disabled + label:before {
+    border-color: $input-disabled-border-color;
+  }
+
+  // &:disabled:hover + label:before {
+  //   box-shadow: none;
+  // }
+}

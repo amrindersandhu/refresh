@@ -1,0 +1,85 @@
+@import "component-button.scss";
+
+//////////////////
+// #FILE INPUT ///
+//////////////////
+
+label {
+    color: $text-color-subtle;
+    display: block;
+    font-size: $text-size-s;
+    margin-bottom: $spacing-xxs;
+}
+
+
+.input-description {
+    color: $text-color-subtle;
+    font-size: var(--text-size-xs);
+    line-height: $line-height-xs;
+    margin-bottom: 0;
+}
+
+
+.input-file {
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 0.1px;
+    z-index: -1;
+
+    + label {
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    // Making button work on touch
+    + label * {
+        pointer-events: none;
+    }
+
+    &:focus + label {
+        border-radius: $controls-border-radius;
+        box-shadow: 0 0 0 2px rgba($color-primary-base, 1) inset;
+        outline: none;
+    }
+}
+
+
+.input-file-wrap {
+    align-items: center;
+    background-color: $background-color-secondary;
+    border-radius: $border-radius-s;
+    display: flex;
+    padding-left: $spacing-s;
+    margin-bottom: $spacing-xs;
+
+    .btn-default {
+        align-self: flex-end;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $background-color-secondary;
+        }
+    }
+
+    .btn-icon-cancel {
+        color: $text-color-subtler;
+        transform: translateY(-1px);
+    }
+
+    .icon-stroke-error * {
+        fill: $icon-color-error;
+    }
+
+    .icon-stroke-success * {
+        fill: $icon-color-success;
+    }
+}
+
+.input-file-name {
+    color: $text-color-subtle;
+    flex-grow: 1;
+    font-size: $text-size-s;
+    margin: 0 $spacing-xs;
+}

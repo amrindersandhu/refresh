@@ -1,0 +1,42 @@
+///////////////////
+// #INPUT ERRORS //
+///////////////////
+
+
+.input-message {
+    align-content: center;
+    display: flex;
+    font-size: var(--text-size-s);
+    line-height: var(--line-height-s);
+  
+    .icon-status {
+      margin-right: var(--spacing-xs);
+      position: relative;
+      top: 2px;
+    }
+  }
+  
+    .input-message--error {
+      color: var(--content-color-error);
+  
+      .icon-status path {
+        fill: var(--content-color-error);
+      }
+    }
+
+
+.input-message--warning {
+    color: var(--content-color-warning);
+
+    .icon-status path {
+        fill: var(--content-color-warning);
+      }
+}
+
+.input-message--success {
+    color: var(--content-color-success);
+
+    icon-status path {
+        fill: var(--content-color-success);
+    }
+}

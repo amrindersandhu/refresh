@@ -1,0 +1,33 @@
+{
+  "name": "pmds",
+  "version": "1.0.0",
+  "description": "Sandbox for Postman Design System",
+  "main": "index.html",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amrindersandhu/pmds.git"
+  },
+  "keywords": [
+    "Postman",
+    "Sandbox"
+  ],
+  "author": "Amrinder Sandhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amrindersandhu/pmds/issues"
+  },
+  "homepage": "https://github.com/amrindersandhu/pmds#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-jade-modules": "^1.0.1",
+    "gulp-open": "^3.0.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "pug": "^3.0.0",
+    "run-sequence": "^2.2.1"
+  }
+}

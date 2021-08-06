@@ -1,0 +1,209 @@
+//////////////////
+// #BUTTON ///////
+//////////////////
+
+// LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+
+$button-border-radius: var(--border-radius-default);
+$button-text-weight: var(--text-weight-regular);
+$button-text-size: var(--text-size-m);
+$button-line-height: 1.4;
+$button-transition: background-color 50ms ease-in-out, border-color 50ms ease-in-out, box-shadow 50ms ease-in-out, outline 50ms ease-in-out;
+$button-spacing-inset-default: var(--spacing-s) var(--spacing-l);
+$button-focus-shadow: 0 0 0 2px rgba($color-primary-base, 1) inset;
+
+$button-spacing-inset-small: var(--spacing-xs) var(--spacing-m);
+
+$button-primary-background-color: var(--orange-50);
+$button-primary-hover-background-color: var(--orange-60);
+$button-primary-active-background-color: var(--orange-70);
+$button-primary-text-color: var(--content-color-constant);
+$button-primary-text-weight: var(--text-weight-medium);
+
+$button-default-background-color: var(--background-color-tertiary);
+$button-default-hover-background-color: var(--grey-20);
+$button-default-active-background-color: var(--grey-30);
+$button-default-text-color: var(--content-color-primary);
+
+
+$button-destructive-background-color: var(--red-50);
+$button-destructive-hover-background-color: var(--red-60);
+$button-destructive-active-background-color: var(--red-70);
+$button-destructive-text-color: var(--grey-00);
+$button-destructive-text-weight: var(--text-weight-medium);
+
+$button-link-background-color: transparent;
+$button-link-hover-text-color: $color-primary-strong;
+$button-link-text-color: var(--color-interactive);
+
+$button-icon-color: $icon-color-default;
+$button-icon-color-hover: $icon-color-hover;
+$button-icon-color-disabled: $icon-color-light;
+$button-icon-background-color-hover: $background-color-tertiary;
+$button-icon-spacing-inset: $spacing-xs;
+
+
+
+.btn-group {
+
+  button + button {
+    margin-left: var(--spacing-m);
+  }
+}
+
+// Common button styles for all <button> elements
+button {
+  border: none;
+  border-radius: $button-border-radius;
+  display: inline-flex;
+  font-size: $button-text-size;
+  line-height: $button-line-height;
+  padding: $button-spacing-inset-default;
+  justify-content: center;
+  transition: $button-transition;
+
+  &:focus {
+    box-shadow: var(--shadow-focus);  
+    outline: none
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &.btn-small {
+    padding: $button-spacing-inset-small;
+  }
+}
+
+
+.btn-primary {
+  background-color: $button-primary-background-color;
+  color: $button-primary-text-color;
+  font-weight: $button-primary-text-weight;
+
+  &:hover {
+    background-color: $orange-60;
+  }
+
+  &:active {
+    background-color: $orange-70;
+  }
+
+  &:disabled {
+    background-color: var(--orange-30);
+  }
+}
+
+
+.btn-default {
+  background-color: $button-default-background-color; 
+  color: $button-default-text-color;
+  // Kept here for the file-input button
+  border-radius: $button-border-radius;
+  padding: $button-spacing-inset-default; 
+  font-weight: $button-text-weight;
+  padding: $button-spacing-inset-default;
+  transition: $button-transition;
+
+  &:hover {
+    background-color: $button-default-hover-background-color;
+  }
+
+  &:active {
+    background-color: $button-default-active-background-color;
+  }
+
+  &:disabled {
+    background-color: var(--grey-05);
+    color: var(--grey-50);
+  }
+}
+
+
+.btn-outline {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .16) inset;
+
+  &:hover {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .32) inset;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .48) inset;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .16) inset, var(--shadow-focus);
+  }
+}
+
+
+.btn-destructive {
+  background-color: $button-destructive-background-color;
+  color: $button-destructive-text-color;
+  font-weight: $button-destructive-text-weight;
+
+  &:hover {
+    background-color: $button-destructive-hover-background-color;
+  }
+
+  &:active {
+    background-color: $button-destructive-active-background-color;
+  }
+}
+
+.btn-link {
+  background-color: transparent;
+  border-radius: 0;
+  border-bottom: 1px solid transparent;
+  color: $button-link-text-color;
+  padding: 0;
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
+}
+
+
+// Icon only button
+.btn-only-icon {
+  padding: $button-icon-spacing-inset;
+  height: 32px;
+
+  .btn-icon {
+    vertical-align: bottom;
+  }
+
+  &:hover {
+    background-color: $button-icon-background-color-hover;
+
+    svg path {
+      fill: $button-icon-color-hover;
+    }
+  }
+
+  &.is-small {
+    height: 24px;
+    padding: 4px 8px;
+  }
+}
+
+
+// Icon inside the button with text
+.btn-icon {
+  vertical-align: middle;
+}
+
+
+// Button with icon plus label
+.btn-with-icon {
+  padding: var(--spacing-s);
+
+  .btn-icon {
+    margin-right: $spacing-xs;
+  }
+
+  &:hover {
+    background-color: $background-color-tertiary;
+  }
+}

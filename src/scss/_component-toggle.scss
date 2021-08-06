@@ -1,0 +1,97 @@
+////////////////////
+// #TOGGLE-SWITCH //
+////////////////////
+
+
+// LOCAL TOKENS  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+$toggle-height: $controls-size-small;
+$toggle-width: $controls-size-default;
+$toggle-off-background-color: $grey-50;
+$toggle-on-background-color: $color-primary-base;
+$toggle-off-disabled-background-color: $grey-30;
+$toggle-on-disabled-background-color: $color-primary-subtler;
+
+$toggle-slider-shadow: 0 0 0 1px rgba(var(--blue-60), 1) inset, 0 0 0 1px rgba(var(--blue-60), 1);
+
+
+.input-wrap--toggle {
+    display: block;
+    height: 16px;
+    position: relative;
+    width: 28px;
+}
+
+
+.input-toggle {
+    height: 0.1px;
+    opacity: 0;
+    width: 0.1px;
+}
+
+
+.input-toggle-slider {
+    border-radius: 16px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--grey-40);
+    margin-bottom: 0;
+    -webkit-transition: $transition-delay-default;
+    transition: $transition-delay-default;
+
+    &:before {
+        border-radius: 10px;
+        position: absolute;
+        content: "";
+        height: 12px;
+        width: 12px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        -webkit-transition: $transition-delay-default;
+        transition: $transition-delay-default;
+    }
+}
+  
+  .input-toggle:checked + .input-toggle-slider {
+    background-color: var(--blue-60);
+  }
+  
+  .input-toggle:focus + .input-toggle-slider {
+      box-shadow: 0 0 0 2px var(--blue-30);
+  }
+
+  .input-toggle:active + .input-toggle-slider {
+    box-shadow: none;
+  }
+
+  .input-toggle:disabled + .input-toggle-slider {
+    background-color: var(--grey-30);
+    cursor: not-allowed;
+  }
+
+  .input-toggle:checked:disabled + .input-toggle-slider {
+    background-color: var(--blue-20);
+    cursor: not-allowed;
+  }
+  
+  .input-toggle:checked + .input-toggle-slider:before {
+    -webkit-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    transform: translateX(12px);
+  }
+
+  .input-toggle-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+  }

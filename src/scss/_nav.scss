@@ -1,0 +1,26 @@
+//////////////////
+// #NAV //////////
+//////////////////
+
+
+
+nav {
+    background-color: $background-color-secondary;
+    bottom: 0;
+    left: 0;
+    padding: $spacing-xl;
+    position: fixed;
+    top: 0;
+
+    a {
+        color: var(--color-content-primary);
+        display: inline-block;
+        font-size: var(--text-size-m);
+        padding: $spacing-xxs $spacing-xs;
+
+        &:hover {
+            border-bottom: none;
+            color: $text-color-stronger;
+        }
+    }
+}

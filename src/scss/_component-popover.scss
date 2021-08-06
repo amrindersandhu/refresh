@@ -1,0 +1,83 @@
+//////////////////
+// #POPOVER //////
+//////////////////
+
+
+// LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+
+
+
+.c-popover {
+  background-color: var(--grey-00);
+  border-radius: var(--border-radius-default);
+  box-shadow: 0 0 1px var(--grey-90), 0 16px 24px -8px var(--grey-30);
+  padding-bottom: var(--spacing-s);
+  padding-top: var(--spacing-s);
+  min-width: 180px;
+}
+
+.c-popover__list + .c-popover__list {
+  margin-top: var(--text-size-m);
+}
+
+.c-popover__list__heading {
+  color: var(--content-color-tertiary);
+  font-size: var(--text-size-s);
+  margin: var(--spacing-xs) var(--spacing-l);
+}
+
+
+.c-popover__list__item__link {
+  align-items: center;
+  color: var(--content-color-primary);
+  display: flex;
+  font-size: var(--text-size-m);
+  line-height: 1.6;
+  padding: var(--spacing-xs) var(--spacing-l);
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--background-color-tertiary);
+  }
+
+  svg {
+    margin-right: var(--spacing-s);
+  }
+
+  .c-avatar {
+    margin-right: var(--spacing-m);
+  }
+}
+
+
+
+
+.c-popover__list__item.is-selected {
+  .c-popover__list__item__link {
+    background: url(../icons/check-single.svg) 12px center no-repeat;
+    //color: var(--blue-60);
+
+    &:hover {
+      background-color: var(--background-color-tertiary);
+    }
+  }
+}
+
+
+
+
+.c-popover__list.has-selection {
+  .c-popover__list__item__link {
+    padding-left: var(--spacing-xxl);
+  }
+}
+
+
+
+
+.c-popover__sep {
+  border-width: 0 0 1px;
+  border-style:solid;
+  border-color: var(--border-color-default);
+  margin: var(--spacing-s) var(--spacing-l);
+}

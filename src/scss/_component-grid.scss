@@ -1,0 +1,194 @@
+//////////////////
+// #GRID /////////
+//////////////////
+
+
+// Breakpoints
+$bp-mob: 544px;
+$bp-tab: 768px;
+$bp-lap: 1280px;
+
+
+$breakpoints: (
+    "mob" "screen and (max-width: $bp-mob)",
+    "tab" "screen and (max-width: $bp-tab)",
+    "lap" "screen and (max-width: $bp-lap)",
+) !default;
+
+
+@mixin breakpoint($bp) {
+
+    @each $breakpoint in $breakpoints {
+        @if $bp == mob {
+            @media (min-width: $bp-mob) {
+                @content;
+            }
+        }
+        @else if $bp == tab {
+            @media (min-width: $bp-mob) {
+                @content;
+            }
+        }
+        @else if $bp == lap {
+            @media (min-width: $bp-lap) {
+                @content;
+            }
+        }
+    }
+}
+
+
+@mixin for-tablet-portrait-up {
+    @media (min-width: $bp-mob) { @content; }
+}
+
+@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+}
+
+@mixin for-laptop-up {
+    @media (min-width: $bp-lap) { @content; }
+}
+
+
+
+
+// ONLY FOR REPRESENTING GRIDS
+.sb-grid_marker {
+    align-items: center;
+    background: rgba(red, .24);
+    display: flex;
+    justify-content: center;
+    padding: $spacing-l 0;
+    width: 100%;
+    margin-bottom: $spacing-l;
+
+    span {
+        font-family: var(--text-family-code-new);
+        font-size: var(--text-size-s);
+        opacity: .75;
+    }
+}
+
+
+.container-xl {
+    padding: var(--spacing-xxl) var(--spacing-xl);
+    width: 100%;
+
+    @include breakpoint(tab) {
+        padding: var(--spacing-xxxl) var(--spacing-xl);
+        margin: 0 auto;
+        max-width: 768px;
+    }
+
+    @include breakpoint(lap) {
+        max-width: 1272px;
+    }
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: $spacing-m;
+
+    @include breakpoint(tab) {
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: $spacing-l;
+    }
+
+    @include breakpoint(lap) {
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: $spacing-l;
+    }
+}
+
+
+
+.col-1 {
+    grid-column: span 12;
+
+    @include breakpoint(tab) {
+        grid-column: span 6;
+    }
+
+    @include breakpoint(lap) {
+        grid-column: span 1;
+    }
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.col-lap-3 {
+    @include breakpoint(lap) {
+        grid-column: span 3;
+    }
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.col-5 {
+    grid-column: span 5;
+}
+
+.col-lap-6 {
+    @include breakpoint(lap) {
+        grid-column: span 6;
+    }
+}
+
+.col-6 {
+    grid-column: span 6;
+}
+
+
+.col-7 {
+    grid-column: span 7;
+}
+
+.col-8 {
+    grid-column: span 8;
+}
+
+.col-lap-9 {
+    @include breakpoint(lap) {
+        grid-column: span 9;
+    }
+}
+
+.col-10 {
+    grid-column: span 10;
+}
+
+.col-11 {
+    grid-column: span 11;
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+
+    
+    @include breakpoint(tab) {
+        .col-tab-4 {
+            grid-column: span 4;
+        }
+
+        .col-tab-8 {
+            grid-column: span 8;
+        }
+    }
+
+
+.col-lap-12 {
+    grid-column: span 4;
+
+    @include breakpoint(lap) {
+        grid-column: span 12;
+    }
+}

@@ -1,0 +1,64 @@
+//////////////////
+// #BADGE ///////
+//////////////////
+
+// LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+
+
+// 
+.c-badge {
+  background-color: var(--background-color-tertiary);
+  border-radius: var(--border-radius-max);
+  color: var(--content-color-secondary);
+  display: inline-block;
+  font-size: var(--text-size-s);
+  font-weight: var(--text-weight-medium);
+  height: 16px;
+  line-height: var(--line-height-s);
+  margin-left: var(--spacing-xs);
+  margin-right: var(--spacing-xs);
+  padding: 0 var(--spacing-s);
+  text-transform: uppercase;
+}
+
+
+.c-badge--success {
+  background-color: var(--background-color-success);
+  color: var(--content-color-success);
+}
+
+.c-badge--info {
+  background-color: var(--background-color-info);
+  color: var(--content-color-info);
+}
+
+.c-badge--warning {
+  background-color: var(--background-color-warning);
+  color: var(--content-color-warning);
+}
+
+.c-badge--error {
+  background-color: var(--background-color-error);
+  color: var(--content-color-error);
+}
+
+.c-badge--new {
+  background-color: var(--background-color-new);
+  color: var(--content-color-new);
+}
+
+.c-badge--count {
+  border-radius: var(--border-radius-default);
+  background-color: var(--base-color-brand);
+  color: var(--content-color-constant);
+  padding-left: var(--spacing-xs);
+  padding-right: var(--spacing-xs);
+}
+
+.tabs-link {
+  position: relative;
+
+  .c-badge--count {
+    transform: translateX(2px) translateY(0);
+  }
+}

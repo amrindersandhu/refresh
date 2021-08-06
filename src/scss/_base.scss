@@ -1,0 +1,40 @@
+//////////////////
+// #BASE /////////
+//////////////////
+
+html {
+  background-color: $background-color-primary;
+
+  font-family: var(--text-family-new);
+  font-size: 62.5%;
+
+  /* Make type rendering look crisper */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Disable auto-enlargement of small text in Safari */
+  text-size-adjust: 100%;
+
+  /* Enable kerning and optional ligatures */
+  text-rendering: optimizeLegibility;
+
+  font-feature-settings:"ss01", "onum", "zero";
+}
+
+body {
+  font-size: var(--text-size-m);
+  line-height: var(--line-height-m);
+  position: relative;
+}
+
+main {
+  margin: 36px 240px;
+  width: 640px;
+}
+
+.logo {
+    margin-bottom: $spacing-m;
+}
+
+//make parent (div, p, span, etc.) display flex, block, inline 
+//put some text on top and bottom 3 lines

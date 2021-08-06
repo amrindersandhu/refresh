@@ -1,0 +1,175 @@
+//////////////////
+// #INPUTS ///////
+//////////////////
+
+
+// LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+
+$input-description-text-color: var(--content-color-secondary);
+$input-description-text-size: var(--text-size-s);
+$input-description-line-height: 16px;
+
+
+
+label {
+  color: $input-text-color-label;
+  font-size: $text-size-xs;
+  line-height: $line-height-xs;
+}
+
+
+.input-group .input-group {
+  margin: 8px 0 12px 22px;
+}
+
+
+.input-wrap {
+  margin-bottom: var(--spacing-s);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.input-label {
+  display: flex;
+  align-items: center;
+  line-height: 16px;
+  
+  .icon-wrap {
+    margin-left: $spacing-xs;
+  }
+}
+
+
+.input-label-copy {
+  .icon-wrap:hover {
+    background-color: var(--background-color-tertiary);
+    border-radius: var(--border-radius-default);
+    padding: 2px 0;
+  }
+
+  .icon-info {
+    margin: 0 var(--spacing-xs);
+    position: relative;
+    top: 2px;
+  }  
+}
+
+
+.input-optional {
+  font-weight: normal;
+}
+
+
+.input-description {
+  color: $input-description-text-color;
+  font-size: $input-description-text-size;
+  line-height: $input-description-line-height;
+  margin-bottom: 0;
+}
+
+
+.input-wrap--checkbox,
+.input-wrap--radiobutton {
+  
+  .input-description {
+    margin-left: $spacing-l;
+    margin-top: var(--spacing-xs);
+  }
+}
+
+
+
+.input-control {
+  position: relative;
+
+  .icon-validation {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+
+  &.has-prefix,
+  &.has-suffix {
+    border: 1px solid var(--grey-40);
+    border-radius: 4px;
+    height: 32px;
+
+    input {
+      border-color: transparent;
+      margin-bottom: 0;
+      height: 30px;
+    }
+
+    .btn-only-icon {
+      margin-right: 2px;
+    }
+  }
+
+  &.has-prefix {
+    input {
+      padding-left: 8px;
+    }
+  }
+
+  &.has-suffix {
+    input {
+      padding-right: 8px;
+    }
+  }
+
+  &.has-error {
+
+    input,
+    textarea {
+      background-color: var(--red-10);
+      border-color: var(--red-60);
+    }
+  }
+
+  // &.has-success {
+  //   input,
+  //   textarea {
+  //     background-color: var(--green-10);
+  //     border-color: var(--green-60);
+  //   }
+  // }
+
+  // &.has-warning {
+  //   input,
+  //   textarea {
+  //     background-color: var(--yellow-10);
+  //     border-color: var(--yellow-60);
+  //   }
+  // }
+}
+
+
+.input-prefix,
+.input-suffix {
+  //background-color: var(--background-color-secondary);
+  color: var(--content-color-secondary);
+  height: 30px;
+  position: relative;
+  top: 2px;
+  padding: 4px 0;
+}
+
+.input-prefix {
+  border-radius: 3px 0 0 3px;
+  padding-left: 12px;
+}
+
+.input-suffix {
+  border-radius: 0 3px 3px 0;
+  padding-right: 12px;
+}
+
+
+
+
+.icon-validation-error path {
+  fill: var(--content-color-error);
+}

@@ -1,0 +1,47 @@
+//////////////////
+// #BREADCRUMB ///////
+//////////////////
+
+// LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+
+
+// 
+.breadcrumb {
+  margin: var(--spacing-m) 0;
+
+  &:hover {
+    .breadcrumb__link {
+      color: var(--color-interactive);
+    }
+  }
+}
+
+.breadcrumb__link {
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
+}
+
+.breadcrumb__item {
+  color: var(--content-color-tertiary);
+
+  &.is-highlighted {
+    color: var(--content-color-primary);
+  }
+}
+
+
+.breadcrumb__sep {
+  color: var(--content-color-tertiary);
+  font-weight: normal;
+  padding: 0 var(--spacing-xs);
+}
+
+
+.tab-header {
+  border-top: 1px solid var(--border-color-default);
+  border-bottom: 1px solid var(--border-color-default);
+  margin: 0 -32px;
+  padding-left: 16px;
+}

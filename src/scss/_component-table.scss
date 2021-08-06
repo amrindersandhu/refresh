@@ -1,0 +1,42 @@
+//////////////////
+// #TABLE /////////
+//////////////////
+
+
+// LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+
+
+
+
+
+// DEFAULT TABLE
+.table-default {
+    font-size: var(--text-size-m);
+    text-align: left;
+
+    tr {
+        &:hover {
+            a {
+                color: var(--content-color-brand);
+            }
+        }
+    }
+
+    th {
+        color: var(--content-color-tertiary);
+        border-bottom: 1px solid $grey-30;
+        font-size: var(--text-size-s);
+        font-weight: normal;
+        padding: $spacing-xs 0;
+        text-transform: uppercase;
+    }
+
+    td {
+        padding: $spacing-xs 0;
+        color: var(--content-color-secondary);
+        
+        a {
+            color: var(--content-color-primary);
+        }
+    }
+}

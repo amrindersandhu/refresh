@@ -1,0 +1,87 @@
+//////////////////
+// #LINK /////////
+//////////////////
+
+
+// LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+
+
+
+
+
+// INLINE OR DEFAULT LINK
+.link {
+    color: inherit;
+    display: inline;
+    position: relative;
+    border-bottom: 1px solid $grey-40;
+    
+
+    // &:after {
+    //     border-bottom: 1px solid $grey-40;
+    //     content: "";
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    // }
+
+    &:hover {
+        color: var(--color-interactive);
+        border-bottom-color: var(--color-interactive);
+    }
+}
+
+
+// EXTERNAL LINK
+.link--external {
+    padding-right: 18px;
+
+    svg {
+        margin-left: var(--spacing-xs);
+        position: absolute;
+        margin-top: var(--spacing-xs);
+
+        path {
+            fill: currentColor;
+        }
+    }
+
+    &:hover {
+
+        svg path {
+            fill: var(--content-color-brand);
+        }
+    }
+}
+
+
+// STANDALONE OR PRIMARY LINK
+.link--primary {
+    color: var(--color-interactive);
+
+    &:after {
+        border-bottom: none;
+    }
+
+    &:hover::after {
+        border-bottom: 1px solid;
+    }
+}
+
+
+// SUBTLE LINKS
+.link--subtle {
+    &:after {
+        border-bottom: none;
+    }
+
+    &:hover::after {
+        border-bottom: 1px solid;
+    }
+}
+
+
+p:hover .link--subtle {
+    color: var(--content-color-brand);
+}

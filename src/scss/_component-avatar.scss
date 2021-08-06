@@ -1,0 +1,20 @@
+//////////////////
+// #AVATAR ///////
+//////////////////
+
+// LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+
+
+// 
+.c-avatar {
+  border-radius: var(--border-radius-max);
+  display: inline-block;
+  position: relative;
+  height: 32px;
+  width: 32px;
+}
+
+.c-avatar--small {
+  height: 24px;
+  width: 24px;
+}

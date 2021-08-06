@@ -1,0 +1,51 @@
+//////////////////
+// #UTILITIES ////
+//////////////////
+
+
+// SPACING HELPER CLASSES
+
+.spacing-below--s {
+    margin-bottom: $spacing-s;
+}
+
+.spacing-below--m {
+    margin-bottom: $spacing-m;
+}
+
+.spacing-below--l {
+    margin-bottom: $spacing-l;
+}
+
+.spacing-below--xl {
+    margin-bottom: $spacing-xl;
+}
+
+.spacing-below--xxl {
+    margin-bottom: $spacing-xxl;
+}
+
+.spacing-right-s {
+    margin-right: $spacing-s;
+}
+
+.spacing-m {
+    margin: $spacing-m 0;
+}
+
+// Separator
+
+.separator-horizontal {
+    border: 1px solid $border-color-base;
+    border-width: 1px 0 0;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

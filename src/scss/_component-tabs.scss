@@ -1,0 +1,189 @@
+//////////////////
+// #TABS /////////
+//////////////////
+
+
+// LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+$tabs-background-color: $background-color-tertiary;
+$tabs-hover-background-color: $background-color-tertiary;
+$tabs-border-color: $border-color-subtle;
+$tabs-active-border-color: $color-primary-base;
+$tabs-text-color-default: $text-color-subtle;
+$tabs-active-text-color: $text-color-stronger;
+$tabs-hover-text-color: $text-color-stronger;
+$tabs-disabled-text-color: $text-color-subtler;
+
+
+
+
+
+// DEFAULT TABS
+.tabs-default {
+    display: flex;
+    font-size: $text-size-s;
+    margin-left: calc(var(--spacing-l) * -1);
+
+    &.is-full-width {
+        .tabs-item {
+            flex-grow: 1;
+        }
+    }
+
+
+    .tabs-link {
+        border-bottom: none;
+        border-radius: var(--border-radius-default);
+        color: var(--content-color-secondary);
+        display: flex;
+        justify-content: center;
+        padding: 0 var(--spacing-l);
+    
+        &:hover,
+        &:focus {
+            color: var(--content-color-primary);
+            border: none;
+            outline: none;
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 0 2px var(--blue-30);
+            z-index: 2;
+        }
+        
+    
+        &.is-active {
+            color: var(--content-color-primary);
+    
+            .tabs-text:after {
+                border-radius: 2px;
+                //border-left: 2px solid white;
+                //border-right: 2px solid white;
+                content: "";
+                display: inline-block;
+                position: absolute;
+                background-color: $color-primary-base;
+                height: 2px;
+                left: 0;
+                right: 0;
+                bottom: -2px;
+            }
+
+            &:hover .tabs-text:after {
+                border-color: $border-color-base;
+            }
+        }
+    
+        &.is-disabled {
+            color: var(--content-color-tertiary);
+            cursor: not-allowed;
+    
+            &:hover,
+            &:focus {
+                background-color: transparent;
+            }
+        }
+    
+        .tabs-text {
+            display: inline-block;
+            padding: $spacing-xs 0;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// ALT TABS
+
+.tabs-alt {
+    align-items: center;
+    display: flex;
+    font-size: $text-size-s;
+
+    &.is-full-width {
+        .tabs-item {
+            flex-grow: 1;
+        }
+    }
+
+    .tabs-item {
+        background-color: $background-color-secondary;
+        height: 32px;
+
+        &:first-child {
+            border-radius: $controls-border-radius 0 0 $controls-border-radius;
+        }
+
+        &:last-child {
+            border-radius: 0 $controls-border-radius $controls-border-radius 0;
+        }
+    }
+
+    .tabs-link {
+        align-items: center;
+        border-bottom: none;
+        border-radius: 3px;
+        color: var(--content-color-secondary);
+        display: flex;
+        justify-content: center;
+        padding: var(--spacing-s) var(--spacing-l);
+        position: relative;
+        line-height: var(--line-height-s);
+    
+        &:hover,
+        &:focus {
+            color: $text-color-strong;
+            border: none;
+            outline: none;
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 0 2px var(--blue-30);
+            z-index: 2;
+        }
+    
+        &.is-active {
+            color: var(--content-color-primary);
+
+            &::before {
+                background-color: white;
+                border-radius: 4px;
+                bottom: 0;
+                content: "";
+                display: block;
+                left: 0;
+                right: 0;
+                position: absolute;
+                top: 0;
+                box-shadow: 0 0 0 1px var(--border-color-strong) inset;
+            }
+        }
+    
+        &.is-disabled {
+            color: var(--content-color-tertiary);;
+            cursor: not-allowed;
+    
+            &:hover {
+                background-color: transparent;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    
+        .tabs-text {
+            display: inline-block;
+            position: relative;
+            z-index: 2;   
+        }
+    }
+}

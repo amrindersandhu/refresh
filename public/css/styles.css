@@ -8174,7 +8174,7 @@ label {
   .input-control.has-suffix input {
     padding-right: 8px; }
   .input-control.has-error {
-    margin-bottom: 4px; }
+    margin-bottom: 8px; }
     .input-control.has-error input,
     .input-control.has-error textarea {
       color: var(--red-50);
@@ -8644,11 +8644,11 @@ label {
   align-content: center;
   display: flex;
   font-size: 14px;
-  line-height: 22px; }
+  line-height: 20px; }
   .input-message .icon-status {
-    margin-right: var(--spacing-xs);
+    margin-right: 8px;
     position: relative;
-    top: 3px; }
+    top: 2px; }
 
 .input-message--error {
   color: var(--content-color-error); }
@@ -8771,7 +8771,7 @@ label {
   .input-control.has-suffix input {
     padding-right: 8px; }
   .input-control.has-error {
-    margin-bottom: 4px; }
+    margin-bottom: 8px; }
     .input-control.has-error input,
     .input-control.has-error textarea {
       color: var(--red-50);

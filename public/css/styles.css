@@ -7791,8 +7791,22 @@ a {
     border-bottom: 1px solid;
     text-decoration: none; }
 
-small {
-  font-size: var(--text-size-s); }
+small,
+.small {
+  font-size: 14px;
+  letter-spacing: 0.24px;
+  line-height: 20px; }
+
+figure img {
+  width: 100%; }
+
+figcaption,
+.caption {
+  color: var(--grey-70);
+  font-size: 14px;
+  letter-spacing: 0.24px;
+  line-height: 20px;
+  text-align: center; }
 
 .page-title {
   font-family: 'IBM Plex Sans', sans-serif;

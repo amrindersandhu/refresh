@@ -8200,7 +8200,6 @@ label {
   width: 0.1px; }
   .input-checkbox + label {
     color: var(--grey-90);
-    display: flex;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;

@@ -78,8 +78,8 @@ button {
 
 
 .btn-primary {
-  background-color: $button-primary-background-color;
-  color: $button-primary-text-color;
+  background-color: var(--orange-50);
+  color: var(--grey-00);
   font-weight: 600;
 
   &:hover {
@@ -93,6 +93,10 @@ button {
   &:disabled {
     background-color: var(--orange-30);
   }
+
+  &:focus {
+    background-color: var(--orange-50);
+  }
 }
 
 
@@ -104,7 +108,9 @@ button {
   font-weight: 600;
 
   &:hover {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .32) inset;
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .64) inset;
+    color: var(--content-color-primary);
   }
 
   &:active {

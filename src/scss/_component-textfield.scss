@@ -79,7 +79,12 @@ $text-field-transition-type: $transition-timing-default;
       color: var(--content-color-tertiary);
       cursor: not-allowed;
     }
+
+    &.has-error {
+      border-color: var(--red-50);  
+    }
   }
+
   
   textarea {
     height: auto;

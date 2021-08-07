@@ -7560,6 +7560,7 @@ a.text-dark:hover, a.text-dark:focus {
   --orange-80: #A12700;
   --orange-90: #553326;
   --red-10: #FFEBE7;
+  --red-40: #F37264;
   --red-50: #EB2013;
   --red-60: #D10D03;
   --red-70: #B70700;
@@ -7815,9 +7816,9 @@ figcaption,
   line-height: 1; }
 
 .intro {
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: -0.12px;
-  line-height: 32px;
+  line-height: 36px;
   margin-bottom: 32px; }
   @media (max-width: 575.98px) {
     .intro {
@@ -8031,7 +8032,7 @@ button {
 
 .btn-primary {
   background-color: var(--orange-50);
-  color: var(--content-color-constant);
+  color: var(--grey-00);
   font-weight: 600; }
   .btn-primary:hover {
     background-color: #E05320; }
@@ -8039,6 +8040,8 @@ button {
     background-color: #D23F0E; }
   .btn-primary:disabled {
     background-color: var(--orange-30); }
+  .btn-primary:focus {
+    background-color: var(--orange-50); }
 
 .btn-secondary {
   background-color: white;
@@ -8046,7 +8049,9 @@ button {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.32) inset;
   font-weight: 600; }
   .btn-secondary:hover {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.32) inset; }
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.64) inset;
+    color: var(--content-color-primary); }
   .btn-secondary:active {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.48) inset; }
   .btn-secondary:focus-visible {
@@ -8168,10 +8173,15 @@ label {
     padding-left: 8px; }
   .input-control.has-suffix input {
     padding-right: 8px; }
-  .input-control.has-error input,
-  .input-control.has-error textarea {
-    background-color: var(--red-10);
-    border-color: var(--red-60); }
+  .input-control.has-error {
+    margin-bottom: 4px; }
+    .input-control.has-error input,
+    .input-control.has-error textarea {
+      color: var(--red-50);
+      border-color: var(--red-40); }
+      .input-control.has-error input:focus,
+      .input-control.has-error textarea:focus {
+        color: var(--grey-90); }
 
 .input-prefix,
 .input-suffix {
@@ -8254,7 +8264,7 @@ button {
 
 .btn-primary {
   background-color: var(--orange-50);
-  color: var(--content-color-constant);
+  color: var(--grey-00);
   font-weight: 600; }
   .btn-primary:hover {
     background-color: #E05320; }
@@ -8262,6 +8272,8 @@ button {
     background-color: #D23F0E; }
   .btn-primary:disabled {
     background-color: var(--orange-30); }
+  .btn-primary:focus {
+    background-color: var(--orange-50); }
 
 .btn-secondary {
   background-color: white;
@@ -8269,7 +8281,9 @@ button {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.32) inset;
   font-weight: 600; }
   .btn-secondary:hover {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.32) inset; }
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.64) inset;
+    color: var(--content-color-primary); }
   .btn-secondary:active {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.48) inset; }
   .btn-secondary:focus-visible {
@@ -8629,12 +8643,12 @@ label {
 .input-message {
   align-content: center;
   display: flex;
-  font-size: var(--text-size-s);
-  line-height: var(--line-height-s); }
+  font-size: 14px;
+  line-height: 22px; }
   .input-message .icon-status {
     margin-right: var(--spacing-xs);
     position: relative;
-    top: 2px; }
+    top: 3px; }
 
 .input-message--error {
   color: var(--content-color-error); }
@@ -8756,10 +8770,15 @@ label {
     padding-left: 8px; }
   .input-control.has-suffix input {
     padding-right: 8px; }
-  .input-control.has-error input,
-  .input-control.has-error textarea {
-    background-color: var(--red-10);
-    border-color: var(--red-60); }
+  .input-control.has-error {
+    margin-bottom: 4px; }
+    .input-control.has-error input,
+    .input-control.has-error textarea {
+      color: var(--red-50);
+      border-color: var(--red-40); }
+      .input-control.has-error input:focus,
+      .input-control.has-error textarea:focus {
+        color: var(--grey-90); }
 
 .input-prefix,
 .input-suffix {
@@ -9050,6 +9069,21 @@ textarea {
     border-color: var(--grey-30);
     color: var(--content-color-tertiary);
     cursor: not-allowed; }
+  input[type="text"].has-error,
+  input[type="email"].has-error,
+  input[type="password"].has-error,
+  input[type="number"].has-error,
+  input[type="url"].has-error,
+  input[type="number"].has-error,
+  input[type="search"].has-error,
+  input[type="date"].has-error,
+  input[type="datetime-local"].has-error,
+  input[type="tel"].has-error,
+  input[type="time"].has-error,
+  input[type="week"].has-error,
+  select.has-error,
+  textarea.has-error {
+    border-color: var(--red-50); }
 
 textarea {
   height: auto;

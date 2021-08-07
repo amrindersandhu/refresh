@@ -124,11 +124,16 @@ label {
   }
 
   &.has-error {
+    margin-bottom: 4px;
 
     input,
     textarea {
-      background-color: var(--red-10);
-      border-color: var(--red-60);
+      color: var(--red-50);
+      border-color: var(--red-40);
+
+      &:focus {
+        color: var(--grey-90);
+      }
     }
   }
 

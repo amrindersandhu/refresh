@@ -6,13 +6,13 @@
 .input-message {
     align-content: center;
     display: flex;
-    font-size: var(--text-size-s);
-    line-height: var(--line-height-s);
+    font-size: 14px;
+    line-height: 22px;
   
     .icon-status {
       margin-right: var(--spacing-xs);
       position: relative;
-      top: 2px;
+      top: 3px;
     }
   }
   

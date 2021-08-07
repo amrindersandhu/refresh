@@ -80,7 +80,7 @@ button {
 .btn-primary {
   background-color: $button-primary-background-color;
   color: $button-primary-text-color;
-  font-weight: $button-primary-text-weight;
+  font-weight: 600;
 
   &:hover {
     background-color: $orange-60;
@@ -96,33 +96,12 @@ button {
 }
 
 
-.btn-default {
-  background-color: $button-default-background-color; 
-  color: $button-default-text-color;
-  // Kept here for the file-input button
-  border-radius: $button-border-radius;
-  padding: $button-spacing-inset-default; 
-  font-weight: $button-text-weight;
-  padding: $button-spacing-inset-default;
-  transition: $button-transition;
 
-  &:hover {
-    background-color: $button-default-hover-background-color;
-  }
-
-  &:active {
-    background-color: $button-default-active-background-color;
-  }
-
-  &:disabled {
-    background-color: var(--grey-05);
-    color: var(--grey-50);
-  }
-}
-
-
-.btn-outline {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, .16) inset;
+.btn-secondary {
+  background-color: white;
+  color: var(--content-color-primary);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .32) inset;
+  font-weight: 600;
 
   &:hover {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .32) inset;

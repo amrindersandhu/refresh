@@ -6,69 +6,69 @@ h1,
 .heading-01 {
     font-size: 48px;
     line-height: 56px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -1.2px;
+    margin-bottom: 24px;
 }
 
 h2,
 .heading-02 {
-    font-size: var(--text-size-xxl);
-    line-height: 1.2;
-    font-weight: $text-weight-medium;
-    letter-spacing: -0.5px;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    letter-spacing: -0.84px;
+    margin-bottom: 16px;
 }
 
 h3,
 .heading-03 {
-    font-size: var(--text-size-xl);
-    line-height: 1.2;
-    font-weight: $text-weight-medium;
-    letter-spacing: -0.25px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    letter-spacing: -0.64px;
+    margin-bottom: 8px;
 }
 
 h4,
 .heading-04 {
-    font-size: var(--text-size-l);
-    line-height: 1.44;
-    font-weight: $text-weight-medium;
-    letter-spacing: 0;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    letter-spacing: -0.36px;
+    margin-bottom: 8px;
 }
 
 
 h5,
 .heading-05 {
-    color: $text-color-subtle;
-    font-size: var(--text-size-m);
+    font-size: 16px;
     line-height: 1.4;
-    font-weight: $text-weight-medium;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
 h6,
 .heading-06 {
-    color: $text-color-subtle;
-    font-size: var(--text-size-m);
+    color: #5B5B5B;
+    font-size: 16px;
     line-height: 1.4;
-    font-weight: $text-weight-medium;
-
-    &.has-margin_bottom {
-        margin-bottom: var(--spacing-xs);
-    }
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
 
 p {
-    font-size: var(--text-size-m);
+    font-size: 16px;
     color: var(--content-color-primary);
+    line-height: 26px;
     max-width: 65ch;
-
-    &.has-margin_bottom {
-        margin-bottom: var(--spacing-l);
-    }
+    margin-bottom: 24px;
 }
 
 li {
-    font-size: var(--text-size-m);
-    color: var(--content-color-secondary);
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--content-color-primary);
 }
 
 strong {
@@ -76,47 +76,50 @@ strong {
 }
 
 
-.ui-list {
-    margin-left: var(--spacing-xl);
-    margin-bottom: var(--spacing-xl);
+.list-unordered,
+.list-ordered {
+    margin-left: 32px;
+    margin-bottom: 24px;
 
     li {
-        margin-bottom: var(--spacing-s);
+        margin-bottom: 12px;
         position: relative;
 
         &:before,
-        &:after {
-            color: var(--content-color-tertiary);    
+        &:after {   
             display: inline-block;
             text-align: right;
         }
 
         &:before {
             direction: rtl;
-            margin-left: -24px;
-            padding-right: 12px;
-            width: 24px;
+            margin-left: -28px;
+            padding-right: 16px;
+            width: 28px;
         }
     }
 }
 
 
-.ui-list--unordered li:before {
-    content: "•";
+.list-unordered li:before {
+    color: var(--orange-30); //var(--grey-50);
+    content: "✦";
 }
 
 
-.ui-list--ordered li {
+.list-ordered li {
     counter-increment: li;
 
     &:before {
+        color: var(--grey-70);
         content: counter(li);
         text-align: right;
     }
 
     &:after {
+        color: var(--grey-70);
         content: ".";
-        left: -12px;
+        left: -16px;
         position: absolute;
         top: 0;
     }
@@ -124,19 +127,28 @@ strong {
 
 
 code {
-    background-color: var(--background-color-secondary);
+    background-color: var(--grey-10);
     box-shadow: inset 0 0 0 1px var(--border-color-strong);
     border-radius: var(--border-radius-default);
+    color: var(--grey-90);
     font-family: var(--text-family-code);
-    padding: var(--spacing-xs) var(--spacing-xs) 3px;
+    font-size: 15px;
+    padding: 1px 4px 2px;
 }
 
 a {
+    color: var(--blue-60);
     transition: color .2s ease-in-out;
+    text-decoration: none;
 
     &:focus {
         outline-color: var(--blue-30);
         outline-offset: 2px;
+    }
+
+    &:hover {
+        border-bottom: 1px solid;
+        text-decoration: none;
     }
 }
 
@@ -155,6 +167,17 @@ small {
 .intro {
     font-size: 20px;
     line-height: 32px;
+    margin-bottom: 32px;
+}
+
+.eyebrow {
+    color: var(--orange-40);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.24px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
 }
 
 .c-kbd-key {

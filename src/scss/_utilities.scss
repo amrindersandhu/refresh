@@ -35,9 +35,10 @@
 
 // Separator
 
-.separator-horizontal {
+hr {
     border: 1px solid $border-color-base;
     border-width: 1px 0 0;
+    margin: 48px 0;
 }
 
 .visually-hidden:not(:focus):not(:active) {

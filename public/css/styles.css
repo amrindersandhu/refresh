@@ -8975,6 +8975,9 @@ input[type="time"],
 input[type="week"],
 select,
 textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border: 1px solid var(--grey-30);
   border-radius: var(--border-radius-default);
   box-sizing: border-box;

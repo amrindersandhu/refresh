@@ -19,7 +19,7 @@ $text-field-transition-type: $transition-timing-default;
 
 
 .input-wrap--text {
-    margin-bottom: $spacing-xl;
+    margin-bottom: 24px;
 }
 
 
@@ -46,14 +46,14 @@ $text-field-transition-type: $transition-timing-default;
   input[type="week"],
   select,
   textarea {
-    border: 1px solid var(--grey-40);
+    border: 1px solid var(--grey-30);
     border-radius: var(--border-radius-default);
     box-sizing: border-box;
-    font-size: var(--text-size-m);
-    height: 32px;
-    line-height: 32px;
-    margin-bottom: var(--spacing-xs);
-    padding: $text-field-inset-spacing;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 4px;
+    padding: 0 12px;
     transition: border-color $text-field-transition-timings $text-field-transition-type, box-shadow $text-field-transition-timings $text-field-transition-type;
     width: 100%;
 
@@ -79,10 +79,15 @@ $text-field-transition-type: $transition-timing-default;
   
   textarea {
     height: auto;
-    line-height: $line-height-xs;
-    min-height: 64px;
+    line-height: 24px;
+    min-height: 80px;
     overflow: auto;
+    padding: 8px 12px;
     resize: vertical;
+  }
+
+  option:disabled {
+    color: var(--grey-50);
   }
 
 

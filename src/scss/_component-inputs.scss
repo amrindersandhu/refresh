@@ -12,9 +12,11 @@ $input-description-line-height: 16px;
 
 
 label {
-  color: $input-text-color-label;
-  font-size: $text-size-xs;
-  line-height: $line-height-xs;
+  color: var(--grey-70);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 4px;
 }
 
 
@@ -64,15 +66,16 @@ label {
 
 
 .input-description {
-  color: $input-description-text-color;
-  font-size: $input-description-text-size;
-  line-height: $input-description-line-height;
-  margin-bottom: 0;
+  color: var(--grey-70);
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 4px;
 }
 
 
 .input-wrap--checkbox,
 .input-wrap--radiobutton {
+  margin-bottom: 24px;
   
   .input-description {
     margin-left: $spacing-l;

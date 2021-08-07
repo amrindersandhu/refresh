@@ -35,25 +35,27 @@ $checkbox-border-radius: $border-radius-xs;
   width: 0.1px;
 
   + label {
-    color: var(--content-color-primary);
+    color: var(--grey-90);
     display: flex;
-    font-size: var(--text-size-m);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
     margin-bottom: 0;
-    padding-left: 22px;
+    padding-left: 24px;
     position: relative;
 
     &:before {
       background: url('../icons/check.svg') no-repeat center center;
       background-size: 0;
-      border: $input-border-size solid $input-border-color;
-      border-radius: var(--border-radius-s);
+      border: 1px solid var(--grey-30);
+      border-radius: 2px;
       //box-shadow: 0 0 0 1px rgba(black, 0.2);
       content: "";
       display: inline-block;
-      height: $input-size;
-      width: $input-size;
+      height: 16px;
+      width: 16px;
       position: absolute;
-      top: 0;
+      top: 2px;
       left: 0;
       transition: background-size $input-transition-timing $input-transition-type;
     }

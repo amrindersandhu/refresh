@@ -5,25 +5,39 @@
 
 // SPACING HELPER CLASSES
 
+
+.spacing-below--none {
+    margin-bottom: var(--spacing-zero);
+}
+
+.spacing-below--xxs {
+    margin-bottom: var(--spacing-xxs);
+}
+
+.spacing-below--xs {
+    margin-bottom: var(--spacing-xs);
+}
+
 .spacing-below--s {
-    margin-bottom: $spacing-s;
+    margin-bottom: var(--spacing-s);
 }
 
 .spacing-below--m {
-    margin-bottom: $spacing-m;
+    margin-bottom: var(--spacing-m);
 }
 
 .spacing-below--l {
-    margin-bottom: $spacing-l;
+    margin-bottom: var(--spacing-l);
 }
 
 .spacing-below--xl {
-    margin-bottom: $spacing-xl;
+    margin-bottom: var(--spacing-xl);
 }
 
 .spacing-below--xxl {
-    margin-bottom: $spacing-xxl;
+    margin-bottom: var(--spacing-xxl);
 }
+
 
 .spacing-right-s {
     margin-right: $spacing-s;

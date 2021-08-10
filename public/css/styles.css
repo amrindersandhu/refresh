@@ -7513,6 +7513,7 @@ a.text-dark:hover, a.text-dark:focus {
 :root {
   --text-family: `Inter`, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica, Arial, sans-serif;
   --text-family-code: 'IBM Plex Mono', SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  --text-family-display: degular-display, `Inter`, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica, Arial, sans-serif;
   --text-weight-regular: 400;
   --text-weight-medium: 600;
   --text-size-xs: 10px;
@@ -7611,13 +7612,13 @@ a.text-dark:hover, a.text-dark:focus {
   --border-radius-default: 4px;
   --border-radius-max: 9999px;
   --spacing-zero: 0;
-  --spacing-xs: 4px;
-  --spacing-s: 8px;
-  --spacing-m: 12px;
-  --spacing-l: 16px;
-  --spacing-xl: 24px;
-  --spacing-xxl: 32px;
-  --spacing-xxxl: 48px;
+  --spacing-xxs: 8px;
+  --spacing-xs: 16px;
+  --spacing-s: 24px;
+  --spacing-l: 32px;
+  --spacing-xl: 48px;
+  --spacing-xxl: 64px;
+  --spacing-xxxl: 128px;
   --shadow-light: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   --shadow-dark: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
   --shadow-focus: 0 0 0 1px var(--background-color-primary), 0 0 0 3px var(--blue-30); }
@@ -7649,45 +7650,42 @@ main {
 
 h1,
 .heading-01 {
+  font-family: degular-display, sans-serif;
   font-size: 48px;
   line-height: 56px;
   font-weight: 600;
-  letter-spacing: -1.2px;
   margin-bottom: 24px; }
   @media (max-width: 575.98px) {
     h1,
     .heading-01 {
       font-size: 36px;
-      letter-spacing: -0.84px;
       line-height: 42px;
       margin-bottom: 16px; } }
 
 h2,
 .heading-02 {
+  font-family: degular-display, sans-serif;
   font-size: 32px;
   line-height: 40px;
   font-weight: 600;
-  letter-spacing: -0.84px;
   margin-bottom: 16px; }
   @media (max-width: 575.98px) {
     h2,
     .heading-02 {
       font-size: 28px;
-      letter-spacing: -0.72px;
       line-height: 32px; } }
 
 h3,
 .heading-03 {
+  font-family: degular-display, sans-serif;
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
-  letter-spacing: -0.64px;
   margin-bottom: 8px; }
   @media (max-width: 575.98px) {
     h3,
     .heading-03 {
       font-size: 24px;
-      letter-spacing: -0.64px;
       line-height: 36px; } }
 
 h4,

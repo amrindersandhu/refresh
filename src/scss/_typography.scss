@@ -273,3 +273,26 @@ figcaption,
     padding: 0 var(--spacing-xs);
     text-transform: uppercase;
 }
+
+
+blockquote {
+    font-size: 24px;
+    padding-top: 16px;
+    padding-left: 32px;
+    position: relative;
+
+    .l-quote {
+        color: var(--orange-30);
+        font-size: 48px;
+        font-family: Georgia, serif;
+        left: 0;
+        top: 0;
+        position: absolute;
+
+    }
+
+    footer {
+        font-size: 16px;
+        margin-top: 24px;
+    }
+}

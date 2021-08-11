@@ -166,21 +166,20 @@ button {
   padding: $button-icon-spacing-inset;
   height: 32px;
 
+  svg path {
+    fill: var(--grey-70)
+  }
+
   .button-icon {
     vertical-align: bottom;
   }
 
   &:hover {
-    background-color: $button-icon-background-color-hover;
+    background-color: var(--grey-20);
 
     svg path {
-      fill: $button-icon-color-hover;
+      fill: var(--grey-90);
     }
-  }
-
-  &.is-small {
-    height: 24px;
-    padding: 4px 8px;
   }
 }
 

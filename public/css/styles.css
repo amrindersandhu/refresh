@@ -8141,7 +8141,8 @@ label {
   color: var(--grey-70);
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 4px; }
+  margin-bottom: 4px;
+  margin-top: -4px; }
 
 .input-wrap--checkbox,
 .input-wrap--radiobutton {
@@ -8333,12 +8334,6 @@ label {
   display: block;
   font-size: 14px;
   margin-bottom: 4px; }
-
-.input-description {
-  color: #3B3B3B;
-  font-size: var(--text-size-xs);
-  line-height: 20px;
-  margin-bottom: 0; }
 
 .input-file {
   height: 0.1px;
@@ -8734,7 +8729,8 @@ label {
   color: var(--grey-70);
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 4px; }
+  margin-bottom: 4px;
+  margin-top: -4px; }
 
 .input-wrap--checkbox,
 .input-wrap--radiobutton {

@@ -122,6 +122,16 @@ button {
   }
 }
 
+.btn-icon--left {
+  margin-right: 8px;
+}
+
+.btn-icon--right {
+  margin-left: 8px;
+}
+
+
+
 
 .btn-destructive {
   background-color: $button-destructive-background-color;

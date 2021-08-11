@@ -42,7 +42,7 @@ h3,
     line-height: 32px;
     font-weight: 600;
     letter-spacing: 0.64px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 
     @media (max-width: 575.98px) { 
         font-size: 24px;
@@ -97,8 +97,9 @@ li {
     color: var(--content-color-primary);
 }
 
-strong {
-    font-weight: var(--text-weight-medium);
+strong,
+.bold {
+    font-weight: 600;
 }
 
 
@@ -164,6 +165,27 @@ code {
     font-family: var(--text-family-code);
     font-size: 15px;
     padding: 1px 4px 2px;
+}
+
+
+pre {
+    background-color: var(--grey-20);
+    border-radius: var(--border-radius-default);
+    color: var(--grey-90);
+    font-family: var(--text-family-code);
+    font-size: 16px;
+    line-height: 26px;
+    padding: 16px 24px;
+
+    code {
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        color: var(--grey-90);
+        font-size: 15px;
+        padding: 0;
+    }
+    
 }
 
 a {

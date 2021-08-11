@@ -4,39 +4,38 @@
 
 
 // LOCAL TOKENS  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***600
-$tooltip-background-color: $grey-90;
+$tooltip-background-color: $grey-80;
 $tooltip-border-radius: $border-radius-s;
 $tooltip-arrow-color: $grey-90;
 $tooltip-font-size: $text-size-xs;
 
 
 .tippy-box {
-    background-color: $tooltip-background-color;
-    border-radius: $tooltip-border-radius;
-    max-width: 160px;
+    background-color: var(--grey-90);
+    border: 1px solid rgba(255, 255, 255, .32);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .32);
+    max-width: 220px;
 }
 
 .tippy-content {
-    font-size: var(--text-size-s);
-    padding: $spacing-xxs $spacing-xs;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 12px 16px;
 }
 
 .tippy-box[data-placement^='top'] > .tippy-arrow::before {
-    border-top-color: $tooltip-arrow-color;
-    border-radius: 2px;
+    display: none;
   }
   
   .tippy-box[data-placement^='bottom'] > .tippy-arrow::before {
-    border-bottom-color: $tooltip-arrow-color;
-    border-radius: 2px;
+    display: none;
   }
 
   .tippy-box[data-placement^='left'] > .tippy-arrow::before {
-    border-left-color: $tooltip-arrow-color;
-    border-radius: 2px;
+    display: none;
   }
 
   .tippy-box[data-placement^='right'] > .tippy-arrow::before {
-    border-right-color: $tooltip-arrow-color;
-    border-radius: 2px;
+    display: none;
   }

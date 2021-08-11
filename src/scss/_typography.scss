@@ -281,6 +281,10 @@ blockquote {
     padding-left: 32px;
     position: relative;
 
+    @media (max-width: 575.98px) { 
+        font-size: 20px;
+    }
+
     .l-quote {
         color: var(--orange-30);
         font-size: 48px;

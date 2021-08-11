@@ -7875,6 +7875,9 @@ blockquote {
   padding-top: 16px;
   padding-left: 32px;
   position: relative; }
+  @media (max-width: 575.98px) {
+    blockquote {
+      font-size: 20px; } }
   blockquote .l-quote {
     color: var(--orange-30);
     font-size: 48px;

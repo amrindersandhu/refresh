@@ -44,7 +44,7 @@ $button-icon-spacing-inset: $spacing-xs;
 
 
 
-.btn-group {
+.button-group {
 
   button + button {
     margin-left: var(--spacing-m);
@@ -59,7 +59,7 @@ button {
   font-size: 16px;
   line-height: 24px;
   padding: 8px 16px;
-  justify-content: center;
+  align-items: center;
   transition: $button-transition;
 
   &:focus {
@@ -71,13 +71,13 @@ button {
     cursor: not-allowed;
   }
 
-  &.btn-small {
+  &.button-small {
     padding: $button-spacing-inset-small;
   }
 }
 
 
-.btn-primary {
+.button-primary {
   background-color: var(--orange-50);
   color: var(--grey-00);
   font-weight: 600;
@@ -101,7 +101,7 @@ button {
 
 
 
-.btn-secondary {
+.button-secondary {
   background-color: white;
   color: var(--content-color-primary);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, .32) inset;
@@ -114,6 +114,7 @@ button {
   }
 
   &:active {
+    background-color: white;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .48) inset;
   }
 
@@ -122,18 +123,18 @@ button {
   }
 }
 
-.btn-icon--left {
+.button-icon--left {
   margin-right: 8px;
 }
 
-.btn-icon--right {
+.button-icon--right {
   margin-left: 8px;
 }
 
 
 
 
-.btn-destructive {
+.button-destructive {
   background-color: $button-destructive-background-color;
   color: $button-destructive-text-color;
   font-weight: $button-destructive-text-weight;
@@ -147,7 +148,7 @@ button {
   }
 }
 
-.btn-link {
+.button-link {
   background-color: transparent;
   border-radius: 0;
   border-bottom: 1px solid transparent;
@@ -161,11 +162,11 @@ button {
 
 
 // Icon only button
-.btn-only-icon {
+.button-only-icon {
   padding: $button-icon-spacing-inset;
   height: 32px;
 
-  .btn-icon {
+  .button-icon {
     vertical-align: bottom;
   }
 
@@ -185,16 +186,16 @@ button {
 
 
 // Icon inside the button with text
-.btn-icon {
+.button-icon {
   vertical-align: middle;
 }
 
 
 // Button with icon plus label
-.btn-with-icon {
+.button-with-icon {
   padding: var(--spacing-s);
 
-  .btn-icon {
+  .button-icon {
     margin-right: $spacing-xs;
   }
 

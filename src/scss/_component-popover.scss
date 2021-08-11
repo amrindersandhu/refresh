@@ -11,8 +11,8 @@
   background-color: var(--grey-00);
   border-radius: var(--border-radius-default);
   box-shadow: 0 0 1px var(--grey-90), 0 16px 24px -8px var(--grey-30);
-  padding-bottom: var(--spacing-s);
-  padding-top: var(--spacing-s);
+  padding-bottom: var(--spacing-xxxs);
+  padding-top: var(--spacing-xxxs);
   min-width: 180px;
 }
 
@@ -22,8 +22,8 @@
 
 .c-popover__list__heading {
   color: var(--content-color-tertiary);
-  font-size: var(--text-size-s);
-  margin: var(--spacing-xs) var(--spacing-l);
+  font-size: 14px;
+  margin: var(--spacing-xs) var(--spacing-s) var(--spacing-xxs);
 }
 
 
@@ -31,13 +31,14 @@
   align-items: center;
   color: var(--content-color-primary);
   display: flex;
-  font-size: var(--text-size-m);
+  font-size: 16px;
   line-height: 1.6;
-  padding: var(--spacing-xs) var(--spacing-l);
+  padding: var(--spacing-xxs) var(--spacing-s);
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
     background-color: var(--background-color-tertiary);
+    border: none;
   }
 
   svg {
@@ -79,5 +80,5 @@
   border-width: 0 0 1px;
   border-style:solid;
   border-color: var(--border-color-default);
-  margin: var(--spacing-s) var(--spacing-l);
+  margin: var(--spacing-xs) var(--spacing-s);
 }

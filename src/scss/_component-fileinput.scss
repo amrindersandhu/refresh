@@ -54,7 +54,7 @@ label {
     padding-left: $spacing-s;
     margin-bottom: $spacing-xs;
 
-    .btn-default {
+    .button-default {
         align-self: flex-end;
         background-color: transparent;
 
@@ -63,7 +63,7 @@ label {
         }
     }
 
-    .btn-icon-cancel {
+    .button-icon-cancel {
         color: $text-color-subtler;
         transform: translateY(-1px);
     }

@@ -34,6 +34,26 @@ label {
 }
 
 
+.input-wrap--inline {
+  align-items: baseline;
+  display: flex;
+
+  input[type="email"],
+  input[type="text"] {
+    border-width: 1px 0 1px 1px;
+    border-color: var(--orange-50);
+    border-radius: 4px 0 0 4px;
+    flex-grow: 1;
+    width: auto;
+  }
+
+  button {
+    flex-grow: 0;
+    border-radius: 0 4px 4px 0;
+  }
+}
+
+
 .input-label {
   
   .icon-wrap {
@@ -104,7 +124,7 @@ label {
       height: 30px;
     }
 
-    .btn-only-icon {
+    .button-only-icon {
       margin-right: 2px;
     }
   }

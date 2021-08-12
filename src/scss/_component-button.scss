@@ -52,7 +52,9 @@ $button-icon-spacing-inset: $spacing-xs;
 }
 
 // Common button styles for all <button> elements
-button {
+button,
+.button-primary,
+.button-secondary {
   border: none;
   border-radius: $button-border-radius;
   display: inline-flex;
@@ -61,6 +63,8 @@ button {
   padding: 8px 16px;
   align-items: center;
   transition: $button-transition;
+  text-align: center;
+  justify-content: center;
 
   &:focus {
     box-shadow: var(--shadow-focus);  

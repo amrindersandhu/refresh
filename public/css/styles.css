@@ -7693,6 +7693,7 @@ h3,
 
 h4,
 .heading-04 {
+  font-family: var(--text-family);
   font-size: 20px;
   line-height: 28px;
   font-weight: 600;
@@ -7705,6 +7706,7 @@ h4,
 
 h5,
 .heading-05 {
+  font-family: var(--text-family);
   font-size: 16px;
   line-height: 1.4;
   font-weight: 600;
@@ -7712,6 +7714,7 @@ h5,
 
 h6,
 .heading-06 {
+  font-family: var(--text-family);
   color: #5B5B5B;
   font-size: 16px;
   line-height: 1.4;
@@ -7740,7 +7743,7 @@ strong,
   margin-bottom: 24px; }
   .list-unordered li,
   .list-ordered li {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     position: relative; }
     .list-unordered li:before, .list-unordered li:after,
     .list-ordered li:before,
@@ -7837,7 +7840,7 @@ figcaption,
 .intro {
   font-size: 22px;
   letter-spacing: -0.12px;
-  line-height: 36px;
+  line-height: 32px;
   margin-bottom: 32px; }
   @media (max-width: 575.98px) {
     .intro {
@@ -8055,7 +8058,9 @@ nav {
 .button-group button + button {
   margin-left: var(--spacing-m); }
 
-button {
+button,
+.button-primary,
+.button-secondary {
   border: none;
   border-radius: var(--border-radius-default);
   display: inline-flex;
@@ -8063,13 +8068,21 @@ button {
   line-height: 24px;
   padding: 8px 16px;
   align-items: center;
-  transition: background-color 50ms ease-in-out, border-color 50ms ease-in-out, box-shadow 50ms ease-in-out, outline 50ms ease-in-out; }
-  button:focus {
+  transition: background-color 50ms ease-in-out, border-color 50ms ease-in-out, box-shadow 50ms ease-in-out, outline 50ms ease-in-out;
+  text-align: center;
+  justify-content: center; }
+  button:focus,
+  .button-primary:focus,
+  .button-secondary:focus {
     box-shadow: var(--shadow-focus);
     outline: none; }
-  button:disabled {
+  button:disabled,
+  .button-primary:disabled,
+  .button-secondary:disabled {
     cursor: not-allowed; }
-  button.button-small {
+  button.button-small,
+  .button-primary.button-small,
+  .button-secondary.button-small {
     padding: var(--spacing-xs) var(--spacing-m); }
 
 .button-primary {
@@ -8301,10 +8314,23 @@ label {
   .input-checkbox:disabled + label:before {
     border-color: var(--grey-30); }
 
+.c-hero {
+  height: 50vh;
+  min-height: 480px; }
+
+.c-hero--page-1 {
+  background: url("https://www.postman.com/assets/lp-api-platform/comp-api-diagram-UW-dual-fade.svg") no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 3600px;
+  height: 80vh; }
+
 .button-group button + button {
   margin-left: var(--spacing-m); }
 
-button {
+button,
+.button-primary,
+.button-secondary {
   border: none;
   border-radius: var(--border-radius-default);
   display: inline-flex;
@@ -8312,13 +8338,21 @@ button {
   line-height: 24px;
   padding: 8px 16px;
   align-items: center;
-  transition: background-color 50ms ease-in-out, border-color 50ms ease-in-out, box-shadow 50ms ease-in-out, outline 50ms ease-in-out; }
-  button:focus {
+  transition: background-color 50ms ease-in-out, border-color 50ms ease-in-out, box-shadow 50ms ease-in-out, outline 50ms ease-in-out;
+  text-align: center;
+  justify-content: center; }
+  button:focus,
+  .button-primary:focus,
+  .button-secondary:focus {
     box-shadow: var(--shadow-focus);
     outline: none; }
-  button:disabled {
+  button:disabled,
+  .button-primary:disabled,
+  .button-secondary:disabled {
     cursor: not-allowed; }
-  button.button-small {
+  button.button-small,
+  .button-primary.button-small,
+  .button-secondary.button-small {
     padding: var(--spacing-xs) var(--spacing-m); }
 
 .button-primary {
@@ -9344,8 +9378,14 @@ select {
 .spacing-below--xl {
   margin-bottom: var(--spacing-xl); }
 
+.spacing-top--xl {
+  margin-top: var(--spacing-xl); }
+
 .spacing-below--xxl {
   margin-bottom: var(--spacing-xxl); }
+
+.spacing-top--xxl {
+  margin-top: var(--spacing-xxl); }
 
 .spacing-right-s {
   margin-right: 12px; }

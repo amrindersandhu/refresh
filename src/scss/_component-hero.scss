@@ -1,0 +1,20 @@
+//////////////////
+// #HERO ///////
+//////////////////
+
+// LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
+
+
+// 
+.c-hero {
+  height: 50vh;
+  min-height: 480px;
+}
+
+.c-hero--page-1 {
+  background: url("https://www.postman.com/assets/lp-api-platform/comp-api-diagram-UW-dual-fade.svg") no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 3600px;
+  height: 80vh;
+}

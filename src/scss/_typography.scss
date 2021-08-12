@@ -51,8 +51,10 @@ h3,
     }
 }
 
+
 h4,
 .heading-04 {
+    font-family: var(--text-family);
     font-size: 20px;
     line-height: 28px;
     font-weight: 600;
@@ -67,6 +69,7 @@ h4,
 
 h5,
 .heading-05 {
+    font-family: var(--text-family);
     font-size: 16px;
     line-height: 1.4;
     font-weight: 600;
@@ -75,6 +78,7 @@ h5,
 
 h6,
 .heading-06 {
+    font-family: var(--text-family);
     color: #5B5B5B;
     font-size: 16px;
     line-height: 1.4;
@@ -109,7 +113,7 @@ strong,
     margin-bottom: 24px;
 
     li {
-        margin-bottom: 12px;
+        margin-bottom: 8px;
         position: relative;
 
         &:before,
@@ -236,7 +240,7 @@ figcaption,
 .intro {
     font-size: 22px;
     letter-spacing: -0.12px;
-    line-height: 36px;
+    line-height: 32px;
     margin-bottom: 32px;
 
     @media (max-width: 575.98px) { 

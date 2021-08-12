@@ -9,6 +9,10 @@
 .c-hero {
   height: 50vh;
   min-height: 480px;
+
+  .container {
+    height: 100%;
+  }
 }
 
 .c-hero--page-1 {

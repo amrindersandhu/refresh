@@ -7654,7 +7654,7 @@ h1,
   font-size: 48px;
   line-height: 48px;
   font-weight: 600;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.64px;
   margin-bottom: 24px; }
   @media (max-width: 575.98px) {
     h1,
@@ -7666,10 +7666,10 @@ h1,
 h2,
 .heading-02 {
   font-family: degular-display, sans-serif;
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 36px;
+  line-height: 42px;
   font-weight: 600;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.48px;
   margin-bottom: 16px; }
   @media (max-width: 575.98px) {
     h2,
@@ -8112,6 +8112,9 @@ button,
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.48) inset; }
   .button-secondary:focus-visible {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.16) inset, var(--shadow-focus); }
+  .button-secondary:disabled {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.16) inset;
+    color: var(--grey-50); }
 
 .button-icon--left {
   margin-right: 8px; }
@@ -8317,6 +8320,8 @@ label {
 .c-hero {
   height: 50vh;
   min-height: 480px; }
+  .c-hero .container {
+    height: 100%; }
 
 .c-hero--page-1 {
   background: url("https://www.postman.com/assets/lp-api-platform/comp-api-diagram-UW-dual-fade.svg") no-repeat;
@@ -8382,6 +8387,9 @@ button,
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.48) inset; }
   .button-secondary:focus-visible {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.16) inset, var(--shadow-focus); }
+  .button-secondary:disabled {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.16) inset;
+    color: var(--grey-50); }
 
 .button-icon--left {
   margin-right: 8px; }

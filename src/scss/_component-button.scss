@@ -125,6 +125,11 @@ button,
   &:focus-visible {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .16) inset, var(--shadow-focus);
   }
+
+  &:disabled {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .16) inset;
+    color: var(--grey-50);
+  }
 }
 
 .button-icon--left {

@@ -1,43 +1,38 @@
 include includes/header.pug
 
 
-.c-hero.c-hero--page-1
-    .container
-        .row
-            .col-xl-6.offset-md-3.mt-5.text-md-center
-                h1.spacing-top--xl The Postman API Platform
+.c-hero
+    .container.d-flex.align-items-stretch
+        .row.align-items-center
+            .col-xl-4
+                h1 Postman 
+                    br
+                    | Learning Center
 
-                p.intro 17 million developers across 500,000 organizations use the Postman API Platform for all things API.
+                p.intro Learn how to use Postman. Check out the docs and support resources!
 
-hr.spacing-below--xxl
+                button.button-primary Explore the Docs
+
+            .col-xl-6.offset-md-2
+                figure.spacing-top--xl
+                    img.mb-5(src="../../i/illu-01.png")
+
+hr
 
 
 .container
-    .row.text-md-center
-        .col-xl-4
-            p 
-                span.heading-01 5x
-                br
-                span.intro Faster API development
-
-
-        .col-xl-4
-            p 
-                span.heading-01 4x
-                br
-                span.intro Faster bug fixes
-
-        .col-xl-4
-            p 
-                span.heading-01 3x
-                br
-                span.intro Less time maintaining APIs
+    .row
+        .col
+            h2.spacing-top--xl Design, develop, and collaborate on your API projects
 
     .row
-        .col-xl-6.offset-md-3.mt-5.text-md-center
-            p You'll discover these quantitative findings and more in a recent report—authored by the Enterprise Strategy Group, a global IT research firm—on the economic benefits of the Postman platform.
+        .col-xl-4
+            h3 Get Started
 
-            button.button-primary Download the Report
+            p Send your first API request in Postman in just a few clicks!
+
+            a.button-secondary(href="#") Send a request
+            
 
 
 hr.spacing-top--xxl.spacing-below--xxl

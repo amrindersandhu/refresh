@@ -8101,12 +8101,12 @@ button,
 .button-secondary {
   background-color: white;
   color: var(--content-color-primary);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.32) inset;
-  font-weight: 600; }
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.24) inset; }
   .button-secondary:hover {
     background-color: white;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.64) inset;
-    color: var(--content-color-primary); }
+    color: var(--content-color-primary);
+    border: none; }
   .button-secondary:active {
     background-color: white;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.48) inset; }
@@ -8380,12 +8380,12 @@ button,
 .button-secondary {
   background-color: white;
   color: var(--content-color-primary);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.32) inset;
-  font-weight: 600; }
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.24) inset; }
   .button-secondary:hover {
     background-color: white;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.64) inset;
-    color: var(--content-color-primary); }
+    color: var(--content-color-primary);
+    border: none; }
   .button-secondary:active {
     background-color: white;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.48) inset; }

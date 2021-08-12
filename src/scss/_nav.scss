@@ -5,22 +5,31 @@
 
 
 nav {
-    background-color: $background-color-secondary;
-    bottom: 0;
-    left: 0;
-    padding: $spacing-xl;
-    position: fixed;
-    top: 0;
+    margin-top: 8px;
+    
+    ul {
+        margin-bottom: 0;
+        margin-left: var(--spacing-xs);
 
-    a {
-        color: var(--color-content-primary);
-        display: inline-block;
-        font-size: var(--text-size-m);
-        padding: $spacing-xxs $spacing-xs;
+        a {
+            align-items: center;
+            color: var(--grey-70);
+            display: inline-flex;
+            font-size: 14px;
+            font-weight: 600;
+            padding: var(--spacing-xs);
 
-        &:hover {
-            border-bottom: none;
-            color: $text-color-stronger;
+            &:hover {
+                border-bottom: none;
+                color: $text-color-stronger;
+            }
         }
     }
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    width: 32px;
+    margin-bottom: 0;
 }

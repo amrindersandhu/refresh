@@ -90,6 +90,7 @@ h6,
 p {
     font-size: 16px;
     color: var(--content-color-primary);
+    letter-spacing: -0.16px;
     line-height: 26px;
     max-width: 65ch;
     margin-bottom: 24px;
@@ -230,16 +231,11 @@ figcaption,
     text-align: center;
 }
 
-.page-title {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 48px;
-    font-weight: normal;
-    line-height: 1;
-}
+
 
 .intro {
     font-size: 22px;
-    letter-spacing: -0.12px;
+    letter-spacing: -0.36px;
     line-height: 32px;
     margin-bottom: 32px;
 
@@ -248,6 +244,7 @@ figcaption,
         line-height: 30px;
     }
 }
+
 
 .eyebrow {
     color: var(--orange-40);
@@ -281,6 +278,7 @@ figcaption,
 
 blockquote {
     font-size: 24px;
+    letter-spacing: -0.36px;
     padding-top: 16px;
     padding-left: 32px;
     position: relative;

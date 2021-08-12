@@ -40,3 +40,14 @@
         }
     }
 }
+
+.table {
+    th, td {
+        border: none;
+        padding: var(--spacing-xs);
+    }
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--grey-10);
+}

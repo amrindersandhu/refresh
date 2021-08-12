@@ -9411,6 +9411,9 @@ select {
 .pad-right--l {
   padding-right: var(--spacing-l); }
 
+.pad-right--xl {
+  padding-right: var(--spacing-xl); }
+
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);

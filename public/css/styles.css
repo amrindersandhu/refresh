@@ -9436,3 +9436,8 @@ hr {
   position: absolute;
   white-space: nowrap;
   width: 1px; }
+
+.img-style-1 {
+  border-radius: 16px;
+  border: 8px solid var(--grey-20);
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.48); }

@@ -9072,31 +9072,23 @@ label {
       position: relative;
       z-index: 2; }
 
-.table-default {
-  font-size: var(--text-size-m);
-  text-align: left; }
-  .table-default tr:hover a {
-    color: var(--content-color-brand); }
-  .table-default th {
-    color: var(--content-color-tertiary);
-    border-bottom: 1px solid #E6E6E6;
-    font-size: var(--text-size-s);
-    font-weight: normal;
-    padding: 8px 0;
-    text-transform: uppercase; }
-  .table-default td {
-    padding: 8px 0;
-    color: var(--content-color-secondary); }
-    .table-default td a {
-      color: var(--content-color-primary); }
+.table tbody tr:hover {
+  background-color: var(--orange-10) !important; }
+
+.table th {
+  color: var(--grey-70);
+  font-size: 14px; }
 
 .table th,
 .table td {
-  border: none;
+  border-bottom: 1px solid var(--grey-20);
   padding: var(--spacing-xs); }
 
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: var(--grey-10); }
+
+.table-striped th, .table-striped td {
+  border: none; }
 
 .input-wrap--text {
   margin-bottom: 24px; }

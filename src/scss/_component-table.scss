@@ -10,44 +10,29 @@
 
 
 // DEFAULT TABLE
-.table-default {
-    font-size: var(--text-size-m);
-    text-align: left;
+.table {
 
-    tr {
-        &:hover {
-            a {
-                color: var(--content-color-brand);
-            }
-        }
+    tbody tr:hover {
+        background-color: var(--orange-10) !important;
     }
 
     th {
-        color: var(--content-color-tertiary);
-        border-bottom: 1px solid $grey-30;
-        font-size: var(--text-size-s);
-        font-weight: normal;
-        padding: $spacing-xs 0;
-        text-transform: uppercase;
+        color: var(--grey-70);
+        font-size: 14px;
     }
 
-    td {
-        padding: $spacing-xs 0;
-        color: var(--content-color-secondary);
-        
-        a {
-            color: var(--content-color-primary);
-        }
-    }
-}
-
-.table {
     th, td {
-        border: none;
+        border-bottom: 1px solid var(--grey-20);
         padding: var(--spacing-xs);
     }
 }
 
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: var(--grey-10);
+.table-striped {
+    tbody tr:nth-of-type(odd) {
+        background-color: var(--grey-10);
+    }
+
+    th, td {
+        border: none;
+    }
 }

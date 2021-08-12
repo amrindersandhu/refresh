@@ -56,6 +56,14 @@
     margin: $spacing-m 0;
 }
 
+.pad-right--m {
+    padding-right: var(--spacing-m);
+}
+
+.pad-right--l {
+    padding-right: var(--spacing-l);
+}
+
 
 
 .sr-only:not(:focus):not(:active) {
@@ -68,6 +76,10 @@
     width: 1px;
 }
 
+
+.w-12 {
+    width: 12%;
+}
 
 // Separator
 

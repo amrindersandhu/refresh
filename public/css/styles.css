@@ -7680,7 +7680,7 @@ h2,
 h3,
 .heading-03 {
   font-family: degular-display, sans-serif;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 32px;
   font-weight: 600;
   letter-spacing: 0.64px;
@@ -8329,6 +8329,10 @@ label {
   background-position-y: bottom;
   background-size: 3600px;
   height: 80vh; }
+
+.c-section {
+  background-color: var(--grey-10);
+  padding: 128px 0; }
 
 .button-group button + button {
   margin-left: var(--spacing-m); }
@@ -9401,6 +9405,12 @@ select {
 .spacing-m {
   margin: 16px 0; }
 
+.pad-right--m {
+  padding-right: var(--spacing-m); }
+
+.pad-right--l {
+  padding-right: var(--spacing-l); }
+
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -9409,6 +9419,9 @@ select {
   position: absolute;
   white-space: nowrap;
   width: 1px; }
+
+.w-12 {
+  width: 12%; }
 
 hr {
   border: 1px solid #EDEDED;

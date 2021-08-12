@@ -20,243 +20,199 @@ include includes/header.pug
 hr
 
 
-.container
+.container.spacing-below--xxl
     .row
         .col
-            h2.spacing-top--xl Design, develop, and collaborate on your API projects
+            h2.spacing-top--xl.spacing-below--l Design, develop, and collaborate on your API projects
 
     .row
-        .col-xl-4
-            h3 Get Started
+        .col-xl-4.pad-right--l
+            figure.mb-5.w-12
+                img(src="../../i/spot-illu/spot-icon-01.svg")
+                
+            h3.heading-04 Get Started
 
             p Send your first API request in Postman in just a few clicks!
 
-            a.button-secondary(href="#") Send a request
+            a.button-secondary(href="#") Send a request &rarr;
+
+
+        .col-xl-4.pad-right--l
+            figure.mb-5.w-12
+                img(src="../../i/spot-illu/spot-icon-02.svg")
+
+            h3.heading-04 Test
+
+            p Write test scripts and build automation into your workflow.
+
+            a.button-secondary(href="#") Create tests &rarr;
+
+
+        .col-xl-4.pad-right--l
+            figure.mb-5.w-12
+                img(src="../../i/spot-illu/spot-icon-03.svg")
+
+            h3.heading-04 30 Days of Postman
+
+            p Tackle a new challenge each day with these developer tutorials.
+
+            a.button-secondary(href="#") Start the challenge &rarr;
+
+
+    hr
+
+
+    .row
+        .col-xl-4.pad-right--l
+                
+            h3.heading-04 Postman Space Camp
+
+            p See previous and upcoming educational webinars.
+
+            a(href="#") See webinars
+
+
+        .col-xl-4.pad-right--l
+
+            h3.heading-04 Postman Network
+
+            p Browse APIs, workspaces, and collections inside Postman.
+
+            a(href="#") Explore Postman
+
+
+        .col-xl-4.pad-right--l
+
+            h3.heading-04 Videos
+
+            p Learn Postman skills from our video playlists.
+
+            a(href="#") Watch Videos
             
 
 
-hr.spacing-top--xxl.spacing-below--xxl
 
+.c-section.spacing-below--xxl
+    .container
+        .row.align-items-center
+            .col-xl-4
+                h2 Intro to Postman
 
-.container.spacing-below--xxl
-    .row.align-items-center
-        .col-xl-5
-            img.w-100.mb-4(src="../i/screenshots/screenshot-sample.png")        
+                p.intro.spacing-below--s Learn the Postman fundamentals in this video course for beginners.
 
+                p.intro Send and authorize a request, write test scripts, and chain requests together.
 
-        .col-xl-5.offset-md-2
-            h2 Great Quality
-
-            p.intro The Postman API Platform delivers great quality through these features and benefits:
-
-            h3.heading-04 Features
-
-            ul.list-unordered
-                li API mocking and prototyping
-
-                li API testing for developers integrated with your CI/CD pipeline
                 
-                li Contract-test internal/external APIs with your consumers
+                    
 
-                li API lifecycle management across multiple versions
-
-
-            h3.heading-04 Benefits
-
-            ul.list-unordered
-                li Faster and earlier bug detection
-
-                li Standardize API specifications
-
-                li Rapid, seamless, and automated API testing
+            .col-xl-7.offset-md-1
+                img.w-100.mb-4(src="../i/video-sample.png")        
 
 
 
-.container.spacing-below--xxl
-    .row.align-items-center
-        .col-xl-5
-            h2 High Productivity
-
-            p.intro The Postman API Platform delivers high productivity through these features and benefits:
-
-            h3.heading-04 Features
-
-            ul.list-unordered
-                li Postman as the single source of truth for all APIs
-
-                li Up-to-date and easily discoverable API documentation
-                
-                li Instant search across your API landscape
-
-                li Persona-based pre-configured API workspaces
-
-
-            h3.heading-04 Benefits
-
-            ul.list-unordered
-                li Eliminate duplicate work
-
-                li Onboard developers faster
-
-                li Fewer meetings = happier developers
-                
-
-        .col-xl-5.offset-md-2
-            img.w-100.mb-4(src="../i/screenshots/screenshot-sample.png")        
-
-
-
-.container.spacing-below--xxl
-    .row.align-items-center
-        .col-xl-5
-            img.w-100.mb-4(src="../i/screenshots/screenshot-sample.png")
-
-
-        .col-xl-5.offset-md-2
-            h2 Airtight Governance
-
-            p.intro The Postman API Platform delivers airtight governance through these features and benefits:
-
-            h3.heading-04 Features
-
-            ul.list-unordered
-                li API governance with design and validation
-
-                li Deep API insight reports, dashboards, and audit logs
-                
-                li User groups and custom roles
-
-                li SCIM-based automated user provisioning and domain capture
-
-
-            h3.heading-04 Benefits
-
-            ul.list-unordered
-                li Visibility into your API landscape
-
-                li Developers complying with your API guidelines
-
-                li Adherence to legal and regulatory requirements
-
-                li Meet operational SLAs
-
-
-hr.spacing-top--xxl.spacing-below--xl
-
-
-
-.container
+.container.spacing-below--xl
     .row
-        .col-xl-8.offset-md-2.mt-5.text-md-center
-            h1 500,000 Organizations use Postman
-
-            p.intro Many of the world’s top organizations, including 98% of the Fortune 500, are using the Postman API Platform today.
-
-
-            a.button-secondary(href="#") See all case studies &rarr;
-
-
-
-hr.spacing-top--xl.spacing-below--xxl
-
-
-
-.container.spacing-below--xxl
-    .row
-        .col-xl-5
-            h2.heading-01 Get Started with Postman Enterprise
-
-            p.intro Talk to our team to learn all about the Postman Enterprise plan, our enterprise-grade offering that gives you powerful tools to securely manage, organize, and accelerate large-scale API development.
-
-            figure.spacing-top--xl
-                img.mb-5(src="../../i/illu-01.png")
-        
-
-        .col-xl-5.offset-md-2
-            h2 Contact sales today
+        .col-xl-4
+            h2 Upcoming Postman Livestreams
 
             p 
-                strong Support inquiries 
-                | submitted through this form are not monitored and will NOT be responded to. For all support inquiries, please visit our 
+                a(href="#") Follow us
+                |  on Twitch or 
                 
-                a(href="#") support center
-                |  or email 
+                a(href="#") subscribe
+                |  to our YouTube channel so you don’t miss when we go live.
+        
+
+        .col-xl-6.offset-md-2
+            .row.spacing-below--l
+                .col-3
+                    p.heading-03 Aug 7
+
+
+                .col-9
+                    p.eyebrow ONLINE – 8/7/2021 9 AM PDT
+
+                    h4 The Postman Student Summit: The API Conference for Students and Educators
+
+                    p The Postman Student Summit is a comprehensive online API event for students and educators from all over the world to collaboratively learn, share, and create all things API. Educators and college/high school students of any experience level are invited to this global celebration of APIs.
+
+                    p 
+                        a(href="#") See details &rarr; 
+
+            .row.spacing-below--l
+                .col-3
+                    p.heading-03 Aug 12
+
+
+                .col-9
+                    p.eyebrow ONLINE – 8/7/2021 9 AM PDT
+
+                    h4 Hacking My Roomba
+
+                    p Joyce and Arlemi put their hacker hat on and jump into the meanders of networking to take over the control of a Roomba using only APIs
+
+                    p 
+                        a(href="#") See details &rarr; 
+
+
+            .row.spacing-below--l
+                .col-3
+                    p.heading-03 Aug 18
+
+
+                .col-9
+                    p.eyebrow ONLINE – 8/7/2021 9 AM PDT
+
+                    h4 Design and Prototype an API
+
+                    p Join Postman developer advocate Arlemi Turpault for a one-hour, next-level Postman webinar geared specifically for API producers. Learn how to build higher-quality APIs, speed up API development, and increase API adoption.
+
+                    p 
+                        a(href="#") See details &rarr; 
+
+
+            .row.spacing-below--l
+                .col-3
+                    p.heading-03 Aug 26
+
+
+                .col-9
+                    p.eyebrow ONLINE – 8/7/2021 9 AM PDT
+
+                    h4 Integrating with a custom Salesforce App in Postman
+
+                    p The Salesforce Platform APIs are one of the most popular collections in the Postman API Network. Arlemi welcomes Philippe Ozil (Principal Developer Advocate from Salesforce) to build and interact with a custom Salesforce App in Postman.
+
+                    p 
+                        a(href="#") See details &rarr; 
+
+hr.spacing-below--xxl
+
+
+.container.spacing-below--xxl
+    .row
+        .col-xl-4.pad-right--l
                 
-                a(href="#") help@postman.com
-                | .
+            h3.heading-04 Postman support
+
+            p Reach out to our support team.
+
+            a(href="#") Open a ticket
 
 
-            form
-                .input-wrap.input-wrap--text
-                    label.input-label(for="input-10") First name 
+        .col-xl-4.pad-right--l
 
-                    .input-control
-                        input(type="text" name="input-10" id="input-10")
+            h3.heading-04 Bugs and feature requests
 
+            p Check out the app support repo.
 
-                .input-wrap.input-wrap--text
-                    label.input-label(for="input-11") Last name 
-
-                    .input-control.0has-error
-                        input(type="text" name="input-11" id="input-11")
-
-                    //p.input-message.input-message--error
-                        <svg class="icon-status" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 12C8.55228 12 9 11.5523 9 11C9 10.4477 8.55228 10 8 10C7.44772 10 7 10.4477 7 11C7 11.5523 7.44772 12 8 12Z"></path><path d="M8 4C8.53541 4 8.95377 4.46229 8.9005 4.99504L8.54975 8.50248C8.52151 8.78492 8.28384 9 8 9C7.71616 9 7.47849 8.78492 7.45025 8.50248L7.0995 4.99504C7.04623 4.46228 7.46459 4 8 4Z" fill="#6B6B6B"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z"></path></svg>
-    
-                        | This is where the input validation message appears.
+            a(href="#") Make a request
 
 
-                .input-wrap.input-wrap--text
-                    label.input-label(for="input-11") Role
+        .col-xl-4.pad-right--l
 
-                    .input-control.input-control--select
-                        select(name="country-selection")
-                            option(selected disabled) Select your job role
+            h3.heading-04 Community
 
-                            option Option 2
-                            
-                            option Option 3
+            p Join the Postman community.
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M8,12c-0.232,0-0.463-0.08-0.651-0.241l-7.759-6.65L0.892,3.59L8,9.683l7.108-6.093l1.302,1.519l-7.759,6.65 C8.463,11.92,8.232,12,8,12z"></path></g></svg>
-                    
-
-                .input-wrap.input-wrap--text
-                    label.input-label(for="input-16") Company
-
-                    .input-control
-                        input(type="text" name="input-16" id="input-16")
-
-
-                .input-wrap.input-wrap--text
-                    label.input-label(for="input-11") Country
-
-                    .input-control.input-control--select
-                        select(name="country-selection")
-                            option(selected disabled) Select your country
-
-                            option Option 2
-                            
-                            option Option 3
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M8,12c-0.232,0-0.463-0.08-0.651-0.241l-7.759-6.65L0.892,3.59L8,9.683l7.108-6.093l1.302,1.519l-7.759,6.65 C8.463,11.92,8.232,12,8,12z"></path></g></svg>
-                    
-
-
-                .input-wrap.input-wrap--text
-                    label.input-label(for="input-12") Message
-
-                    //p.input-description How does your organization indent to use Postman
-
-                    .input-control
-                        textarea(name="input-12" id="input-12" placeholder="How can we help you? Any specific questions about Postman Enterprise plan?")
-
-
-                
-                .mt-5
-                    button.button-primary.w-100 Submit
-
-                    p.small.mt-3 By clicking submit below, you agree to Postman's 
-                        a(href="#") Terms
-                        |  and personal data as described in our 
-                        a(href="#") Privacy Policy
-                        | .
+            a(href="#") Visit Forum

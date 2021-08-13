@@ -11,12 +11,14 @@
   border-radius: 4px;
   color: var(--content-color-secondary);
   display: inline-block;
-  font-size: 14px;
-  height: 24px;
-  line-height: 21px;
+  font-size: 12px;
+  height: 20px;
+  line-height: 18px;
   margin-right: var(--spacing-xxs);
+  margin-bottom: var(--spacing-xxs);
   padding: 0 var(--spacing-xxs);
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 

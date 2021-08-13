@@ -8024,12 +8024,14 @@ nav {
   border-radius: 4px;
   color: var(--content-color-secondary);
   display: inline-block;
-  font-size: 14px;
-  height: 24px;
-  line-height: 21px;
+  font-size: 12px;
+  height: 20px;
+  line-height: 18px;
   margin-right: var(--spacing-xxs);
+  margin-bottom: var(--spacing-xxs);
   padding: 0 var(--spacing-xxs);
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  white-space: nowrap; }
 
 .c-badge--1 {
   border-color: var(--background-color-success);
@@ -8261,11 +8263,81 @@ button,
   .button-with-icon:hover {
     background-color: #F2F2F2; }
 
-.card {
+.c-card {
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 0 1px #A6A6A6;
-  padding: 32px; }
+  box-shadow: 0 0 1px var(--grey-30);
+  display: block;
+  overflow: hidden;
+  position: relative;
+  transition: .2s ease-in-out; }
+  .c-card figure {
+    background-color: var(--grey-10); }
+  .c-card img {
+    max-height: 240px; }
+  .c-card .heading-04 {
+    color: var(--grey-90);
+    padding-right: var(--spacing-s); }
+  .c-card:hover {
+    border: none;
+    box-shadow: 0 0 1px var(--grey-50), 0 8px 16px -4px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px); }
+
+.c-card__content {
+  padding: var(--spacing-s); }
+
+.c-card__date {
+  background-color: var(--grey-00);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+  color: var(--orange-50);
+  font-size: 12px;
+  line-height: 1.2;
+  position: absolute;
+  text-align: center;
+  top: 8px;
+  right: 8px;
+  text-transform: uppercase;
+  padding: var(--spacing-xxs); }
+  .c-card__date strong {
+    font-size: 24px;
+    display: block; }
+
+.c-card--01 {
+  padding-top: 180px; }
+  .c-card--01:before {
+    background-image: url("https://www.postman.com/assets/events/space-camp/posters/postman-space-camp-session-3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 180px;
+    width: 100%;
+    transition: .2s ease-in-out; }
+  .c-card--01:hover:before {
+    background-size: 105%; }
+
+.c-card--02 {
+  padding-top: 170px; }
+  .c-card--02:before {
+    background-image: url("../i/card-01.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 170px;
+    width: 100%;
+    transition: .2s ease-in-out; }
+  .c-card--02:hover:before {
+    background-size: 105%; }
 
 label {
   color: var(--grey-70);

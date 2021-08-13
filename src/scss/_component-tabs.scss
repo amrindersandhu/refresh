@@ -106,7 +106,7 @@ $tabs-disabled-text-color: $text-color-subtler;
 .tabs-alt {
     align-items: center;
     display: flex;
-    font-size: $text-size-s;
+    
 
     &.is-full-width {
         .tabs-item {
@@ -115,15 +115,15 @@ $tabs-disabled-text-color: $text-color-subtler;
     }
 
     .tabs-item {
-        background-color: $background-color-secondary;
-        height: 32px;
+        background-color: var(--grey-10);
+        //height: 32px;
 
         &:first-child {
-            border-radius: $controls-border-radius 0 0 $controls-border-radius;
+            border-radius: 4px 0 0 4px;
         }
 
         &:last-child {
-            border-radius: 0 $controls-border-radius $controls-border-radius 0;
+            border-radius: 0 4px 4px 0;
         }
     }
 
@@ -133,10 +133,12 @@ $tabs-disabled-text-color: $text-color-subtler;
         border-radius: 3px;
         color: var(--content-color-secondary);
         display: flex;
+        font-size: 14px;
+        line-height: 24px;
         justify-content: center;
-        padding: var(--spacing-s) var(--spacing-l);
+        padding: var(--spacing-xxs) var(--spacing-s);
         position: relative;
-        line-height: var(--line-height-s);
+        //line-height: 40px;
     
         &:hover,
         &:focus {

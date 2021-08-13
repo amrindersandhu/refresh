@@ -9022,13 +9022,11 @@ label {
 
 .tabs-alt {
   align-items: center;
-  display: flex;
-  font-size: 14px; }
+  display: flex; }
   .tabs-alt.is-full-width .tabs-item {
     flex-grow: 1; }
   .tabs-alt .tabs-item {
-    background-color: #F9F9F9;
-    height: 32px; }
+    background-color: var(--grey-10); }
     .tabs-alt .tabs-item:first-child {
       border-radius: 4px 0 0 4px; }
     .tabs-alt .tabs-item:last-child {
@@ -9039,10 +9037,11 @@ label {
     border-radius: 3px;
     color: var(--content-color-secondary);
     display: flex;
+    font-size: 14px;
+    line-height: 24px;
     justify-content: center;
-    padding: var(--spacing-s) var(--spacing-l);
-    position: relative;
-    line-height: var(--line-height-s); }
+    padding: var(--spacing-xxs) var(--spacing-s);
+    position: relative; }
     .tabs-alt .tabs-link:hover, .tabs-alt .tabs-link:focus {
       color: #2B2B2B;
       border: none;

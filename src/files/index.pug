@@ -178,7 +178,7 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
         hr
 
 
-        .container.mb-5
+        .container.mb-5#blockquote
             .row.mb-5
                 .col-xl-5.col-md-8.col-12.mb-5
                     p.eyebrow Design
@@ -216,7 +216,7 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
 
 
         // FORM
-        .container.mb-5
+        .container.mb-5#form
             .row
                 .col-xl-5.col-md-8.col-12    
                     h2 Tell us about your organization
@@ -307,7 +307,7 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
         .container.mb-5
             .row.mb-5
                 .col
-                    h2.mb-5 Buttons and their variants
+                    h2.mb-5#buttons Buttons and their variants
 
             .row
                 .col-xl-8.col-md-8.col-12
@@ -387,7 +387,7 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
         .container.mb-5
             .row
                 .col
-                    h2.mb-5 Links and their variants
+                    h2.mb-5#links Links and their variants
 
                     h3 Link in a para
 
@@ -410,7 +410,7 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
         .container.mb-5
             .row
                 .col
-                    h2.mb-5 Breadcrumbs
+                    h2.mb-5#breadcrumb Breadcrumbs
 
                     p.c-breadcrumb
                         a.c-breadcrumb__link(href="#") All open positions
@@ -427,7 +427,7 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
         .container.mb-5
             .row
                 .col
-                    h2.mb-5 Code Block
+                    h2.mb-5#code-block Code Block
 
                     pre(data-lang="json")
                         code {
@@ -459,7 +459,7 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
         .container.mb-5 
             .row
                 .col
-                    h2.mb-5 Tooltip
+                    h2.mb-5#tooltip Tooltip
 
                     span#icon-help-sample
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g stroke-width="1" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="7.5"></circle><circle cx="8.003" cy="12" r="1" stroke="none" fill="#212121"></circle><path d="M6.5,3.577c.953-.86,3.018-.845,3.423.635C10.453,6.134,8,6.142,8,9" stroke="#212121"></path></g></svg>
@@ -472,7 +472,7 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
         .container.mb-5 
             .row
                 .col
-                    h2.mb-5 Tags
+                    h2.mb-5#tags Tags
 
                     .d-flex.align-items-baseline
                         span.mr-2 Tags:
@@ -489,7 +489,7 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
 
                 
                 .col
-                    h2.mb-5 Badges
+                    h2.mb-5#badges Badges
 
                     .d-flex.align-items-baseline
                         span Careers &nbsp;
@@ -503,10 +503,12 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
         hr
 
 
+
+        // TABLES
         .container.spacing-below--xxl
             .row.spacing-below--m
                 .col
-                    h2 Striped Table 
+                    h2#table Striped Table 
 
                     table.w-100.table.table-striped
                         thead
@@ -652,7 +654,32 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
                                 td
                                     a(href="#") Apply &rarr;
 
-                
+
+
+        hr 
+
+
+        // TABS
+
+        .container.spacing-below--xxl
+            .row
+                .col
+                    h2#tabs Tabs 
+
+                    ul.tabs-alt.spacing-below--xl
+                        li.tabs-item
+                            a.tabs-link(href="javascript:void(0)") 
+                                span.tabs-text All Sessions
+
+                        
+                        li.tabs-item
+                            a.tabs-link.is-active(href="javascript:void(0)")
+                                span.tabs-text Sat, Aug 7
+
+
+                        li.tabs-item
+                            a.tabs-link(href="javascript:void(0)") 
+                                span.tabs-text Sun, Aug 8
 
 
 

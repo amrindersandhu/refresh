@@ -8955,6 +8955,12 @@ label {
   left: 0;
   bottom: 0;
   right: 0; }
+  .c-modal__wrap.is-visible {
+    opacity: 1;
+    visibility: visible; }
+  .c-modal__wrap.is-hidden {
+    opacity: 0;
+    visibility: hidden; }
 
 .c-modal {
   background-color: var(--grey-00);
@@ -9275,19 +9281,19 @@ label {
 .table tbody tr:hover {
   background-color: var(--orange-10) !important; }
 
-.table th {
+.table thead th {
   color: var(--grey-70);
   font-size: 14px; }
 
-.table th,
-.table td {
+.table thead th, .table tbody td {
+  border-top: none;
   border-bottom: 1px solid var(--grey-20);
   padding: var(--spacing-xs); }
 
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: var(--grey-10); }
 
-.table-striped th, .table-striped td {
+.table-striped thead th, .table-striped tbody td {
   border: none; }
 
 .input-wrap--text {

@@ -16,12 +16,13 @@
         background-color: var(--orange-10) !important;
     }
 
-    th {
+    thead th {
         color: var(--grey-70);
         font-size: 14px;
     }
 
-    th, td {
+    thead th, tbody td {
+        border-top: none;
         border-bottom: 1px solid var(--grey-20);
         padding: var(--spacing-xs);
     }
@@ -32,7 +33,7 @@
         background-color: var(--grey-10);
     }
 
-    th, td {
+    thead th, tbody td {
         border: none;
     }
 }

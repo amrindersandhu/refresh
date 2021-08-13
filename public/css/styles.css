@@ -7727,7 +7727,6 @@ p {
   color: var(--content-color-primary);
   letter-spacing: -0.16px;
   line-height: 26px;
-  max-width: 65ch;
   margin-bottom: 24px; }
 
 li {
@@ -8325,6 +8324,10 @@ label {
   min-height: 480px; }
   .c-hero .container {
     height: 100%; }
+
+.h-25 {
+  height: 25vh !important;
+  min-height: 360px; }
 
 .c-hero--page-1 {
   background: url("https://www.postman.com/assets/lp-api-platform/comp-api-diagram-UW-dual-fade.svg") no-repeat;

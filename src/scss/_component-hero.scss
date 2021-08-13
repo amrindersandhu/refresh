@@ -15,6 +15,11 @@
   }
 }
 
+.h-25 {
+  height: 25vh !important;
+  min-height: 360px;
+}
+
 .c-hero--page-1 {
   background: url("https://www.postman.com/assets/lp-api-platform/comp-api-diagram-UW-dual-fade.svg") no-repeat;
   background-position-x: center;

@@ -17,7 +17,7 @@
 
 .c-avatar--person {
   box-shadow: 0 0 0 2px rgba(white, 1), 0 0 0 4px rgba(black, .24);
-  filter: sepia(80%);
+  filter: grayscale(100%) brightness(1.2);
   border-radius: 999px;
 }
 

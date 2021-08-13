@@ -7986,7 +7986,7 @@ nav {
 
 .c-avatar--person {
   box-shadow: 0 0 0 2px white, 0 0 0 4px rgba(0, 0, 0, 0.24);
-  filter: sepia(80%);
+  filter: grayscale(100%) brightness(1.2);
   border-radius: 999px; }
 
 .c-avatar--badge {

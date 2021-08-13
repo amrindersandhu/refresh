@@ -7890,27 +7890,74 @@ blockquote {
     font-size: 16px;
     margin-top: 24px; }
 
+.logo {
+  align-items: center;
+  display: flex;
+  width: 32px;
+  margin-bottom: 0; }
+
 nav {
   margin-top: 8px; }
   nav ul {
     margin-bottom: 0;
     margin-left: var(--spacing-xs); }
+    nav ul li {
+      position: relative; }
+      nav ul li:hover a + .c-popover {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px); }
+      nav ul li:hover svg {
+        transform: rotate(180deg); }
     nav ul a {
       align-items: center;
       color: var(--grey-70);
       display: inline-flex;
       font-size: 14px;
       font-weight: 600;
-      padding: var(--spacing-xs); }
+      line-height: 20px;
+      padding: var(--spacing-xs);
+      position: relative; }
+      nav ul a svg {
+        margin-left: 6px;
+        width: 10px;
+        transition: .1s ease-in-out; }
+        nav ul a svg path {
+          fill: var(--grey-70); }
       nav ul a:hover {
         border-bottom: none;
         color: #212121; }
+  nav .c-popover {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    padding: var(--spacing-xs);
+    z-index: 9;
+    transition: .3s ease-in-out;
+    transform: translateY(-10px); }
+    nav .c-popover h6 {
+      padding: var(--spacing-xxs) var(--spacing-xs);
+      margin-bottom: 0; }
+  nav .c-popover--menu {
+    display: flex; }
+  nav .c-menu {
+    margin: 0; }
+    nav .c-menu a {
+      border-radius: 4px;
+      color: var(--grey-90);
+      display: block;
+      font-weight: 400;
+      padding: var(--spacing-xxs) var(--spacing-xs);
+      white-space: nowrap; }
+      nav .c-menu a:hover {
+        background-color: var(--grey-10); }
 
-.logo {
-  align-items: center;
-  display: flex;
-  width: 32px;
-  margin-bottom: 0; }
+.c-menu__group {
+  padding-bottom: var(--spacing-xs); }
+  .c-menu__group + .c-menu__group {
+    padding-left: var(--spacing-xs);
+    padding-right: var(--spacing-xs); }
 
 .side-nav {
   margin-left: -12px;

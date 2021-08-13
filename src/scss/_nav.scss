@@ -3,6 +3,13 @@
 //////////////////
 
 
+.logo {
+    align-items: center;
+    display: flex;
+    width: 32px;
+    margin-bottom: 0;
+}
+
 
 nav {
     margin-top: 8px;
@@ -11,13 +18,43 @@ nav {
         margin-bottom: 0;
         margin-left: var(--spacing-xs);
 
+        li {
+            position: relative;
+
+            &:hover {
+
+                a + .c-popover {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0px);
+                }
+
+                svg {
+                    transform: rotate(180deg);
+                }
+
+            }
+        }
+
         a {
             align-items: center;
             color: var(--grey-70);
             display: inline-flex;
             font-size: 14px;
             font-weight: 600;
+            line-height: 20px;
             padding: var(--spacing-xs);
+            position: relative;
+
+            svg {
+                margin-left: 6px;
+                width: 10px;
+                transition: .1s ease-in-out;
+
+                path {
+                    fill: var(--grey-70);
+                }
+            }
 
             &:hover {
                 border-bottom: none;
@@ -25,14 +62,61 @@ nav {
             }
         }
     }
+
+    .c-popover {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        padding: var(--spacing-xs);
+        z-index: 9;
+        transition: .3s ease-in-out;
+        transform: translateY(-10px);
+
+        h6 {
+            padding: var(--spacing-xxs) var(--spacing-xs);
+            margin-bottom: 0;
+        }
+    }
+
+    .c-popover--menu {
+        display: flex;
+    }
+
+    
+
+    .c-menu {
+        margin: 0;
+        
+
+        a {
+            border-radius: 4px;
+            color: var(--grey-90);
+            display: block;
+            font-weight: 400;
+            padding: var(--spacing-xxs) var(--spacing-xs);
+            white-space: nowrap;
+
+            &:hover {
+                background-color: var(--grey-10);
+            }
+        }
+    }
 }
 
-.logo {
-    align-items: center;
-    display: flex;
-    width: 32px;
-    margin-bottom: 0;
+
+.c-menu__group {
+    padding-bottom: var(--spacing-xs);
+    + .c-menu__group {
+        padding-left: var(--spacing-xs);
+        padding-right: var(--spacing-xs);
+    }
 }
+
+
+
+
+
 
 
 

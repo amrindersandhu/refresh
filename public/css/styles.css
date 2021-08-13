@@ -7939,6 +7939,39 @@ nav {
   height: 24px;
   width: 24px; }
 
+.c-accordion__wrap {
+  border-top: 1px solid var(--grey-20); }
+
+.c-accordion__item {
+  border-bottom: 1px solid var(--grey-20);
+  padding: var(--spacing-s) 0 var(--spacing-xs); }
+  .c-accordion__item.is-expanded .c-accordion__button__icon {
+    transform: rotate(180deg); }
+  .c-accordion__item.is-expanded .c-accordion__content {
+    display: block; }
+
+.c-accordion__button {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-xxs);
+  text-align: left;
+  padding: var(--spacing-xxs) var(--spacing-xxs) var(--spacing-xxs) 0;
+  width: 100%; }
+
+.c-accordion__button__heading {
+  margin-bottom: 0;
+  padding-right: var(--spacing-l); }
+
+.c-accordion__button__icon {
+  fill: var(--orange-40);
+  flex-shrink: 0;
+  transition: .2s ease-in-out; }
+
+.c-accordion__content {
+  display: none;
+  padding-right: var(--spacing-l); }
+
 .c-badge {
   border: 1px solid var(--grey-20);
   border-radius: 4px;

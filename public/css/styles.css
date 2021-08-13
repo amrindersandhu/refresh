@@ -8194,8 +8194,7 @@ button,
     border-bottom: 1px solid; }
 
 .button-only-icon {
-  padding: 8px;
-  height: 32px; }
+  padding: 8px; }
   .button-only-icon svg path {
     fill: var(--grey-70); }
   .button-only-icon .button-icon {
@@ -8477,8 +8476,7 @@ button,
     border-bottom: 1px solid; }
 
 .button-only-icon {
-  padding: 8px;
-  height: 32px; }
+  padding: 8px; }
   .button-only-icon svg path {
     fill: var(--grey-70); }
   .button-only-icon .button-icon {
@@ -8826,6 +8824,36 @@ label {
   color: var(--content-color-success); }
   .input-message--success icon-status path {
     fill: var(--content-color-success); }
+
+.c-modal__wrap {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.48);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.c-modal {
+  background-color: var(--grey-00);
+  box-shadow: 0 16px 24px -16px rgba(0, 0, 0, 0.64);
+  border-radius: 4px;
+  max-width: 640px;
+  max-height: 96vh; }
+
+.c-modal__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-s) var(--spacing-m); }
+  .c-modal__header h2 {
+    margin-bottom: 0; }
+
+.c-modal__body {
+  padding: 0 var(--spacing-m) var(--spacing-s); }
 
 .link {
   color: inherit;

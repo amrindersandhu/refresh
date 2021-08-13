@@ -1,0 +1,41 @@
+//////////////////
+// #MODAL //////
+//////////////////
+
+
+.c-modal__wrap {
+  align-items: center;
+  background-color: rgba(black, .48);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+  .c-modal {
+    background-color: var(--grey-00);
+    box-shadow: 0 16px 24px -16px rgba(black, .64);
+    border-radius: 4px;
+    max-width: 640px;
+    max-height: 96vh;
+  }
+
+    .c-modal__header {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: var(--spacing-s) var(--spacing-m);
+
+      h2 {
+        margin-bottom: 0;
+      }
+    }
+
+
+    .c-modal__body {
+      padding: 0 var(--spacing-m) var(--spacing-s);
+    }

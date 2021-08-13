@@ -11,13 +11,13 @@
 
   &:hover {
     .c-breadcrumb__link {
-      color: var(--color-interactive);
+      color: var(--blue-60);
     }
   }
 }
 
 .c-breadcrumb__link {
-  color: var(--content-color-secondary);
+  color: var(--grey-70);
 
   &:hover {
     border-bottom: 1px solid;
@@ -25,16 +25,16 @@
 }
 
 .c-breadcrumb__item {
-  color: var(--content-color-secondary);
+  color: var(--grey-70);
 
   &.is-highlighted {
-    color: var(--content-color-primary);
+    color: var(--grey-90);
   }
 }
 
 
 .c-breadcrumb__sep {
-  color: var(--content-color-tertiary);
+  color: var(--grey-30);
   font-weight: normal;
   padding: 0 var(--spacing-xs);
 }

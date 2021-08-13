@@ -8007,6 +8007,9 @@ nav {
 .c-avatar--m {
   height: 64px;
   width: 64px; }
+  .c-avatar--m + .c-avatar--badge {
+    bottom: -4px;
+    left: -4px; }
 
 .c-avatar--l {
   height: 80px;

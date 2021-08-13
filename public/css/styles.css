@@ -7531,7 +7531,6 @@ a.text-dark:hover, a.text-dark:focus {
   --line-height-xxl: 32px;
   --line-height-xxxl: 40px;
   --grey-00: #FFF;
-  --grey-05: #F9F9F9;
   --grey-10: #F9F9F9;
   --grey-20: #E6E6E6;
   --grey-30: #C6C6C6;
@@ -7540,7 +7539,6 @@ a.text-dark:hover, a.text-dark:focus {
   --grey-60: #3B3B3B;
   --grey-70: #6B6B6B;
   --grey-80: #3B3B3B;
-  --grey-85: #262626;
   --grey-90: #212121;
   --blue-10: #E7F0FF;
   --blue-20: #ADCDFB;
@@ -7813,6 +7811,7 @@ a {
     outline-color: var(--blue-30);
     outline-offset: 2px; }
   a:hover {
+    color: var(--blue-70);
     border-bottom: 1px solid;
     text-decoration: none; }
 

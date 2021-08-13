@@ -48,8 +48,16 @@
 }
 
 
-.spacing-right-s {
-    margin-right: $spacing-s;
+.spacing-right--xs {
+    margin-right: var(--spacing-xs);
+}
+
+.spacing-right--s {
+    margin-right: var(--spacing-s);
+}
+
+.spacing-right--m {
+    margin-right: var(--spacing-m);
 }
 
 .spacing-m {

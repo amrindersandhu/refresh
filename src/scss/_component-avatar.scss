@@ -5,16 +5,63 @@
 // LOCAL VARIABLES  *** ONLY MOVE TO TOKEN SCSS FILES IF REUSABLE ***
 
 
-// 
+.c-avatar__wrap {
+  position: relative;
+}
+
+
 .c-avatar {
-  border-radius: var(--border-radius-max);
   display: inline-block;
   position: relative;
+}
+
+.c-avatar--person {
+  box-shadow: 0 0 0 2px rgba(white, 1), 0 0 0 4px rgba(black, .24);
+  filter: sepia(80%);
+  border-radius: 999px;
+}
+
+
+
+.c-avatar--badge {
+  border: 2px solid var(--grey-00);
+  border-radius: 999px;
+  bottom: -2px;
+  left: -2px;
+  position: absolute;
+}
+
+
+.c-avatar--xs {
+  height: 24px;
+  width: 24px;
+}
+
+
+.c-avatar--s {
   height: 32px;
   width: 32px;
 }
 
-.c-avatar--small {
-  height: 24px;
-  width: 24px;
+.c-avatar--m {
+  height: 64px;
+  width: 64px;
 }
+
+.c-avatar--l {
+  height: 80px;
+  width: 80px;
+}
+
+.c-avatar--xl {
+  height: 160px;
+  width: 160px;
+
+  + .c-avatar--badge {
+    bottom: 6px;
+    left: 6px;
+  }
+}
+
+
+

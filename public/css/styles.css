@@ -7698,7 +7698,7 @@ h4,
   font-size: 20px;
   line-height: 28px;
   font-weight: 600;
-  letter-spacing: -0.36px;
+  letter-spacing: -0.32px;
   margin-bottom: 8px; }
   @media (max-width: 575.98px) {
     h4,
@@ -7709,6 +7709,7 @@ h5,
 .heading-05 {
   font-family: var(--text-family);
   font-size: 16px;
+  letter-spacing: -0.24px;
   line-height: 1.4;
   font-weight: 600;
   margin-bottom: 8px; }
@@ -7718,6 +7719,7 @@ h6,
   font-family: var(--text-family);
   color: #5B5B5B;
   font-size: 16px;
+  letter-spacing: -0.24px;
   line-height: 1.4;
   font-weight: 600;
   margin-bottom: 8px; }
@@ -7909,6 +7911,22 @@ nav {
   display: flex;
   width: 32px;
   margin-bottom: 0; }
+
+.side-nav {
+  margin-left: -12px;
+  margin-bottom: 16px; }
+  .side-nav a {
+    border-radius: 4px;
+    color: var(--grey-90);
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 6px 12px; }
+    .side-nav a:hover {
+      background-color: var(--grey-10);
+      border: none; }
+  .side-nav .is-selected a {
+    background-color: var(--orange-10); }
 
 .c-avatar {
   border-radius: var(--border-radius-max);

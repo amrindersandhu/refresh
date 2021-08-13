@@ -33,3 +33,32 @@ nav {
     width: 32px;
     margin-bottom: 0;
 }
+
+
+
+.side-nav__wrap {
+
+}
+
+.side-nav {
+    margin-left: -12px;
+    margin-bottom: 16px;
+
+    a {
+        border-radius: 4px;
+        color: var(--grey-90);
+        display: block;
+        font-size: 14px;
+        line-height: 22px;
+        padding: 6px 12px;
+
+        &:hover {
+            background-color: var(--grey-10);
+            border: none;
+        }
+    }
+
+    .is-selected a {
+        background-color: var(--orange-10);
+    }
+}

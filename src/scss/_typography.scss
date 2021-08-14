@@ -14,7 +14,7 @@ h1,
     @media (max-width: 575.98px) { 
         font-size: 36px;
         //letter-spacing: -0.84px;
-        line-height: 42px;
+        line-height: 36px;
         margin-bottom: 16px;
     }
 }
@@ -258,7 +258,7 @@ figcaption,
     font-weight: 600;
     letter-spacing: 0.24px;
     line-height: 24px;
-    margin-bottom: 8px;
+    margin-bottom: var(--spacing-xs);
     text-transform: uppercase;
 
     @media (max-width: 575.98px) { 

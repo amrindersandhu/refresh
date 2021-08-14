@@ -7659,7 +7659,7 @@ h1,
     h1,
     .heading-01 {
       font-size: 36px;
-      line-height: 42px;
+      line-height: 36px;
       margin-bottom: 16px; } }
 
 h2,
@@ -7852,7 +7852,7 @@ figcaption,
   font-weight: 600;
   letter-spacing: 0.24px;
   line-height: 24px;
-  margin-bottom: 8px;
+  margin-bottom: var(--spacing-xs);
   text-transform: uppercase; }
   @media (max-width: 575.98px) {
     .eyebrow {
@@ -8238,6 +8238,10 @@ button,
   transition: background-color 50ms ease-in-out, border-color 50ms ease-in-out, box-shadow 50ms ease-in-out, outline 50ms ease-in-out;
   text-align: center;
   justify-content: center; }
+  button:hover,
+  .button-primary:hover,
+  .button-secondary:hover {
+    border: none; }
   button:focus,
   .button-primary:focus,
   .button-secondary:focus {
@@ -8258,6 +8262,7 @@ button,
   color: var(--grey-00);
   font-weight: 600; }
   .button-primary:hover {
+    color: var(--grey-00);
     background-color: #E05320; }
   .button-primary:active {
     background-color: #D23F0E; }
@@ -8555,7 +8560,6 @@ label {
     border-color: var(--grey-30); }
 
 .c-hero {
-  height: 50vh;
   min-height: 480px;
   padding: var(--spacing-xxl) 0; }
   .c-hero .container {
@@ -8592,6 +8596,10 @@ button,
   transition: background-color 50ms ease-in-out, border-color 50ms ease-in-out, box-shadow 50ms ease-in-out, outline 50ms ease-in-out;
   text-align: center;
   justify-content: center; }
+  button:hover,
+  .button-primary:hover,
+  .button-secondary:hover {
+    border: none; }
   button:focus,
   .button-primary:focus,
   .button-secondary:focus {
@@ -8612,6 +8620,7 @@ button,
   color: var(--grey-00);
   font-weight: 600; }
   .button-primary:hover {
+    color: var(--grey-00);
     background-color: #E05320; }
   .button-primary:active {
     background-color: #D23F0E; }
@@ -9699,6 +9708,9 @@ select {
 
 .pad-right--xl {
   padding-right: var(--spacing-xl); }
+
+.pad-right--xxl {
+  padding-right: var(--spacing-xxl); }
 
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);

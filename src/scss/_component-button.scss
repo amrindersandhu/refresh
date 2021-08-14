@@ -66,6 +66,10 @@ button,
   text-align: center;
   justify-content: center;
 
+  &:hover {
+    border: none; // for link buttons
+  }
+
   &:focus {
     box-shadow: var(--shadow-focus);  
     outline: none
@@ -88,6 +92,7 @@ button,
   font-weight: 600;
 
   &:hover {
+    color: var(--grey-00);
     background-color: $orange-60;
   }
 

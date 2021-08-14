@@ -7932,6 +7932,9 @@ nav ul {
     nav ul a:hover {
       border-bottom: none;
       color: #212121; }
+  nav ul small {
+    display: block;
+    font-size: 12px; }
 
 nav .c-popover {
   visibility: hidden;

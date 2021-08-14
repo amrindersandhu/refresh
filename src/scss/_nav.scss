@@ -65,6 +65,11 @@ nav {
                 color: $text-color-stronger;
             }
         }
+
+        small {
+            display: block;
+            font-size: 12px;
+        }
     }
 
     .c-popover {

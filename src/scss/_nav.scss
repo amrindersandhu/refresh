@@ -2,6 +2,11 @@
 // #NAV //////////
 //////////////////
 
+.c-header {
+    background-color: rgba(white, .84);
+    backdrop-filter: blur(4px);
+    padding: 4px 16px;
+}
 
 .logo {
     align-items: center;
@@ -12,7 +17,6 @@
 
 
 nav {
-    margin-top: 8px;
     
     ul {
         margin-bottom: 0;
@@ -43,7 +47,7 @@ nav {
             font-size: 14px;
             font-weight: 600;
             line-height: 20px;
-            padding: var(--spacing-xs);
+            padding: var(--spacing-xxs) var(--spacing-xs);
             position: relative;
 
             svg {
@@ -112,6 +116,38 @@ nav {
         padding-right: var(--spacing-xs);
     }
 }
+
+
+.nav-search__wrap {
+    position: absolute;
+    max-width: 360px;
+    top: 12px;
+    left: 50%;
+    margin-left: -180px;
+
+    input[type="text"] {
+        background-color: var(--grey-10);
+        border-color: var(--grey-20);
+        font-size: 14px;
+        padding: 4px 12px;
+        height: 32px;
+        margin: 0;
+        text-align: center;
+
+        &::placeholder {
+            color: var(--grey-50);
+        }
+    }
+}
+
+
+    .nav-search__icon {
+        position: absolute;
+        left: 50%;
+        top: 8px;
+        margin-left: -80px;
+        //stroke: var(--grey-70);
+    }
 
 
 

@@ -76,7 +76,8 @@ button,
   }
 
   &.button-small {
-    padding: $button-spacing-inset-small;
+    font-size: 14px;
+    padding: 4px 12px;
   }
 }
 

@@ -7513,7 +7513,7 @@ a.text-dark:hover, a.text-dark:focus {
 :root {
   --text-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica, Arial, sans-serif;
   --text-family-code: 'IBM Plex Mono', SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
-  --text-family-display: degular-display, `Inter`, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica, Arial, sans-serif;
+  --text-family-display: 'Degular-Display-Semibold', Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica, Arial, sans-serif;
   --text-weight-regular: 400;
   --text-weight-medium: 600;
   --text-size-xs: 10px;
@@ -7647,12 +7647,20 @@ main {
 .logo {
   margin-bottom: 16px; }
 
+@font-face {
+  font-family: 'Degular-Display-Semibold';
+  src: url("../fonts/Degular_Display-Semibold.woff") format("woff"), url("../fonts/Degular_Display-Semibold.woff2") format("woff2"); }
+
+h1, h2, h3,
+.heading-01, .heading-02, .heading-03 {
+  font-family: var(--text-family-display);
+  font-weight: 600;
+  font-feature-settings: 'kern' 1, 'ss01' 1, 'salt' 1; }
+
 h1,
 .heading-01 {
-  font-family: degular-display, sans-serif;
   font-size: 48px;
   line-height: 48px;
-  font-weight: 600;
   letter-spacing: 0.64px;
   margin-bottom: 24px; }
   @media (max-width: 575.98px) {
@@ -7664,10 +7672,8 @@ h1,
 
 h2,
 .heading-02 {
-  font-family: degular-display, sans-serif;
   font-size: 36px;
   line-height: 42px;
-  font-weight: 600;
   letter-spacing: 0.48px;
   margin-bottom: 16px; }
   @media (max-width: 575.98px) {
@@ -7678,10 +7684,8 @@ h2,
 
 h3,
 .heading-03 {
-  font-family: degular-display, sans-serif;
   font-size: 28px;
   line-height: 32px;
-  font-weight: 600;
   letter-spacing: 0.64px;
   margin-bottom: 16px; }
   @media (max-width: 575.98px) {

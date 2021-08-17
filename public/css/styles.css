@@ -7976,7 +7976,7 @@ nav .c-menu {
 .nav-search__wrap {
   position: absolute;
   max-width: 360px;
-  top: 12px;
+  top: 10px;
   left: 50%;
   margin-left: -180px; }
   .nav-search__wrap input[type="text"] {

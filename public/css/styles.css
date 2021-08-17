@@ -7905,6 +7905,10 @@ blockquote {
   display: flex;
   width: 32px;
   margin-bottom: 0; }
+  .logo img {
+    width: 32px; }
+  .logo:hover {
+    border: none; }
 
 nav ul {
   margin-bottom: 0;
@@ -8011,6 +8015,41 @@ nav .c-menu {
       border: none; }
   .side-nav .is-selected a {
     background-color: var(--orange-10); }
+
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000px; }
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg); }
+
+.flip-container, .front, .back {
+  width: 32px;
+  height: 32px; }
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative; }
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg); }
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg); }
 
 .c-avatar__wrap {
   position: relative; }

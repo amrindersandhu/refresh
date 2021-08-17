@@ -1,0 +1,36 @@
+//////////////////
+// #FOOTER /////////
+//////////////////
+
+
+.c-footer {
+    ul {
+        margin-bottom: var(--spacing-s);
+    }
+
+    ul li a {
+        align-items: center;
+        display: inline-flex;
+        font-size: 14px;
+        padding: 4px 0;
+
+        svg {
+            margin-right: var(--spacing-xxs);
+        }
+    }
+
+    a {
+        color: var(--grey-70);
+
+        &:hover {
+            border: none;
+            color: var(--blue-70);
+        }
+    }
+}
+
+.c-sep {
+    color: var(--grey-50);
+    display: inline-block;
+    margin: 0 var(--spacing-xxs);
+}

@@ -8818,6 +8818,28 @@ label {
 .flex-space--around {
   justify-content: space-around; }
 
+.c-footer ul {
+  margin-bottom: var(--spacing-s); }
+
+.c-footer ul li a {
+  align-items: center;
+  display: inline-flex;
+  font-size: 14px;
+  padding: 4px 0; }
+  .c-footer ul li a svg {
+    margin-right: var(--spacing-xxs); }
+
+.c-footer a {
+  color: var(--grey-70); }
+  .c-footer a:hover {
+    border: none;
+    color: var(--blue-70); }
+
+.c-sep {
+  color: var(--grey-50);
+  display: inline-block;
+  margin: 0 var(--spacing-xxs); }
+
 .sb-grid_marker {
   align-items: center;
   background: rgba(255, 0, 0, 0.24);

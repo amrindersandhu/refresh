@@ -54,7 +54,8 @@ $button-icon-spacing-inset: $spacing-xs;
 // Common button styles for all <button> elements
 button,
 .button-primary,
-.button-secondary {
+.button-secondary,
+.button-filter {
   border: none;
   border-radius: $button-border-radius;
   display: inline-flex;
@@ -111,7 +112,8 @@ button,
 
 
 
-.button-secondary {
+.button-secondary,
+.button-filter {
   background-color: white;
   color: var(--content-color-primary);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, .24) inset;
@@ -119,7 +121,7 @@ button,
 
   &:hover {
     background-color: white;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .64) inset;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .32) inset;
     color: var(--content-color-primary);
     border: none;
   }
@@ -216,4 +218,61 @@ button,
   &:hover {
     background-color: $background-color-tertiary;
   }
+}
+
+
+// FILTER BUTTONS
+
+.button-filter {
+  border-radius: 999px;
+  position: relative;
+
+  + .button-filter {
+    margin-left: var(--spacing-xxs);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  &:hover {
+    background-color: var(--grey-10);
+  }
+  
+
+  &.is-selected {
+    background-color: var(--grey-10);
+    padding-left: 42px;
+
+    .icon-filter-status--selected {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .icon-filter-status--deselect {
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &:hover {
+      .icon-filter-status--deselect {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+        transition: .3s ease-in-out;
+      }
+      .icon-filter-status--selected {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.icon-filter-status--selected,
+.icon-filter-status--deselect {
+  position: absolute;
+  left: var(--spacing-xs);
+  stroke: var(--grey-70);
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.84);
 }

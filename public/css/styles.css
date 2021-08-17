@@ -8272,7 +8272,8 @@ nav .c-menu {
 
 button,
 .button-primary,
-.button-secondary {
+.button-secondary,
+.button-filter {
   border: none;
   border-radius: var(--border-radius-default);
   display: inline-flex;
@@ -8285,20 +8286,24 @@ button,
   justify-content: center; }
   button:hover,
   .button-primary:hover,
-  .button-secondary:hover {
+  .button-secondary:hover,
+  .button-filter:hover {
     border: none; }
   button:focus,
   .button-primary:focus,
-  .button-secondary:focus {
+  .button-secondary:focus,
+  .button-filter:focus {
     box-shadow: var(--shadow-focus);
     outline: none; }
   button:disabled,
   .button-primary:disabled,
-  .button-secondary:disabled {
+  .button-secondary:disabled,
+  .button-filter:disabled {
     cursor: not-allowed; }
   button.button-small,
   .button-primary.button-small,
-  .button-secondary.button-small {
+  .button-secondary.button-small,
+  .button-filter.button-small {
     font-size: 14px;
     padding: 4px 12px; }
 
@@ -8316,21 +8321,26 @@ button,
   .button-primary:focus {
     background-color: var(--orange-50); }
 
-.button-secondary {
+.button-secondary,
+.button-filter {
   background-color: white;
   color: var(--content-color-primary);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.24) inset; }
-  .button-secondary:hover {
+  .button-secondary:hover,
+  .button-filter:hover {
     background-color: white;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.64) inset;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.32) inset;
     color: var(--content-color-primary);
     border: none; }
-  .button-secondary:active {
+  .button-secondary:active,
+  .button-filter:active {
     background-color: white;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.48) inset; }
-  .button-secondary:focus-visible {
+  .button-secondary:focus-visible,
+  .button-filter:focus-visible {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.16) inset, var(--shadow-focus); }
-  .button-secondary:disabled {
+  .button-secondary:disabled,
+  .button-filter:disabled {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.16) inset;
     color: var(--grey-50); }
 
@@ -8378,6 +8388,42 @@ button,
     margin-right: 8px; }
   .button-with-icon:hover {
     background-color: #F2F2F2; }
+
+.button-filter {
+  border-radius: 999px;
+  position: relative; }
+  .button-filter + .button-filter {
+    margin-left: var(--spacing-xxs);
+    margin-bottom: var(--spacing-xs); }
+  .button-filter:hover {
+    background-color: var(--grey-10); }
+  .button-filter.is-selected {
+    background-color: var(--grey-10);
+    padding-left: 42px; }
+    .button-filter.is-selected .icon-filter-status--selected {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1); }
+    .button-filter.is-selected .icon-filter-status--deselect {
+      visibility: hidden;
+      opacity: 0; }
+    .button-filter.is-selected:hover .icon-filter-status--deselect {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1);
+      transition: .3s ease-in-out; }
+    .button-filter.is-selected:hover .icon-filter-status--selected {
+      visibility: hidden;
+      opacity: 0; }
+
+.icon-filter-status--selected,
+.icon-filter-status--deselect {
+  position: absolute;
+  left: var(--spacing-xs);
+  stroke: var(--grey-70);
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.84); }
 
 .c-card {
   background-color: white;
@@ -8630,7 +8676,8 @@ label {
 
 button,
 .button-primary,
-.button-secondary {
+.button-secondary,
+.button-filter {
   border: none;
   border-radius: var(--border-radius-default);
   display: inline-flex;
@@ -8643,20 +8690,24 @@ button,
   justify-content: center; }
   button:hover,
   .button-primary:hover,
-  .button-secondary:hover {
+  .button-secondary:hover,
+  .button-filter:hover {
     border: none; }
   button:focus,
   .button-primary:focus,
-  .button-secondary:focus {
+  .button-secondary:focus,
+  .button-filter:focus {
     box-shadow: var(--shadow-focus);
     outline: none; }
   button:disabled,
   .button-primary:disabled,
-  .button-secondary:disabled {
+  .button-secondary:disabled,
+  .button-filter:disabled {
     cursor: not-allowed; }
   button.button-small,
   .button-primary.button-small,
-  .button-secondary.button-small {
+  .button-secondary.button-small,
+  .button-filter.button-small {
     font-size: 14px;
     padding: 4px 12px; }
 
@@ -8674,21 +8725,26 @@ button,
   .button-primary:focus {
     background-color: var(--orange-50); }
 
-.button-secondary {
+.button-secondary,
+.button-filter {
   background-color: white;
   color: var(--content-color-primary);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.24) inset; }
-  .button-secondary:hover {
+  .button-secondary:hover,
+  .button-filter:hover {
     background-color: white;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.64) inset;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.32) inset;
     color: var(--content-color-primary);
     border: none; }
-  .button-secondary:active {
+  .button-secondary:active,
+  .button-filter:active {
     background-color: white;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.48) inset; }
-  .button-secondary:focus-visible {
+  .button-secondary:focus-visible,
+  .button-filter:focus-visible {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.16) inset, var(--shadow-focus); }
-  .button-secondary:disabled {
+  .button-secondary:disabled,
+  .button-filter:disabled {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.16) inset;
     color: var(--grey-50); }
 
@@ -8736,6 +8792,42 @@ button,
     margin-right: 8px; }
   .button-with-icon:hover {
     background-color: #F2F2F2; }
+
+.button-filter {
+  border-radius: 999px;
+  position: relative; }
+  .button-filter + .button-filter {
+    margin-left: var(--spacing-xxs);
+    margin-bottom: var(--spacing-xs); }
+  .button-filter:hover {
+    background-color: var(--grey-10); }
+  .button-filter.is-selected {
+    background-color: var(--grey-10);
+    padding-left: 42px; }
+    .button-filter.is-selected .icon-filter-status--selected {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1); }
+    .button-filter.is-selected .icon-filter-status--deselect {
+      visibility: hidden;
+      opacity: 0; }
+    .button-filter.is-selected:hover .icon-filter-status--deselect {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1);
+      transition: .3s ease-in-out; }
+    .button-filter.is-selected:hover .icon-filter-status--selected {
+      visibility: hidden;
+      opacity: 0; }
+
+.icon-filter-status--selected,
+.icon-filter-status--deselect {
+  position: absolute;
+  left: var(--spacing-xs);
+  stroke: var(--grey-70);
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.84); }
 
 label {
   color: #3B3B3B;

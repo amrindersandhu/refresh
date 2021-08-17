@@ -1,4 +1,9 @@
-.container-fluid.fixed-top.c-header
+include includes/header.pug
+
+
+
+
+.container-fluid.fixed-top.c-header.c-header--dark
     .row.justify-content-between.align-items-center
         .col
             nav.d-flex.align-items-center
@@ -157,3 +162,109 @@
             button.button-secondary.button-small.spacing-right--xxs Sign In
 
             button.button-primary.button-small Create Account 
+
+
+
+
+.c-hero.c-hero--downloads.c-hero--dark.spacing-below--xxl
+    .container
+        .row.spacing-below--xs 
+            .col-xl-10.offset-md-1.text-center
+                h1 Download Postman
+
+                p.intro Download the app to quickly get started using the Postman API Platform. 
+                    br
+                    | Or, if you prefer a browser experience, you can try the new web version of Postman.
+
+
+        .row.align-items-center
+            .col-xl-5.pl-0
+                .c-on_dark 
+                    h2.heading-03 Postman desktop app
+
+                    p The ever-improving Postman app (a new release every two weeks) gives you a full-featured Postman experience.
+
+                    button.button-primary.w-100.spacing-below--xs 
+                            <svg class="button-icon--left"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>apple</title><g fill="#F7F7F7"><path fill="#F7F7F7" d="M14.326,12.08c-0.346,0.766-0.511,1.108-0.957,1.785c-0.621,0.945-1.496,2.123-2.581,2.133 c-0.964,0.009-1.212-0.627-2.52-0.62S6.686,16.009,5.722,16c-1.085-0.01-1.914-1.073-2.536-2.019 C1.45,11.337,1.268,8.235,2.339,6.586c0.761-1.173,1.962-1.858,3.092-1.858c1.15,0,1.872,0.63,2.823,0.63 c0.922,0,1.484-0.631,2.814-0.631c1.005,0,2.07,0.547,2.828,1.492C11.411,7.582,11.815,11.131,14.326,12.08L14.326,12.08z"></path> <path d="M10.604,2.699c0.546-0.7,0.96-1.689,0.809-2.699C10.522,0.061,9.48,0.628,8.871,1.367 C8.319,2.038,7.863,3.033,8.04,4C9.013,4.03,10.019,3.449,10.604,2.699L10.604,2.699z"></path></g></svg> 
+
+                            | Download the App
+                    
+                    p.footnote By downloading and using Postman, I agree to the  Privacy Policy and Terms.
+
+                    p.footnote Version 8.10.0 
+                        span.c-sep &middot; 
+
+                        a(href="#") Release Notes
+                        
+                        span.c-sep &middot; 
+
+                        a(href="#") Product Roadmap
+
+                    p.footnote Not your OS? Download for Windows (
+                        a(href="#") x32
+                        | /
+                        a(href="#") x64
+                        | ) or 
+                        a(href="#") Linux (x64)
+
+                    hr.m-5
+
+                    h2.heading-03 Postman on the web
+
+                    p You can now access Postman through your web browser. Simply create a free Postman account, and you’re in.
+
+                    a.button-secondary.w-100(href="#") Try the web version
+
+
+            .col-xl-7
+                figure.app-screenshot.m-0
+
+
+
+
+
+.container.spacing-below--xxl
+    .row.align-items-center
+        .col-xl-5
+            img.w-100(src="../i/postman-tools.jpg")        
+
+
+        .col-xl-6.offset-md-1
+            h2 Postman Desktop Agent
+
+            p.intro If you are using the Postman web client, you will need to also download the Postman desktop agent. The Postman agent overcomes the Cross Object Resource Sharing (CORS) limitations of browsers, and facilitates API request sending from your browser version of Postman.
+
+            p Download Desktop Agent: 
+
+            p
+                a.button-secondary.spacing-right--xxs(href="#") macOS 
+                a.button-secondary.spacing-right--xxs(href="#") Linux 
+                a.button-secondary.spacing-right--xxs(href="#") Windows 64-bit 
+                a.button-secondary.spacing-right--xxs(href="#") Windows 32-bit
+
+            p 
+                a(href="#") Read the blog post &rarr;
+
+
+
+.container.spacing-below--xxl
+    .row.align-items-center
+        .col-xl-4
+            img.w-100.mb-4(src="https://www.postman.com/assets/logos/canary-treated-logo.svg")  
+
+        .col-xl-6.offset-md-2
+            h2 Postman Canary
+
+            p.intro Be the first to experience new Postman features
+
+            p If you want to be first in line to experience new features, download our latest Canary builds available for OSX (x64) / Windows (x86 or x64) / Linux (x86 or x64) for a sneak peek. Our Canary builds are designed for early adopters, and may sometimes break.
+
+            p
+                a.button-secondary.spacing-right--xxs(href="#") Download Postman Canary       
+
+
+
+hr.spacing-top--xxl.spacing-below--xxl
+
+
+include includes/footer.pug

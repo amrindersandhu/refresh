@@ -114,20 +114,17 @@ button,
 
 .button-secondary,
 .button-filter {
-  background-color: white;
   color: var(--content-color-primary);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, .24) inset;
 
 
   &:hover {
-    background-color: white;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .32) inset;
     color: var(--content-color-primary);
     border: none;
   }
 
   &:active {
-    background-color: white;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .48) inset;
   }
 
@@ -138,6 +135,11 @@ button,
   &:disabled {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .16) inset;
     color: var(--grey-50);
+  }
+
+  .c-on_dark & {
+      box-shadow: 0 0 0 1px rgba(white, .32) inset;
+      color: var(--grey-20);
   }
 }
 

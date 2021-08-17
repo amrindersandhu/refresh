@@ -13,6 +13,10 @@ h1, h2, h3,
     font-family: var(--text-family-display);
     font-weight: 600;
     font-feature-settings: 'kern' 1, 'ss01' 1, 'salt' 1;
+
+    .c-on_dark & {
+        color: var(--grey-10);
+    }
 }
 
 
@@ -105,6 +109,10 @@ p {
     letter-spacing: -0.16px;
     line-height: 26px;
     margin-bottom: 24px;
+
+    .c-on_dark & {
+        color: var(--grey-30);
+    }
 }
 
 li {
@@ -219,6 +227,10 @@ a {
         border-bottom: 1px solid;
         text-decoration: none;
     }
+
+    .c-on_dark & {
+        color: var(--blue-30);
+    }
 }
 
     .link--subtle:hover {
@@ -230,7 +242,14 @@ small,
 .small {
     color: var(--grey-70);
     font-size: 14px;
-    line-height: 20px;
+    line-height: 22px;
+}
+
+.footnote {
+    color: var(--grey-70);
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: var(--spacing-xs);
 }
 
 figure img {

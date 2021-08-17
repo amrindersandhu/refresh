@@ -120,9 +120,13 @@
 // Separator
 
 hr {
-    border: 1px solid $border-color-base;
+    border: 1px solid var(--grey-20);
     border-width: 1px 0 0;
     margin: 48px 0;
+
+    .c-on_dark & {
+        border-color: var(--grey-80);
+    }
 }
 
 .visually-hidden:not(:focus):not(:active) {

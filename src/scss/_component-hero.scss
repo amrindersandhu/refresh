@@ -15,6 +15,18 @@
   }
 }
 
+
+.c-hero--dark {
+  background-color: var(--grey-90);
+
+  h1, 
+  .intro {
+    color: var(--grey-00);
+  }
+
+}
+
+
 .h-25 {
   height: 25vh !important;
   min-height: 360px;
@@ -31,4 +43,16 @@
 .c-section {
   background-color: var(--grey-10);
   padding: 128px 0;
+}
+
+
+
+.c-hero--downloads {
+
+  .app-screenshot {
+    background: url("../i/screenshots/postman-app.png") no-repeat;
+    background-size: 100% 100%;
+    height: 756px;
+    width: 1280px;
+  }
 }

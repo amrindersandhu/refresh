@@ -8,6 +8,34 @@
     padding: 8px 16px;
 }
 
+.c-header--dark {
+    background-color: rgba(black, .16);
+
+    nav > ul > li > a {
+        color: var(--grey-20);
+
+        svg path {
+            fill: var(--grey-40);
+        }
+    }
+
+    .nav-search__wrap input[type="text"] {
+        background-color: transparent;
+        border-color: transparent;
+        box-shadow: 0 0 0 1px rgba(white, .32) inset;
+    }
+
+    .nav-search__icon path {
+        fill: var(--grey-50);
+    }
+
+    .button-secondary {
+        box-shadow: 0 0 0 1px rgba(white, .32) inset;
+        color: var(--grey-20);
+    }
+}
+
+
 .logo {
     align-items: center;
     display: flex;

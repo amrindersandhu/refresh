@@ -4,12 +4,12 @@
 
 .c-header {
     background-color: rgba(white, .84);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(16px);
     padding: 8px 16px;
 }
 
 .c-header--dark {
-    background-color: rgba(black, .16);
+    background-color: rgba(black, .24);
 
     nav > ul > li > a {
         color: var(--grey-20);

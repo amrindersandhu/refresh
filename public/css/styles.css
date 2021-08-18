@@ -7911,11 +7911,11 @@ blockquote {
 
 .c-header {
   background-color: rgba(255, 255, 255, 0.84);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(16px);
   padding: 8px 16px; }
 
 .c-header--dark {
-  background-color: rgba(0, 0, 0, 0.16); }
+  background-color: rgba(0, 0, 0, 0.24); }
   .c-header--dark nav > ul > li > a {
     color: var(--grey-20); }
     .c-header--dark nav > ul > li > a svg path {

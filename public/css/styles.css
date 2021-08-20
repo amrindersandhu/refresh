@@ -8747,7 +8747,7 @@ label {
     border-color: var(--grey-30); }
 
 .c-hero {
-  min-height: 480px;
+  min-height: 72vh;
   padding: var(--spacing-xxl) 0; }
   .c-hero .container {
     height: 100%; }

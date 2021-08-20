@@ -7675,6 +7675,11 @@ main {
       .c-doc .anchor.before:hover svg {
         color: var(--blue-60); }
 
+.has-frame {
+  border-radius: 8px;
+  border: 8px solid var(--grey-20);
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.32); }
+
 @font-face {
   font-family: 'Degular-Display-Semibold';
   src: url("../fonts/Degular_Display-Semibold.woff") format("woff"), url("../fonts/Degular_Display-Semibold.woff2") format("woff2"); }

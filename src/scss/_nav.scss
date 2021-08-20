@@ -39,17 +39,27 @@
 .logo {
     align-items: center;
     display: flex;
-    width: 32px;
     margin-bottom: 0;
 
     img {
         width: 32px;
     }
 
+    // Learning center title
+    span {
+        color: var(--grey-70);
+        font-size: 13px;
+        margin-left: var(--spacing-xxs);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
     &:hover {
         border: none;
     }
 }
+
+
 
 
 nav {
@@ -160,20 +170,14 @@ nav {
 
 
 .nav-search__wrap {
-    position: absolute;
-    max-width: 360px;
-    top: 10px;
-    left: 50%;
-    margin-left: -180px;
 
     input[type="text"] {
         background-color: var(--grey-10);
         border-color: var(--grey-20);
-        font-size: 14px;
-        padding: 4px 12px;
+        font-size: 13px;
+        padding: 4px 24px 4px 28px;
         height: 32px;
         margin: 0;
-        text-align: center;
 
         &::placeholder {
             color: var(--grey-50);
@@ -184,13 +188,33 @@ nav {
 
     .nav-search__icon {
         position: absolute;
-        left: 50%;
+        margin-left: 8px;
         top: 8px;
-        margin-left: -80px;
-        //stroke: var(--grey-70);
+        //margin-left: -80px;
+
+        path {
+            fill: var(--grey-50);
+        }
     }
 
 
+
+.nav-search--centered {
+    max-width: 360px;
+
+    input[type="text"] {
+        text-align: center;
+
+        &::placeholder {
+            color: var(--grey-50);
+        }
+    }
+
+    .nav-search__icon {
+        left: 50%;
+        margin-left: -72px;
+    }
+}
 
 
 

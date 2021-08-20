@@ -126,7 +126,8 @@ strong,
     font-weight: 600;
 }
 
-
+.c-doc ul,
+.c-doc ol,
 .list-unordered,
 .list-ordered {
     margin-left: 32px;
@@ -136,9 +137,14 @@ strong,
         margin-bottom: 8px;
         position: relative;
 
+        p {
+            margin-bottom: var(--spacing-xxs);
+        }
+
         &:before,
         &:after {   
             display: inline-block;
+            float: left;
             text-align: right;
         }
 
@@ -156,12 +162,14 @@ strong,
 }
 
 
+.c-doc ul li:before, 
 .list-unordered li:before {
     color: var(--orange-30); //var(--grey-50);
     content: "✦";
 }
 
 
+.c-doc ol li:before, 
 .list-ordered li {
     counter-increment: li;
 

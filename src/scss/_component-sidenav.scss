@@ -1,0 +1,54 @@
+//////////////////
+// #SIDENAV /////////
+//////////////////
+
+
+.c-sidenav {
+    background-color: var(--grey-10);
+    height: 100%;
+    padding: var(--spacing-s) var(--spacing-s) var(--spacing-m);
+
+    button {
+        font-size: 14px;
+        width: 100%;
+        justify-content: left;
+        text-align: left;
+
+        svg {
+            transform: rotate(90deg);
+        }
+    }
+
+    a {
+        font-weight: 400;
+    }
+
+    ul ul {
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .is-parent::before {
+        content: ">";
+        display: inline;
+        width: 16px;
+        height: 16px;
+    }
+
+    .is-collapsed {
+        button svg {
+            transform: rotate(0);
+        }
+
+        ul {
+            display: none;
+        }
+    }
+}
+
+
+.icon-parent-indicator {
+    stroke: var(--grey-70);
+    position: absolute;
+    left: -8px;
+    top: 12px;
+}

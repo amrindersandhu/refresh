@@ -40,3 +40,48 @@ main {
 
 //make parent (div, p, span, etc.) display flex, block, inline 
 //put some text on top and bottom 3 lines
+
+
+.pg-lc_details {
+
+  .c-header {
+    border-bottom: 1px solid var(--grey-20);
+  }
+  padding-top: 52px;
+}
+
+
+.c-doc {
+  padding-bottom: var(--spacing-xxl);
+
+  h2, h3 {
+    &:hover .anchor.before {
+      opacity: 1;
+    }
+  }
+
+  img {
+    border-radius: 8px;
+    border: 8px solid var(--grey-20);
+    box-shadow: 8px 8px 0 rgba(black, .32);
+    margin-bottom: var(--spacing-m);
+    width: 100%;
+  }
+
+  .anchor.before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-160%);
+    opacity: 0;
+    transition: .2s ease-in-out;
+
+    &:hover {
+      border: none;
+
+      svg {
+        color: var(--blue-60);
+      }
+    }
+  }
+}

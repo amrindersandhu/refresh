@@ -72,6 +72,10 @@ button,
   }
 
   &:focus {
+    outline: none
+  }
+
+  &:focus-visible {
     box-shadow: var(--shadow-focus);  
     outline: none
   }

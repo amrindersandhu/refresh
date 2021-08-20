@@ -7648,6 +7648,33 @@ main {
 .logo {
   margin-bottom: 16px; }
 
+.pg-lc_details {
+  padding-top: 52px; }
+  .pg-lc_details .c-header {
+    border-bottom: 1px solid var(--grey-20); }
+
+.c-doc {
+  padding-bottom: var(--spacing-xxl); }
+  .c-doc h2:hover .anchor.before, .c-doc h3:hover .anchor.before {
+    opacity: 1; }
+  .c-doc img {
+    border-radius: 8px;
+    border: 8px solid var(--grey-20);
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.32);
+    margin-bottom: var(--spacing-m);
+    width: 100%; }
+  .c-doc .anchor.before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-160%);
+    opacity: 0;
+    transition: .2s ease-in-out; }
+    .c-doc .anchor.before:hover {
+      border: none; }
+      .c-doc .anchor.before:hover svg {
+        color: var(--blue-60); }
+
 @font-face {
   font-family: 'Degular-Display-Semibold';
   src: url("../fonts/Degular_Display-Semibold.woff") format("woff"), url("../fonts/Degular_Display-Semibold.woff2") format("woff2"); }
@@ -7748,39 +7775,61 @@ strong,
 .bold {
   font-weight: 600; }
 
+.c-doc ul,
+.c-doc ol,
 .list-unordered,
 .list-ordered {
   margin-left: 32px;
   margin-bottom: 24px; }
+  .c-doc ul li,
+  .c-doc ol li,
   .list-unordered li,
   .list-ordered li {
     margin-bottom: 8px;
     position: relative; }
-    .list-unordered li:before, .list-unordered li:after,
+    .c-doc ul li p,
+    .c-doc ol li p,
+    .list-unordered li p,
+    .list-ordered li p {
+      margin-bottom: var(--spacing-xxs); }
+    .c-doc ul li:before, .c-doc ul li:after,
+    .c-doc ol li:before,
+    .c-doc ol li:after,
+    .list-unordered li:before,
+    .list-unordered li:after,
     .list-ordered li:before,
     .list-ordered li:after {
       display: inline-block;
+      float: left;
       text-align: right; }
+    .c-doc ul li:before,
+    .c-doc ol li:before,
     .list-unordered li:before,
     .list-ordered li:before {
       direction: rtl;
       margin-left: -28px;
       padding-right: 16px;
       width: 28px; }
+    .c-doc ul li:last-child,
+    .c-doc ol li:last-child,
     .list-unordered li:last-child,
     .list-ordered li:last-child {
       margin-bottom: 0; }
 
+.c-doc ul li:before,
 .list-unordered li:before {
   color: var(--orange-30);
   content: "✦"; }
 
+.c-doc ol li:before,
 .list-ordered li {
   counter-increment: li; }
+  .c-doc ol li:before:before,
   .list-ordered li:before {
     color: var(--grey-70);
     content: counter(li);
     text-align: right; }
+  .c-doc ol li:before:after,
   .list-ordered li:after {
     color: var(--grey-70);
     content: ".";
@@ -7954,8 +8003,6 @@ nav ul {
       opacity: 1;
       visibility: visible;
       transform: translateY(0px); }
-    nav ul li:hover svg {
-      transform: rotate(180deg); }
   nav ul a {
     align-items: center;
     color: var(--grey-70);
@@ -8005,6 +8052,9 @@ nav .c-menu {
     white-space: nowrap; }
     nav .c-menu a:hover {
       background-color: var(--grey-10); }
+
+.c-header nav ul li:hover svg {
+  transform: rotate(180deg); }
 
 .c-menu__group {
   padding-bottom: var(--spacing-xs); }
@@ -8333,6 +8383,11 @@ button,
   .button-primary:focus,
   .button-secondary:focus,
   .button-filter:focus {
+    outline: none; }
+  button:focus-visible,
+  .button-primary:focus-visible,
+  .button-secondary:focus-visible,
+  .button-filter:focus-visible {
     box-shadow: var(--shadow-focus);
     outline: none; }
   button:disabled,
@@ -8750,6 +8805,11 @@ button,
   .button-primary:focus,
   .button-secondary:focus,
   .button-filter:focus {
+    outline: none; }
+  button:focus-visible,
+  .button-primary:focus-visible,
+  .button-secondary:focus-visible,
+  .button-filter:focus-visible {
     box-shadow: var(--shadow-focus);
     outline: none; }
   button:disabled,
@@ -9474,6 +9534,37 @@ label {
     cursor: not-allowed; }
   .input-radio:disabled + label:before {
     border-color: var(--grey-30); }
+
+.c-sidenav {
+  background-color: var(--grey-10);
+  height: 100%;
+  padding: var(--spacing-s) var(--spacing-s) var(--spacing-m); }
+  .c-sidenav button {
+    font-size: 14px;
+    width: 100%;
+    justify-content: left;
+    text-align: left; }
+    .c-sidenav button svg {
+      transform: rotate(90deg); }
+  .c-sidenav a {
+    font-weight: 400; }
+  .c-sidenav ul ul {
+    margin-bottom: var(--spacing-xs); }
+  .c-sidenav .is-parent::before {
+    content: ">";
+    display: inline;
+    width: 16px;
+    height: 16px; }
+  .c-sidenav .is-collapsed button svg {
+    transform: rotate(0); }
+  .c-sidenav .is-collapsed ul {
+    display: none; }
+
+.icon-parent-indicator {
+  stroke: var(--grey-70);
+  position: absolute;
+  left: -8px;
+  top: 12px; }
 
 .tabs-default {
   display: flex;

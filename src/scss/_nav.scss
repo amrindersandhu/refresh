@@ -79,10 +79,6 @@ nav {
                     transform: translateY(0px);
                 }
 
-                svg {
-                    transform: rotate(180deg);
-                }
-
             }
         }
 
@@ -156,6 +152,13 @@ nav {
                 background-color: var(--grey-10);
             }
         }
+    }
+}
+
+
+.c-header {
+    nav ul li:hover svg {
+        transform: rotate(180deg);
     }
 }
 

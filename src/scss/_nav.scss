@@ -178,6 +178,7 @@ nav {
         padding: 4px 24px 4px 28px;
         height: 32px;
         margin: 0;
+        width: 320px;
 
         &::placeholder {
             color: var(--grey-50);
@@ -189,7 +190,7 @@ nav {
     .nav-search__icon {
         position: absolute;
         margin-left: 8px;
-        top: 8px;
+        top: 10px;
         //margin-left: -80px;
 
         path {

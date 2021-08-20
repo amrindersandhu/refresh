@@ -8749,8 +8749,7 @@ label {
 .c-hero {
   align-items: center;
   display: flex;
-  min-height: 72vh;
-  padding: var(--spacing-xl) 0; }
+  padding: var(--spacing-xxl) 0; }
   .c-hero .container {
     height: 100%; }
 

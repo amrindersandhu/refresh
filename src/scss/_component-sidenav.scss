@@ -52,3 +52,14 @@
     left: -8px;
     top: 12px;
 }
+
+
+.c-context_nav {
+    height: 100%;
+
+    figure {
+        margin-top: var(--spacing-xl);
+        position: sticky;
+        top: 160px;
+    }
+}

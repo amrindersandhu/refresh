@@ -9572,6 +9572,13 @@ label {
   left: -8px;
   top: 12px; }
 
+.c-context_nav {
+  height: 100%; }
+  .c-context_nav figure {
+    margin-top: var(--spacing-xl);
+    position: sticky;
+    top: 160px; }
+
 .tabs-default {
   display: flex;
   font-size: 14px;

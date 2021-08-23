@@ -193,7 +193,7 @@ nav {
     .nav-search__icon {
         position: absolute;
         margin-left: 8px;
-        top: 8px;
+        top: 10px;
         //margin-left: -80px;
 
         path {
@@ -215,6 +215,7 @@ nav {
     }
 
     .nav-search__icon {
+        top: 8px;
         left: 50%;
         margin-left: -74px;
     }

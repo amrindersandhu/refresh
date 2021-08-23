@@ -8081,7 +8081,7 @@ nav .c-menu {
 .nav-search__icon {
   position: absolute;
   margin-left: 8px;
-  top: 8px; }
+  top: 10px; }
   .nav-search__icon path {
     fill: var(--grey-50); }
 
@@ -8092,6 +8092,7 @@ nav .c-menu {
     .nav-search--centered input[type="text"]::placeholder {
       color: var(--grey-50); }
   .nav-search--centered .nav-search__icon {
+    top: 8px;
     left: 50%;
     margin-left: -74px; }
 
@@ -8757,6 +8758,10 @@ label {
   padding: var(--spacing-xxl) 0; }
   .c-hero .container {
     height: 100%; }
+  .c-hero.has-bg {
+    background-color: #FFFDF6; }
+  .c-hero.has-bg--alt {
+    background-color: #FFFBF6; }
 
 .c-hero--dark {
   background-color: var(--grey-90); }

@@ -8081,7 +8081,7 @@ nav .c-menu {
 .nav-search__icon {
   position: absolute;
   margin-left: 8px;
-  top: 10px; }
+  top: 8px; }
   .nav-search__icon path {
     fill: var(--grey-50); }
 
@@ -8093,7 +8093,7 @@ nav .c-menu {
       color: var(--grey-50); }
   .nav-search--centered .nav-search__icon {
     left: 50%;
-    margin-left: -72px; }
+    margin-left: -74px; }
 
 .side-nav {
   margin-left: -12px;

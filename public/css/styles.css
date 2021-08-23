@@ -8974,7 +8974,7 @@ label {
 
 .input-file-wrap {
   align-items: center;
-  background-color: #F9F9F9;
+  background-color: #F2F2F2;
   border-radius: 4px;
   display: flex;
   padding-left: 12px;
@@ -8983,7 +8983,7 @@ label {
     align-self: flex-end;
     background-color: transparent; }
     .input-file-wrap .button-default:hover {
-      background-color: #F9F9F9; }
+      background-color: #F2F2F2; }
   .input-file-wrap .button-icon-cancel {
     color: #707070;
     transform: translateY(-1px); }
@@ -9578,6 +9578,48 @@ label {
     margin-top: var(--spacing-xl);
     position: sticky;
     top: 160px; }
+
+.c-scroller {
+  background-color: rgba(255, 255, 255, 0.48);
+  backdrop-filter: blur(8px);
+  border-radius: 999px;
+  padding: 8px;
+  margin: 0 16px;
+  transition: .2s ease-in-out;
+  z-index: 2; }
+  .c-scroller:hover {
+    background-color: var(--grey-20); }
+    .c-scroller:hover svg {
+      stroke: var(--grey-90); }
+  .c-scroller svg {
+    stroke: var(--grey-70); }
+
+.c-scroller--prev svg {
+  transform: translateX(-1px); }
+
+.c-scroller--next svg {
+  transform: translateX(1px); }
+
+.c-scroller__wrap {
+  display: flex;
+  align-items: center; }
+
+.c-scroller__counter {
+  color: var(--grey-50);
+  font-size: 20px;
+  white-space: nowrap;
+  margin: 0; }
+
+.c-scroller__wrap--full_width {
+  height: 320px;
+  position: relative;
+  overflow: hidden; }
+  .c-scroller__wrap--full_width .c-scroller {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+  .c-scroller__wrap--full_width .c-scroller--next {
+    right: 16px; }
 
 .tabs-default {
   display: flex;

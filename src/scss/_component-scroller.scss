@@ -1,0 +1,69 @@
+//////////////////
+// #SCROLLER /////////
+//////////////////
+
+.c-scroller {
+    background-color: rgba(white, .48);
+    backdrop-filter: blur(8px);
+    border-radius: 999px;
+    padding: 8px;
+    margin: 0 16px;
+    transition: .2s ease-in-out;
+    z-index: 2;
+  
+    &:hover {
+      background-color: var(--grey-20);
+  
+      svg {
+        stroke: var(--grey-90);
+      }
+    }
+  
+    svg {
+      stroke: var(--grey-70);
+    }
+  }
+  
+  
+    .c-scroller--prev {
+      svg {
+        transform: translateX(-1px);
+      }
+    }
+  
+    .c-scroller--next {
+      svg {
+        transform: translateX(1px);
+      }
+    }
+  
+  
+  
+    .c-scroller__wrap {
+      display: flex;
+      align-items: center;
+    }
+  
+    .c-scroller__counter {
+      color: var(--grey-50);
+      font-size: 20px;
+      white-space: nowrap;
+      margin: 0;
+    }
+  
+  
+    .c-scroller__wrap--full_width {
+      height: 320px;
+      position: relative;
+      overflow: hidden;
+  
+      .c-scroller {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+  
+      .c-scroller--next {
+        right: 16px;
+      }
+    }

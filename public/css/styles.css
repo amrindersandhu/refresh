@@ -9378,6 +9378,22 @@ p:hover .link--subtle {
 .c-modal__body {
   padding: 0 var(--spacing-m) var(--spacing-s); }
 
+.c-pagination {
+  display: flex;
+  justify-content: center;
+  margin: 48px; }
+
+.c-pagination__item {
+  border-radius: 4px;
+  color: var(--grey-70);
+  padding: 8px 16px; }
+  .c-pagination__item.is-selected {
+    color: var(--grey-90); }
+
+a.c-pagination__item:hover {
+  background-color: var(--grey-10);
+  border: none; }
+
 label {
   color: var(--grey-70);
   font-size: 14px;

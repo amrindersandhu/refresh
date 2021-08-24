@@ -800,8 +800,8 @@ pre {
 .container-lg,
 .container-xl {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 12px;
+  padding-left: 12px;
   margin-right: auto;
   margin-left: auto; }
 
@@ -819,13 +819,13 @@ pre {
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px; } }
+    max-width: 1224px; } }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+  margin-right: -12px;
+  margin-left: -12px; }
 
 .no-gutters {
   margin-right: 0;
@@ -843,8 +843,8 @@ pre {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px; }
+  padding-right: 12px;
+  padding-left: 12px; }
 
 .col {
   flex-basis: 0;
@@ -3744,22 +3744,22 @@ input[type="button"].btn-block {
   border-bottom-left-radius: calc(0.25rem - 1px); }
 
 .card-deck .card {
-  margin-bottom: 15px; }
+  margin-bottom: 12px; }
 
 @media (min-width: 576px) {
   .card-deck {
     display: flex;
     flex-flow: row wrap;
-    margin-right: -15px;
-    margin-left: -15px; }
+    margin-right: -12px;
+    margin-left: -12px; }
     .card-deck .card {
       flex: 1 0 0%;
-      margin-right: 15px;
+      margin-right: 12px;
       margin-bottom: 0;
-      margin-left: 15px; } }
+      margin-left: 12px; } }
 
 .card-group > .card {
-  margin-bottom: 15px; }
+  margin-bottom: 12px; }
 
 @media (min-width: 576px) {
   .card-group {
@@ -7966,8 +7966,7 @@ blockquote {
     margin-top: 24px; }
 
 .c-header {
-  background-color: rgba(255, 255, 255, 0.84);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(32px);
   padding: 8px 16px; }
 
 .c-header--dark {
@@ -8071,8 +8070,8 @@ nav .c-menu {
     padding-right: var(--spacing-xs); }
 
 .nav-search__wrap input[type="text"] {
-  background-color: var(--grey-10);
-  border-color: var(--grey-20);
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.24);
   font-size: 13px;
   padding: 4px 24px 4px 28px;
   height: 32px;
@@ -8084,7 +8083,7 @@ nav .c-menu {
 .nav-search__icon {
   position: absolute;
   margin-left: 8px;
-  top: 10px; }
+  top: 12px; }
   .nav-search__icon path {
     fill: var(--grey-50); }
 
@@ -8410,7 +8409,7 @@ button,
   .button-filter.button-small {
     font-size: 14px;
     padding: 4px 12px;
-    height: 32pxs; }
+    height: 32px; }
 
 .button-primary {
   background-color: var(--orange-50);
@@ -8788,8 +8787,11 @@ label {
   height: 80vh; }
 
 .c-section {
-  background-color: var(--yellow-05);
   padding: 128px 0; }
+  .c-section.has-bg {
+    background-color: #FFFDF6; }
+  .c-section.has-bg--alt {
+    background-color: #FFFBF6; }
 
 .c-hero--downloads .app-screenshot {
   background: url("../i/screenshots/postman-app.png") no-repeat;
@@ -8841,7 +8843,7 @@ button,
   .button-filter.button-small {
     font-size: 14px;
     padding: 4px 12px;
-    height: 32pxs; }
+    height: 32px; }
 
 .button-primary {
   background-color: var(--orange-50);
@@ -10158,3 +10160,12 @@ hr {
 .img-style-1 {
   border-radius: 16px;
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.16); }
+
+.border {
+  border: 1px solid var(--grey-20) !important; }
+
+div[class*="border"] {
+  border-color: var(--grey-20) !important; }
+
+.rounded {
+  border-radius: 4px !important; }

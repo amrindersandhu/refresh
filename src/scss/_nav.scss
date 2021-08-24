@@ -3,8 +3,8 @@
 //////////////////
 
 .c-header {
-    background-color: rgba(white, .84);
-    backdrop-filter: blur(16px);
+    //background-color: rgba(white, .84);
+    backdrop-filter: blur(32px);
     padding: 8px 16px;
 }
 
@@ -176,8 +176,8 @@ nav {
 .nav-search__wrap {
 
     input[type="text"] {
-        background-color: var(--grey-10);
-        border-color: var(--grey-20);
+        background-color: transparent;
+        border-color: rgba(black, .24);
         font-size: 13px;
         padding: 4px 24px 4px 28px;
         height: 32px;
@@ -194,8 +194,7 @@ nav {
     .nav-search__icon {
         position: absolute;
         margin-left: 8px;
-        top: 10px;
-        //margin-left: -80px;
+        top: 12px;
 
         path {
             fill: var(--grey-50);

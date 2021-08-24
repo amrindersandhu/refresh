@@ -10142,5 +10142,4 @@ hr {
 
 .img-style-1 {
   border-radius: 16px;
-  border: 8px solid var(--grey-20);
-  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.48); }
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.16); }

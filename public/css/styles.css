@@ -7971,7 +7971,8 @@ blockquote {
   padding: 8px 16px; }
 
 .c-header--dark {
-  background-color: rgba(0, 0, 0, 0.24); }
+  background-color: transparent;
+  backdrop-filter: blur(0); }
   .c-header--dark nav > ul > li > a {
     color: var(--grey-20); }
     .c-header--dark nav > ul > li > a svg path {
@@ -10008,7 +10009,7 @@ select {
 .c-popover {
   background-color: var(--grey-00);
   border-radius: var(--border-radius-default);
-  box-shadow: 0 0 1px var(--grey-90), 0 16px 24px -8px var(--grey-30);
+  box-shadow: 0 0 1px var(--grey-90), 0 16px 24px -8px rgba(0, 0, 0, 0.24);
   padding-bottom: var(--spacing-xxxs);
   padding-top: var(--spacing-xxxs);
   min-width: 180px; }
@@ -10110,6 +10111,12 @@ select {
 
 .pad-below--l {
   padding-bottom: var(--spacing-l); }
+
+.pad-in--m {
+  padding: var(--spacing-m); }
+
+.pad-in--l {
+  padding: var(--spacing-l); }
 
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);

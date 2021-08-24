@@ -10,7 +10,7 @@
 .c-popover {
   background-color: var(--grey-00);
   border-radius: var(--border-radius-default);
-  box-shadow: 0 0 1px var(--grey-90), 0 16px 24px -8px var(--grey-30);
+  box-shadow: 0 0 1px var(--grey-90), 0 16px 24px -8px rgba(black, .24);
   padding-bottom: var(--spacing-xxxs);
   padding-top: var(--spacing-xxxs);
   min-width: 180px;

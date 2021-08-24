@@ -90,6 +90,16 @@
 }
 
 
+.pad-in--m {
+    padding: var(--spacing-m);
+}
+
+
+.pad-in--l {
+    padding: var(--spacing-l);
+}
+
+
 
 .sr-only:not(:focus):not(:active) {
     clip: rect(0 0 0 0); 

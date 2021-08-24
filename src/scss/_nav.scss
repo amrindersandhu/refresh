@@ -9,7 +9,8 @@
 }
 
 .c-header--dark {
-    background-color: rgba(black, .24);
+    background-color:transparent;
+    backdrop-filter: blur(0);
 
     nav > ul > li > a {
         color: var(--grey-20);

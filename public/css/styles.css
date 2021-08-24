@@ -8379,7 +8379,7 @@ button,
   line-height: 24px;
   padding: 8px 16px;
   align-items: center;
-  transition: background-color 50ms ease-in-out, border-color 50ms ease-in-out, box-shadow 50ms ease-in-out, outline 50ms ease-in-out;
+  transition: .2s ease-in-out;
   text-align: center;
   justify-content: center; }
   button:hover,
@@ -8428,10 +8428,10 @@ button,
 .button-secondary,
 .button-filter {
   color: var(--content-color-primary);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.24) inset; }
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.32) inset; }
   .button-secondary:hover,
   .button-filter:hover {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.32) inset;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.64) inset;
     color: var(--content-color-primary);
     border: none; }
   .button-secondary:active,
@@ -8454,6 +8454,9 @@ button,
 
 .button-icon--right {
   margin-left: 8px; }
+
+.button-secondary {
+  font-weight: 600; }
 
 .button-destructive {
   background-color: var(--red-50);
@@ -8807,7 +8810,7 @@ button,
   line-height: 24px;
   padding: 8px 16px;
   align-items: center;
-  transition: background-color 50ms ease-in-out, border-color 50ms ease-in-out, box-shadow 50ms ease-in-out, outline 50ms ease-in-out;
+  transition: .2s ease-in-out;
   text-align: center;
   justify-content: center; }
   button:hover,
@@ -8856,10 +8859,10 @@ button,
 .button-secondary,
 .button-filter {
   color: var(--content-color-primary);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.24) inset; }
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.32) inset; }
   .button-secondary:hover,
   .button-filter:hover {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.32) inset;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.64) inset;
     color: var(--content-color-primary);
     border: none; }
   .button-secondary:active,
@@ -8882,6 +8885,9 @@ button,
 
 .button-icon--right {
   margin-left: 8px; }
+
+.button-secondary {
+  font-weight: 600; }
 
 .button-destructive {
   background-color: var(--red-50);

@@ -63,7 +63,7 @@ button,
   line-height: 24px;
   padding: 8px 16px;
   align-items: center;
-  transition: $button-transition;
+  transition: .2s ease-in-out;
   text-align: center;
   justify-content: center;
 
@@ -120,11 +120,11 @@ button,
 .button-secondary,
 .button-filter {
   color: var(--content-color-primary);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, .24) inset;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .32) inset;
 
 
   &:hover {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .32) inset;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .64) inset;
     color: var(--content-color-primary);
     border: none;
   }
@@ -154,6 +154,12 @@ button,
 
 .button-icon--right {
   margin-left: 8px;
+}
+
+
+.button-secondary {
+  //color: var(--blue-60);
+  font-weight: 600;
 }
 
 

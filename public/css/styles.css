@@ -7549,6 +7549,7 @@ a.text-dark:hover, a.text-dark:focus {
   --blue-70: #0053B8;
   --blue-80: #00439D;
   --blue-90: #002D70;
+  --orange-05: #FFFBF6;
   --orange-10: #FFF1EB;
   --orange-20: #FFD1BE;
   --orange-30: #FFB091;
@@ -7567,6 +7568,7 @@ a.text-dark:hover, a.text-dark:focus {
   --green-50: #0CBB52;
   --green-60: #049D40;
   --green-70: #007F31;
+  --yellow-05: #FFFDF6;
   --yellow-10: #FFF9E0;
   --yellow-50: #FFB400;
   --yellow-60: #DE9C00;
@@ -8781,7 +8783,7 @@ label {
   height: 80vh; }
 
 .c-section {
-  background-color: var(--grey-10);
+  background-color: var(--yellow-05);
   padding: 128px 0; }
 
 .c-hero--downloads .app-screenshot {

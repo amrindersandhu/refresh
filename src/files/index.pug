@@ -179,8 +179,17 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
 
 
         .container.mb-5#blockquote
-            .row.mb-5
-                .col-xl-5.col-md-8.col-12.mb-5
+            .row
+                .col.spacing-below--m.spacing-top--xl
+                    h1 Quotes
+
+
+            .row.spacing-top--xl.spacing-below--xl.align-items-center
+                .col-xl-3
+                    img.img-style-1.w-100(src="https://ca.slack-edge.com/T02G7V5JE-U013CMPRNLX-5ba4744f1ae2-512")
+                
+
+                .col-xl-8.offset-md-1
                     p.eyebrow Design
 
                     blockquote 
@@ -193,9 +202,19 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
                         footer
                             strong Sanket Pathak
                             | , Product Designer
+
+
+            .row
+                .col
+                    hr
+
                     
-            .row.mb-5
-                .col-xl-7.col-md-8.col-12.mb-5
+                         
+            .row.mb-5.d-flex.align-items-center
+                .col-xl-4
+                    img.w-100(src="https://www.shipengine.com/docs/img/media/logo-square.png?v=2")
+
+                .col-xl-7.col-md-8.col-12.mb-5.offset-md-1
                     blockquote 
                         span.l-quote “
 
@@ -203,9 +222,20 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
 
                         span.r-quote ”
 
-                        footer
-                            strong James Messinger
-                            | , Director of Developer Experience, ShipEngine
+                        footer.d-flex.align-items-center.spacing-below--m
+                            .c-avatar__wrap.spacing-right--xs
+                                img.c-avatar--person.c-avatar--m(src="https://nordicapis.com/wp-content/uploads/James-Messinger-1.png")
+
+                                //img.c-avatar--badge.c-avatar--s(src="../i/logos/logoicon-shipengine.png")
+
+                    
+                            .d-flex.flex-column
+                                h5.spacing-below--none James Messinger
+
+                                p.small.spacing-below--none Director of Developer Experience, ShipEngine
+
+                                
+
 
 
 
@@ -218,7 +248,13 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
         // FORM
         .container.mb-5#form
             .row
-                .col-xl-5.col-md-8.col-12    
+                .col.spacing-below--m.spacing-top--xl
+                    h1 Form controls
+
+
+
+            .row
+                .col-xl-5.col-md-8.col-12
                     h2 Tell us about your organization
 
                     p Fill out this form to apply for free Postman Business plan licenses under the Postman for Nonprofits program. Someone from the Postman team will be in contact with you once we have reviewed your application.
@@ -1060,13 +1096,12 @@ html.p-home(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
 
 
         .container.spacing-below--xxl#logo-wall
-            .row.spacing-below--xl
-                .col-xl-6.offset-xl-3.text-center
+            .row.spacing-below--l
+                .col-xl-6
                     h2 500,000 Companies are using Postman Today
 
-                    p Join these companies and more than 17 million developers who are already building, running, and distributing APIs with Postman.
+                    p.intro Join these companies and more than 17 million developers who are already building, running, and distributing APIs with Postman.
 
-                    a.button-primary(href="#") Buy now
 
             
             .row.spacing-below--xl

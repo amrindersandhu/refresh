@@ -8408,7 +8408,8 @@ button,
   .button-secondary.button-small,
   .button-filter.button-small {
     font-size: 14px;
-    padding: 4px 12px; }
+    padding: 4px 12px;
+    height: 32pxs; }
 
 .button-primary {
   background-color: var(--orange-50);
@@ -8835,7 +8836,8 @@ button,
   .button-secondary.button-small,
   .button-filter.button-small {
     font-size: 14px;
-    padding: 4px 12px; }
+    padding: 4px 12px;
+    height: 32pxs; }
 
 .button-primary {
   background-color: var(--orange-50);

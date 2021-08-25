@@ -8771,7 +8771,7 @@ label {
 .c-hero {
   align-items: center;
   display: flex;
-  padding: var(--spacing-xxl) 0; }
+  padding: calc(52px + var(--spacing-xxl)) 0 var(--spacing-xxl) 0; }
   .c-hero .container {
     height: 100%; }
   .c-hero.has-bg {
@@ -10091,11 +10091,29 @@ select {
 .spacing-below--xl {
   margin-bottom: var(--spacing-xl); }
 
-.spacing-top--xl {
-  margin-top: var(--spacing-xl); }
-
 .spacing-below--xxl {
   margin-bottom: var(--spacing-xxl); }
+
+.spacing-top--xxs {
+  margin-top: var(--spacing-xxs); }
+
+.spacing-top--xs {
+  margin-top: var(--spacing-xs); }
+
+.spacing-top--s {
+  margin-top: var(--spacing-s); }
+
+.spacing-top--m {
+  margin-top: var(--spacing-m); }
+
+.spacing-top--l {
+  margin-top: var(--spacing-l); }
+
+.spacing-top--l {
+  margin-top: var(--spacing-l); }
+
+.spacing-top--xl {
+  margin-top: var(--spacing-xl); }
 
 .spacing-top--xxl {
   margin-top: var(--spacing-xxl); }

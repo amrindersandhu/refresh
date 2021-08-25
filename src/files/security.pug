@@ -1,0 +1,233 @@
+include includes/header.pug
+
+include includes/nav.pug
+
+body
+    .c-hero.has-bg.spacing-below--xl
+        .container
+            .row.align-items-center
+                .col-xl-6
+                    h1 Security at Postman
+
+
+    .container.spacing-below--xl
+        .row
+            .col-xl-4
+                h2 Your data security is important to us
+
+            .col-xl-7.offset-1.spacing-top--xxs
+                p More than 17 million users and over 500,000 companies worldwide use Postman products and access Postman services. Individuals, small, medium, and large organizations count on Postman to meet their data protection and data security needs. We have developed a comprehensive set of practices and policies to help ensure your data is secure.
+
+    
+    hr.spacing-below--xl
+
+
+    .container.spacing-below--xl
+        .row
+            .col-xl-4
+                h2 Key Security Features
+
+            .col-xl-7.offset-1.spacing-top--xxs
+                p
+                    | Different Postman plans have different security features. See the Postman 
+                    a(href='/pricing/') Plans and Pricing
+                    |  page for full details.
+
+                ul.list-unordered
+                    li
+                        span.font-weight-bold Data encryption
+                        |  - We use strong encryption standards to protect data both in transit between Postman clients and the Postman cloud and at rest in the production network.
+                        
+                    ul.list-unordered
+
+                        li
+                            | Data in transit - All interactions use TLS with 2048-bit digital signatures, 128-bit AES encryption, and the latest recommended secure cipher suites.
+                        li
+                            | Data at rest - Depending on its sensitivity classification, customer data is also AES-256-GCM encrypted on the server-side before storage.
+                    li
+                        span.font-weight-bold SAML based SSO
+                        |  - Authenticate with and access Postman services through an identity provider of your choice with SAML 2.0 compliant 
+                        a(href='https://learning.postman.com/docs/postman-enterprise/sso/intro-sso/' target='_blank' rel='noopener noreferrer') single sign-on (SSO)
+                        | .
+                    li
+                        span.font-weight-bold Audit logs
+                        |  - Track key activities related to billing, security, access, and team management with 
+                        a(href='https://learning.postman.com/docs/postman/collaboration/audit-logs/' target='_blank' rel='noopener noreferrer') audit logs
+                        | .
+                    li
+                        span.font-weight-bold Static IP
+                        |  - Test IPs securely behind a firewall by a whitelisting a single, 
+                        a(href='https://learning.postman.com/docs/postman/monitors/using-static-IPs-to-monitor/' target='_blank' rel='noopener noreferrer') static IP address
+                        |  to use for monitoring.
+                    li
+                        span.font-weight-bold Postman sessions
+                        |  - Protect private tokens, passwords, and credentials by storing sensitive information locally in 
+                        a(href='https://learning.postman.com/docs/postman/environments-and-globals/sessions/' target='_blank' rel='noopener noreferrer') session variables
+                        | .
+                    li
+                        span.font-weight-bold Granular role-based access control
+                        |  - Provide granular access to entities in Postman products with roles and permissions.
+
+
+    hr.spacing-below--xl
+
+                
+    .container.spacing-below--xl
+        .row
+            .col-xl-4
+                h2 Shared Responsibility Model
+
+            .col-xl-7.offset-1.spacing-top--xxs
+                p
+                    | While we continuously focus on doing our part to maintain high standards for security and complying with regulations, you also have a role to play in helping to ensure the security of your data. While our responsibility is to ensure that Postman products and services are safe and secure to use, yours is to ensure that you follow safe practices with the data you store within Postman. To know more about the list of things that we expect our users to be aware of during regular product usage, please read the 
+                    a(href='/security/shared-responsibility/' rel='noopener')  shared responsibility model
+                    |  document.
+                p
+                    | For details on what information we collect from you and how we use, share, and store that information, consult our 
+                    a(href='/legal/privacy-policy/' rel='noopener') privacy policy
+                    | .
+
+    
+    
+    hr.spacing-below--xl
+
+                
+    .container.spacing-below--xl
+        .row
+            .col-xl-4
+                h2 Compliance and Regulations
+
+            .col-xl-7.offset-1.spacing-top--xxs     
+                p
+                    | While we continuously focus on doing our part to maintain high standards for security and complying with regulations, you also have a role to play in helping to ensure the security of your data. While our responsibility is to ensure that Postman products and services are safe and secure to use, yours is to ensure that you follow safe practices with the data you store within Postman. To know more about the list of things that we expect our users to be aware of during regular product usage, please read the shared responsibility model document.
+                p
+                    | For details on what information we collect from you and how we use, share, and store that information, consult our privacy policy.
+                h3 Certifications
+                h4 SOC Reports
+                p
+                    | Service Organization and Controls (SOC) are assurance reports which provide an industry-wide acknowledgment that a company adheres to trust service principles. For access to our SOC 2 (Type 2) report, please email us at 
+                    a(href='mailto:help@postman.com') help@postman.com
+                    | .
+                p
+                    | For a high level overview of the audit, you can 
+                    a(href='/postman-2021-type-2-soc-3-final-report.pdf') view the Postman SOC3 Final Report 2021 (PDF)
+                h4 GDPR
+                p
+                    | We comply with the European Union’s General Data Protection Regulation, which governs data protection and privacy for all individuals citizens of the European Union and the European Economic Area.
+                h4 Infrastructure Security
+                p
+                    | We contract our digital hardware to cloud vendors that adhere to the applicable data regulations and compliances. Our infrastructure runs on data centers provided by Amazon Web Services (AWS), which is 
+                    a(href='https://aws.amazon.com/compliance/programs/' target='_blank' rel='noopener noreferrer') SOC2 and PCI Level 1 certified among others
+                    | . AWS, as a platform provider, has a number of 
+                    a(href='https://aws.amazon.com/security/' target='_blank' rel='noopener noreferrer') security and privacy focussed features
+                    | , which we leverage wherever applicable.
+                p
+                    | Our servers run on stable, regularly patched, versions of Amazon Linux with carefully configured security groups, isolated VPC environments with well-defined network segmentation, role-based access control, and advanced web application firewall protection.
+                h4 Physical and Environmental Security
+                p
+                    | We do not have in-house data centers. Amazon Web Services (AWS) manages the physical and environmental security of our data centers. Our internal security program covers physical security at our offices.
+                p
+                    | For more details, please review 
+                    a(href='https://aws.amazon.com/compliance/data-center/controls/' target='_blank' rel='noopener noreferrer') AWS' control and security measures
+                    | .
+                h4 Product and Service Security
+                p
+                    | We distribute and serve our products and services exclusively over 
+                    a(href='https://en.wikipedia.org/wiki/HTTPS' target='_blank' rel='noopener noreferrer') HTTPS
+                    |  and secure 
+                    a(href='https://en.wikipedia.org/wiki/WebSocket' target='_blank' rel='noopener noreferrer') WebSockets
+                    | . All network interactions use TLS with 2048-bit digital signatures and 128-bit AES encryption. Additionally, we use 
+                    a(href='https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security' target='_blank' rel='noopener noreferrer') HTTP Strict-Transport-Security
+                    |  to ensure the applications never interact with the servers on an insecure network path.
+                p
+                    | More details are available at 
+                    a(href='https://aws.amazon.com/compliance/data-center/controls/' rel='noopener noreferrer' trget='_blank') https://aws.amazon.com/compliance/data-center/controls/
+                h4 Software Security
+                p
+                    | Our applications run on the latest stable version of Node.js. We reduce the attack surface by isolating our processes via hardened 
+                    a(href='https://en.wikipedia.org/wiki/Docker_(software)' rel='noopener noreferrer' target='_blank') containerization technology
+                    | . Our security team sets architectural guidelines, conducts code reviews, and deploys every software system that can interface with customer data.
+                p
+                    | Our developers are trained with specific attention toward security. Our automated and manual code review processes look for any code that could potentially violate security policies. We have also instituted a standardized security stack that complies with software composition analysis tools.
+                h4 Vulnerability Management
+                p
+                    | Our security team performs Vulnerability Assessment and Penetration Testing (VAPT) of our ongoing releases, interfacing with products and services. All vulnerabilities found during VAPTs are managed internally in our vulnerability management system. All vulnerabilities are assigned a score, using the CVSS scoring system, and an owner. We also have an internal SLA that stipulates deadlines for fixing vulnerabilities.
+                h4 Employee Access
+                p
+                    | To manage employee access, we have implemented an audited security policy (IAM) that includes access control, a secure password policy, BYOD, and secure network access.
+                p
+                    | All internal services require single sign-on, with 2FA RSA Authentication. All SSH-based access has a mandatory key-file driven policy that requires storing keys securely, rotating them frequently, and logging all access to them.
+                h4 Data Security
+                p
+                    | All customer data is stored in databases on Amazon RDS, which are configured securely. Data is stored with at least dual redundancy, with 15-day backups, and is accessible only within the private cloud. We have also instituted per-service access protection and isolation of data.
+                p
+                    | Depending upon its sensitivity classification, Customer data is AES-256-GCM encrypted at the on server-side before storage. Postman 
+                    a(href='https://blog.postman.com/using-variables-inside-postman-and-collection-runner/' target='_blank' rel='noopener') environment and global variables
+                    |  are covered in this classification and we strongly encourage using them to store authentication keys and passwords. We have also added 
+                    a(href='https://blog.postman.com/sessions-faq/' rel='noopener noreferrer' target='_blank') sessions
+                    |  in the 6.2 release onwards of Postman. We recommend using session variables for any data that users do not want to be synced to Postman’s servers.
+                p
+                    | We maintain all internal testing and validation data in a production-stack equivalent internal stack populated with fictitious data. Postman does not distribute actual customer data for internal testing or validation purposes.
+                p
+                    | We have instituted a role-based access process to govern access to any customer data required for customer support (or otherwise). This process is audited and recorded and includes a human arbitration done by a core team. Consisting of the founders and VP of Engineering, This team validates the requirement hypothesis and ensures data is obfuscated and sanitized before communicating back to customer support or engineering. Customer data classified as sensitive is not accessible by any party except the customer.
+                h4 Attack Prevention and Mitigation
+                p
+                    | We maintain intelligent, web application firewalls on our load balancers which, along with the elastic scaling capacity of our compute instances, mitigate attacks at the application layer.
+                p
+                    | We log activity across our platform, from individual API requests to infrastructure configuration changes. Logs are aggregated for monitoring, analysis, and anomaly detection and archived in vaulted storage. We implement measures to detect and prevent log tampering or interruptions. In order to determine security breaches, we monitor access patterns and network data flow patterns using automated systems that alert us in case of an anomaly. We also keep track of private contacts and public channels from our open-source and third-party technology stacks for any security-related reports. In case of a customer-reported breach, the CTO, CEO, and VP of Engineering are notified automatically and the report is responded to within a few hours as per set policies.
+                h4 Incident Response
+                p
+                    | We have incident response policies and procedures to address service availability, integrity, security, privacy, and confidentiality issues. As part of our incident response procedures, we have trained our teams to:
+                ul
+                    li Promptly respond to alerts of potential incidents
+                    li Determine the severity of the incident
+                    li Analyze and assess the extent of the incident
+                    li If necessary, execute mitigation and containment measures
+                    li
+                        | Communicate with relevant internal and external stakeholders, including notifying affected customers so as to comply with relevant laws and regulations and meet contractual obligations around breach or incident notifications
+                    li Gather and preserve evidence for investigative efforts
+                    li Conduct and document a postmortem and develop a permanent triage plan
+                p
+                    | The incident response policies and processes are audited as part of our SOC 2 and other security assessments. Check out 
+                    a(href='https://status.postman.com/' target='_blank' rel='noopener noreferrer') our Status page
+                    | for service availability information.
+                h4 Payment Processing
+                p
+                    | We process all payments using 
+                    a(href='https://stripe.com/' target='_blank' rel='noopener noreferrer') Stripe
+                    | , which has been certified as a PCI Level 1 Service Provider.
+
+
+    hr.spacing-below--xl
+
+                
+    .container.spacing-below--xl
+        .row
+            .col-xl-4
+                h2 Reach out to Postman Security
+
+            .col-xl-7.offset-1.spacing-top--xxs
+                p
+                    | Our security team ensures the security of data stored with Postman and helps you keep your APIs secure by providing security-aware features, workshops, and content.
+                p
+                    | If you have questions around how to define secured APIs, you can ask them in our 
+                    a(href='https://community.postman.com/' target='_blank' rel='noopener noreferrer') Community Forum
+                    | .
+                p
+                    | If you’ve found a vulnerability in our service or website or want additional information about our security policies, you can reach us at 
+                    a(href='mailto:security@postman.com') security@postman.com
+                    | . We will review it and respond to you within 24 hours. You may use our 
+                    a(href='https://assets.getpostman.com/getpostman/documents/publickey.txt' target='_blank' rel='noopener noreferrer') PGP public key
+                    |  to encrypt your communications with us.
+                p
+                    | If you are reporting security vulnerabilities or if you are a security researcher, you may want to review our 
+                    a(href='/security/vulnerability-reporting/' rel='noreferrer') security reporting guidelines and policy
+                    | .
+
+
+
+    hr
+
+
+
+    include includes/footer.pug

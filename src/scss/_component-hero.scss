@@ -9,7 +9,7 @@
 .c-hero {
   align-items: center;
   display: flex;
-  padding: var(--spacing-xxl) 0;
+  padding: calc(52px + var(--spacing-xxl)) 0 var(--spacing-xxl) 0;
 
   .container {
     height: 100%;

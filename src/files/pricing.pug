@@ -18,11 +18,12 @@ body
                     .pad-in--m
                         h3 Free
 
-                        p.text-small Perfect place to start designing, developing, and testing APIs.
+                        p.small.h-96 Perfect place to start designing, developing, and testing APIs.
 
-                        p.d-flex.align-items-top 
-                            | $
-                            span.heading-01 0
+                        p
+                            span.d-flex.align-items-top.h-120
+                                | $
+                                span.heading-01 0
 
                         a.button-primary.w-100.spacing-below--m(href="#") Sign Up
 
@@ -34,11 +35,11 @@ body
                     .pad-in--m
                         h3 Team
 
-                        p.text-small Collaborate across your team to design, develop, and test APIs faster.
+                        p.small.h-96 Collaborate across your team to design, develop, and test APIs faster.
 
 
-                        p
-                            .d-flex.align-items-top 
+                        p.h-120
+                            span.d-flex.align-items-top 
                                 | $
                                 span.heading-01.spacing-below--xxs 12
 
@@ -65,10 +66,10 @@ body
                     .pad-in--m
                         h3 Business
 
-                        p.text-small Rapidly scale your organization and manage the entire API workflow, all in one place.
+                        p.small.h-96 Rapidly scale your organization and manage the entire API workflow, all in one place.
 
-                        p
-                            .d-flex.align-items-top 
+                        p.h-120
+                            span.d-flex.align-items-top 
                                 | $
                                 span.heading-01.spacing-below--xxs 24
 
@@ -98,10 +99,10 @@ body
                     .pad-in--m
                         h3 Enterprise
 
-                        p.text-small Enterprise-grade offering, with powerful tools to securely manage, organize, and accelerate large-scale API development.
+                        p.small.h-96 Enterprise-grade offering, with powerful tools to securely manage, organize, and accelerate large-scale API development.
 
-                        p
-                            .d-flex.align-items-top 
+                        p.h-120
+                            span.d-flex.align-items-top 
                                 | $
                                 span.heading-01.spacing-below--xxs 69
 
@@ -249,55 +250,32 @@ body
     .c-section.has-bg
         .container
             .row
-                .col-xl-5.pad-right--xl
+                .col-xl-8.pad-right--xl.spacing-below--xl
                     h2 500,000 Companies are using Postman Today
 
-                    p Join these companies and more than 17 million developers who are already building, running, and distributing APIs with Postman.
+            
+            .row
+                .col-xl-12.c-logo_wall--alt.spacing-below--xl
+                    .d-flex.justify-content-between
+                        img(src="../i/logos/logo-shopify.png")
+
+                        img(src="../i/logos/logo-cisco.png")
+
+                        img(src="../i/logos/logo-imgur.png")
+
+                        img(src="../i/logos/logo-amc.png")
+
+                        img(src="../i/logos/logo-okta.png")
+
+                        img(src="../i/logos/logo-intuit.png")
+
+            .row.align-items-center
+                .col-xl-8.pad-right--xl
+                    p.intro Join these companies and more than 17 million developers who are already building, running, and distributing APIs with Postman.
 
                     a.button-primary(href="#") Buy now
-
             
-            
-                .col-xl-7.c-logo_wall
-                    .d-flex.justify-content-between.spacing-below--l
-                        img(src="../i/logos/logo-cisco.png")
-
-                        img(src="../i/logos/logo-imgur.png")
-
-                        img(src="../i/logos/logo-amc.png")
-
-                        img(src="../i/logos/logo-okta.png")
-
-                        img(src="../i/logos/logo-intuit.png")
-
-            
-            
-                    .d-flex.justify-content-between.spacing-below--l
-                        img(src="../i/logos/logo-amc.png")
-
-                        img(src="../i/logos/logo-imgur.png")
-
-                        img(src="../i/logos/logo-okta.png")
-
-                        img(src="../i/logos/logo-intuit.png")
-
-                        img(src="../i/logos/logo-cisco.png")
-
-
-                    .d-flex.justify-content-between
-                        img(src="../i/logos/logo-cisco.png")
-
-                        img(src="../i/logos/logo-intuit.png")
-
-                        img(src="../i/logos/logo-okta.png")
-
-                        img(src="../i/logos/logo-imgur.png")
-
-                        img(src="../i/logos/logo-amc.png")
-
-
-
-    
+                    
 
 
     include includes/footer.pug

@@ -10154,6 +10154,12 @@ select {
 .w-20 {
   width: 20%; }
 
+.h-96 {
+  height: 96px; }
+
+.h-120 {
+  height: 120px; }
+
 hr {
   border: 1px solid var(--grey-20);
   border-width: 1px 0 0;

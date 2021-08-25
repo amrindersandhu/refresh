@@ -119,6 +119,11 @@ li {
     font-size: 16px;
     line-height: 26px;
     color: var(--content-color-primary);
+
+    .is-small & {
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
 
 strong,
@@ -166,6 +171,14 @@ strong,
 .list-unordered li:before {
     color: var(--orange-30); //var(--grey-50);
     content: "✦";
+}
+
+
+.list-unordered--checked li:before {
+    color: var(--green-60); //var(--grey-50);
+    content: "✓";
+    font-weight: 600;
+    font-size: 16px;
 }
 
 
@@ -251,6 +264,11 @@ small,
     color: var(--grey-70);
     font-size: 14px;
     line-height: 22px;
+}
+
+.text-small {
+    font-size: 14px !important;
+    line-height: 22px !important;
 }
 
 .footnote {

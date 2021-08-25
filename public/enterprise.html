@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&amp;family=Inter:wght@400;600&amp;display=swap"/>
   </head>
 </html>
-<body> 
-  <div class="container-fluid fixed-top c-header">
+<body>
+  <div class="container-fluid fixed-top c-header c-header--dark"> 
     <div class="row justify-content-between align-items-center">
       <div class="col">
         <nav class="d-flex align-items-center"><a class="logo" href="/">
@@ -37,14 +37,12 @@
                 Pages<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg></a>
               <div class="c-popover">
                 <ul class="c-menu">
-                  <li> <a href="../enterprise.html">Enterprise<small>For companies that are huge</small></a></li>
-                  <li> <a href="../learning-center.html">Learning Center<small>Never stop learning or you will</small></a></li>
-                  <li> <a href="../about.html">About<small>It is all about us and us</small></a></li>
+                  <li> <a href="../page-1.html">Enterprise<small>For companies that are huge</small></a></li>
+                  <li> <a href="../page-2.html">Learning Center<small>Never stop learning or you will</small></a></li>
+                  <li> <a href="../page-3.html">About<small>It is all about us and us</small></a></li>
                   <li> <a href="../heros.html">Hero variants<small>A few variants of the hero section </small></a></li>
-                  <li> <a href="../careers.html">Careers<small>We love working at Postman and you’ll too</small></a></li>
+                  <li> <a href="../page-4.html">Careers<small>We love working at Postman and you’ll too</small></a></li>
                   <li> <a href="../downloads.html">Downloads<small>Download Postman app for Mac, Windows, and Linux</small></a></li>
-                  <li> <a href="../pricing.html">Pricing</a></li>
-                  <li> <a href="../security.html">Security</a></li>
                 </ul>
               </div>
             </li>
@@ -99,70 +97,199 @@
                 </div>
               </div>
             </li>
-            <li> <a href="../pricing.html">Pricing</a></li>
           </ul>
         </nav>
       </div>
-      <div class="col d-flex justify-content-end align-items-center">
-        <div class="col nav-search__wrap">
-          <label for="search-01"><svg class="nav-search__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.87147 9.16437C10.5768 8.30243 11 7.20063 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11C7.20063 11 8.30243 10.5768 9.16437 9.87147L9.89648 10.6036L9.64648 10.8536L13.5758 14.7829C13.8101 15.0172 14.19 15.0172 14.4243 14.7829L14.7829 14.4243C15.0172 14.19 15.0172 13.8101 14.7829 13.5758L10.8536 9.64648L10.6036 9.89648L9.87147 9.16437ZM6 10C8.20914 10 10 8.20914 10 6C10 3.79086 8.20914 2 6 2C3.79086 2 2 3.79086 2 6C2 8.20914 3.79086 10 6 10Z"></path></svg></label>
-          <input type="text" id="search-01" name="search-01" placeholder="Search Postman"/>
-        </div><a class="button-secondary button-small spacing-right--xxs" href="#">Sign In</a><a class="button-primary button-small" href="#">Create Account </a>
+      <div class="col nav-search__wrap nav-search--centered d-flex align-items-center">
+        <label for="search-01"><svg class="nav-search__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.87147 9.16437C10.5768 8.30243 11 7.20063 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11C7.20063 11 8.30243 10.5768 9.16437 9.87147L9.89648 10.6036L9.64648 10.8536L13.5758 14.7829C13.8101 15.0172 14.19 15.0172 14.4243 14.7829L14.7829 14.4243C15.0172 14.19 15.0172 13.8101 14.7829 13.5758L10.8536 9.64648L10.6036 9.89648L9.87147 9.16437ZM6 10C8.20914 10 10 8.20914 10 6C10 3.79086 8.20914 2 6 2C3.79086 2 2 3.79086 2 6C2 8.20914 3.79086 10 6 10Z"></path></svg></label>
+        <input type="text" id="search-01" name="search-01" placeholder="Search Postman"/>
+      </div>
+      <div class="col d-flex justify-content-end">
+        <button class="button-secondary button-small spacing-right--xxs">Sign In</button>
+        <button class="button-primary button-small">Create Account </button>
       </div>
     </div>
   </div>
-  <div class="c-hero c-hero--downloads">
+  <div class="c-hero c-hero--dark">
     <div class="container">
-      <div class="row spacing-below--xs"> 
-        <div class="col-xl-10 offset-md-1 text-center">
-          <h1>Download Postman</h1>
-          <p class="intro">Download the app to quickly get started using the Postman API Platform. <br/>Or, if you prefer a browser experience, you can try the new web version of Postman.</p>
-        </div>
-      </div>
       <div class="row align-items-center">
-        <div class="col-xl-5 pl-0"> 
-          <h2 class="heading-03">Postman desktop app</h2>
-          <p>The ever-improving Postman app (a new release every two weeks) gives you a full-featured Postman experience.</p>
-          <button class="button-primary w-100 spacing-below--xs">
-             <svg class="button-icon--left"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>apple</title><g fill="#F7F7F7"><path fill="#F7F7F7" d="M14.326,12.08c-0.346,0.766-0.511,1.108-0.957,1.785c-0.621,0.945-1.496,2.123-2.581,2.133 c-0.964,0.009-1.212-0.627-2.52-0.62S6.686,16.009,5.722,16c-1.085-0.01-1.914-1.073-2.536-2.019 C1.45,11.337,1.268,8.235,2.339,6.586c0.761-1.173,1.962-1.858,3.092-1.858c1.15,0,1.872,0.63,2.823,0.63 c0.922,0,1.484-0.631,2.814-0.631c1.005,0,2.07,0.547,2.828,1.492C11.411,7.582,11.815,11.131,14.326,12.08L14.326,12.08z"></path> <path d="M10.604,2.699c0.546-0.7,0.96-1.689,0.809-2.699C10.522,0.061,9.48,0.628,8.871,1.367 C8.319,2.038,7.863,3.033,8.04,4C9.013,4.03,10.019,3.449,10.604,2.699L10.604,2.699z"></path></g></svg> Download the App</button>
-          <p class="footnote">By downloading and using Postman, I agree to the  Privacy Policy and Terms.</p>
-          <p class="footnote">Version 8.10.0 <span class="c-sep">&middot; </span><a href="#">Release Notes</a><span class="c-sep">&middot; </span><a href="#">Product Roadmap</a></p>
-          <p class="footnote">Not your OS? Download for Windows (<a href="#">x32</a>/<a href="#">x64</a>) or <a href="#">Linux (x64)</a></p>
-          <hr class="m-5"/>
-          <h2 class="heading-03">Postman on the web</h2>
-          <p>You can now access Postman through your web browser. Simply create a free Postman account, and you’re in.</p><a class="button-secondary w-100" href="#">Try the web version</a>
+        <div class="col-xl-5 pad-right--xl">
+          <h1 class="pad-right--xxl">The Postman API Platform</h1>
+          <p class="intro">17 million developers across 500,000 organizations use the Postman API Platform for all things API.</p>
         </div>
-        <div class="col-xl-7">
-          <figure class="app-screenshot m-0"></figure>
-        </div>
+        <div class="col-xl-7 spacing-top--xl"><img src="../i/enterprise.jpg"/></div>
       </div>
     </div>
   </div>
-  <hr class="mt-0 spacing-below--xxl"/>
-  <div class="container spacing-below--xxl">
-    <div class="row align-items-center">
-      <div class="col-xl-5"><img class="w-100" src="../i/postman-tools.png"/></div>
-      <div class="col-xl-6 offset-md-1">
-        <h2>Postman Desktop Agent</h2>
-        <p>If you are using the Postman web client, you will need to also download the Postman desktop agent. The Postman agent overcomes the Cross Object Resource Sharing (CORS) limitations of browsers, and facilitates API request sending from your browser version of Postman.</p>
-        <p>Download Desktop Agent: </p>
-        <p><a class="button-secondary spacing-right--xxs" href="#">macOS </a><a class="button-secondary spacing-right--xxs" href="#">Linux </a><a class="button-secondary spacing-right--xxs" href="#">Windows 64-bit </a><a class="button-secondary spacing-right--xxs" href="#">Windows 32-bit</a></p>
-        <p> <a href="#">Read the blog post &rarr;</a></p>
+  <div class="c-section spacing-below--xxl">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-4 offset-1">
+          <p> <span class="heading-01">5x</span><br/><span>Faster API development</span></p>
+          <p> <span class="heading-01">4x</span><br/><span>Faster bug fixes</span></p>
+          <p> <span class="heading-01">3x</span><br/><span>Less time maintaining APIs</span></p>
+        </div>
+        <div class="col-xl-6">
+          <p class="intro">You'll discover these quantitative findings and more in a recent report—authored by the Enterprise Strategy Group, a global IT research firm—on the economic benefits of the Postman platform.</p><a class="button-secondary" href="#">Download the Report</a>
+        </div>
       </div>
     </div>
   </div>
   <div class="container spacing-below--xxl">
     <div class="row align-items-center">
-      <div class="col-xl-4"><img class="w-100 mb-4" src="https://www.postman.com/assets/logos/canary-treated-logo.svg"/></div>
-      <div class="col-xl-6 offset-md-2">
-        <h2>Postman Canary</h2>
-        <p class="intro">Be the first to experience new Postman features</p>
-        <p>If you want to be first in line to experience new features, download our latest Canary builds available for OSX (x64) / Windows (x86 or x64) / Linux (x86 or x64) for a sneak peek. Our Canary builds are designed for early adopters, and may sometimes break.</p>
-        <p><a class="button-secondary spacing-right--xxs" href="#">Download Postman Canary       </a></p>
+      <div class="col-xl-5"><img class="w-100 mb-4" src="../i/screenshots/screenshot-sample.png"/></div>
+      <div class="col-xl-5 offset-md-2">
+        <h2>Great Quality</h2>
+        <p class="intro">The Postman API Platform delivers great quality through these features and benefits:</p>
+        <h3 class="heading-04">Features</h3>
+        <ul class="list-unordered">
+          <li>API mocking and prototyping</li>
+          <li>API testing for developers integrated with your CI/CD pipeline</li>
+          <li>Contract-test internal/external APIs with your consumers</li>
+          <li>API lifecycle management across multiple versions</li>
+        </ul>
+        <h3 class="heading-04">Benefits</h3>
+        <ul class="list-unordered">
+          <li>Faster and earlier bug detection</li>
+          <li>Standardize API specifications</li>
+          <li>Rapid, seamless, and automated API testing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container spacing-below--xxl">
+    <div class="row align-items-center">
+      <div class="col-xl-5">
+        <h2>High Productivity</h2>
+        <p class="intro">The Postman API Platform delivers high productivity through these features and benefits:</p>
+        <h3 class="heading-04">Features</h3>
+        <ul class="list-unordered">
+          <li>Postman as the single source of truth for all APIs</li>
+          <li>Up-to-date and easily discoverable API documentation</li>
+          <li>Instant search across your API landscape</li>
+          <li>Persona-based pre-configured API workspaces</li>
+        </ul>
+        <h3 class="heading-04">Benefits</h3>
+        <ul class="list-unordered">
+          <li>Eliminate duplicate work</li>
+          <li>Onboard developers faster</li>
+          <li>Fewer meetings = happier developers</li>
+        </ul>
+      </div>
+      <div class="col-xl-5 offset-md-2"><img class="w-100 mb-4" src="../i/screenshots/screenshot-sample.png"/></div>
+    </div>
+  </div>
+  <div class="container spacing-below--xxl">
+    <div class="row align-items-center">
+      <div class="col-xl-5"><img class="w-100 mb-4" src="../i/screenshots/screenshot-sample.png"/></div>
+      <div class="col-xl-5 offset-md-2">
+        <h2>Airtight Governance</h2>
+        <p class="intro">The Postman API Platform delivers airtight governance through these features and benefits:</p>
+        <h3 class="heading-04">Features</h3>
+        <ul class="list-unordered">
+          <li>API governance with design and validation</li>
+          <li>Deep API insight reports, dashboards, and audit logs</li>
+          <li>User groups and custom roles</li>
+          <li>SCIM-based automated user provisioning and domain capture</li>
+        </ul>
+        <h3 class="heading-04">Benefits</h3>
+        <ul class="list-unordered">
+          <li>Visibility into your API landscape</li>
+          <li>Developers complying with your API guidelines</li>
+          <li>Adherence to legal and regulatory requirements</li>
+          <li>Meet operational SLAs</li>
+        </ul>
       </div>
     </div>
   </div>
   <hr class="spacing-top--xxl spacing-below--xxl"/>
+  <div class="container spacing-below--xxl">
+    <div class="row spacing-below--l">
+      <div class="col-xl-8 offset-md-2 text-md-center">
+        <h1>500,000 Organizations use Postman</h1>
+        <p class="intro">Many of the world’s top organizations, including 98% of the Fortune 500, are using the Postman API Platform today.</p>
+      </div>
+    </div>
+    <div class="row spacing-below--xl">
+      <div class="col-xl-12 c-logo_wall--alt">
+        <div class="d-flex justify-content-between"><img src="../i/logos/logo-okta.svg"/><img src="../i/logos/logo-shopify.svg"/><img src="../i/logos/logo-intuit.svg"/><img src="../i/logos/logo-amc.svg"/><img src="../i/logos/logo-imgur.svg"/><img src="../i/logos/logo-cisco.svg"/></div>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center"><a class="button-secondary" href="#">See all case studies &rarr;</a></div>
+  </div>
+  <div class="c-section spacing-below--xxl">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5">
+          <h2 class="heading-01">Get Started with Postman Enterprise</h2>
+          <p class="intro">Talk to our team to learn all about the Postman Enterprise plan, our enterprise-grade offering that gives you powerful tools to securely manage, organize, and accelerate large-scale API development.</p>
+          <figure class="spacing-top--xl"><img class="mb-5" src="../../i/illu-01.png"/></figure>
+        </div>
+        <div class="col-xl-5 offset-md-2">
+          <h2>Contact sales today</h2>
+          <p> <strong>Support inquiries </strong>submitted through this form are not monitored and will NOT be responded to. For all support inquiries, please visit our <a href="#">support center</a> or email <a href="#">help@postman.com</a>.</p>
+          <form>
+            <div class="input-wrap input-wrap--text">
+              <label class="input-label" for="input-10">First name </label>
+              <div class="input-control">
+                <input type="text" name="input-10" id="input-10"/>
+              </div>
+            </div>
+            <div class="input-wrap input-wrap--text">
+              <label class="input-label" for="input-11">Last name </label>
+              <div class="input-control 0has-error">
+                <input type="text" name="input-11" id="input-11"/>
+              </div>
+              <!--p.input-message.input-message--error
+              <svg class="icon-status" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 12C8.55228 12 9 11.5523 9 11C9 10.4477 8.55228 10 8 10C7.44772 10 7 10.4477 7 11C7 11.5523 7.44772 12 8 12Z"></path><path d="M8 4C8.53541 4 8.95377 4.46229 8.9005 4.99504L8.54975 8.50248C8.52151 8.78492 8.28384 9 8 9C7.71616 9 7.47849 8.78492 7.45025 8.50248L7.0995 4.99504C7.04623 4.46228 7.46459 4 8 4Z" fill="#6B6B6B"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z"></path></svg>
+              
+              | This is where the input validation message appears.
+              
+              
+              -->
+            </div>
+            <div class="input-wrap input-wrap--text">
+              <label class="input-label" for="input-11">Role</label>
+              <div class="input-control input-control--select">
+                <select name="country-selection">
+                  <option selected="selected" disabled="disabled">Select your job role</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M8,12c-0.232,0-0.463-0.08-0.651-0.241l-7.759-6.65L0.892,3.59L8,9.683l7.108-6.093l1.302,1.519l-7.759,6.65 C8.463,11.92,8.232,12,8,12z"></path></g></svg>
+              </div>
+            </div>
+            <div class="input-wrap input-wrap--text">
+              <label class="input-label" for="input-16">Company</label>
+              <div class="input-control">
+                <input type="text" name="input-16" id="input-16"/>
+              </div>
+            </div>
+            <div class="input-wrap input-wrap--text">
+              <label class="input-label" for="input-11">Country</label>
+              <div class="input-control input-control--select">
+                <select name="country-selection">
+                  <option selected="selected" disabled="disabled">Select your country</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g><path d="M8,12c-0.232,0-0.463-0.08-0.651-0.241l-7.759-6.65L0.892,3.59L8,9.683l7.108-6.093l1.302,1.519l-7.759,6.65 C8.463,11.92,8.232,12,8,12z"></path></g></svg>
+              </div>
+            </div>
+            <div class="input-wrap input-wrap--text">
+              <label class="input-label" for="input-12">Message</label>
+              <!--p.input-description How does your organization indent to use Postman-->
+              <div class="input-control">
+                <textarea name="input-12" id="input-12" placeholder="How can we help you? Any specific questions about Postman Enterprise plan?"></textarea>
+              </div>
+            </div>
+            <div class="mt-5">
+              <button class="button-primary w-100">Submit</button>
+              <p class="small mt-3">By clicking submit below, you agree to Postman's <a href="#">Terms</a> and personal data as described in our <a href="#">Privacy Policy</a>.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container c-footer spacing-top--xxl spacing-below--xl">
     <div class="row spacing-below--l">
       <div class="col">

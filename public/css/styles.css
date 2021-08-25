@@ -10183,6 +10183,9 @@ hr {
   border-radius: 16px;
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.16); }
 
+.bg-light {
+  background-color: var(--yellow-05) !important; }
+
 .border {
   border: 1px solid var(--grey-20) !important; }
 

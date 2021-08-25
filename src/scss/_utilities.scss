@@ -173,6 +173,9 @@ hr {
 
 
 // BOOTSTRAP OVERRIDE
+.bg-light {
+ background-color: var(--yellow-05) !important;
+}
 
 .border {
     border: 1px solid var(--grey-20) !important;

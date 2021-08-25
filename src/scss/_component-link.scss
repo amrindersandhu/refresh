@@ -72,6 +72,8 @@
 
 // SUBTLE LINKS
 .link--subtle {
+    color: inherit;
+
     &:after {
         border-bottom: none;
     }

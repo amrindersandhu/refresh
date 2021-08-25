@@ -9358,11 +9358,12 @@ label {
   .link--primary:hover::after {
     border-bottom: 1px solid; }
 
-.link--subtle:after {
-  border-bottom: none; }
-
-.link--subtle:hover::after {
-  border-bottom: 1px solid; }
+.link--subtle {
+  color: inherit; }
+  .link--subtle:after {
+    border-bottom: none; }
+  .link--subtle:hover::after {
+    border-bottom: 1px solid; }
 
 p:hover .link--subtle {
   color: var(--content-color-brand); }

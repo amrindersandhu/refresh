@@ -7618,7 +7618,7 @@ a.text-dark:hover, a.text-dark:focus {
   --spacing-m: 32px;
   --spacing-l: 48px;
   --spacing-xl: 64px;
-  --spacing-xxl: 128px;
+  --spacing-xxl: 96px;
   --shadow-light: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   --shadow-dark: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
   --shadow-focus: 0 0 0 1px var(--background-color-primary), 0 0 0 3px var(--blue-30); }

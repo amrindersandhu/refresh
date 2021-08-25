@@ -9767,7 +9767,7 @@ label {
 
 .table tbody tr:hover {
   background-color: var(--orange-10) !important; }
-  .table tbody tr:hover a {
+  .table tbody tr:hover a:not(.button-primary) {
     color: var(--blue-60); }
 
 .table thead th {

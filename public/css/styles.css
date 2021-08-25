@@ -7892,9 +7892,6 @@ a {
   .c-on_dark a {
     color: var(--blue-30); }
 
-.link--subtle:hover {
-  border-bottom: none; }
-
 small,
 .small {
   color: var(--grey-70);
@@ -9770,6 +9767,8 @@ label {
 
 .table tbody tr:hover {
   background-color: var(--orange-10) !important; }
+  .table tbody tr:hover a {
+    color: var(--blue-60); }
 
 .table thead th {
   color: var(--grey-70);
@@ -9784,6 +9783,9 @@ label {
   background-color: var(--grey-10); }
 
 .table-striped thead th, .table-striped tbody td {
+  border: none; }
+
+.table-naked thead th, .table-naked tbody td {
   border: none; }
 
 .input-wrap--text {

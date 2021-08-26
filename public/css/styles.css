@@ -10133,6 +10133,12 @@ select {
 .spacing-m {
   margin: 16px 0; }
 
+.pad-right--xs {
+  padding-right: var(--spacing-xs); }
+
+.pad-right--s {
+  padding-right: var(--spacing-s); }
+
 .pad-right--m {
   padding-right: var(--spacing-m); }
 

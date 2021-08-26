@@ -1,59 +1,59 @@
 include includes/header.pug
 
-include includes/nav.pug
+body
+    include includes/nav.pug
 
 
-.c-hero
-    .container.d-flex.align-items-stretch
+    .c-hero.has-bg.spacing-below--xxl
+        .container.d-flex.align-items-stretch
+            .row.align-items-center
+                .col-xl-5.pad-right--xl
+                    p.eyebrow Company
+
+                    h1 What’s it like to work at Postman?
+
+                    p.intro Great question. This page is designed to answer it by giving you a peek into who we are, what we do, and how we do it.
+
+                    a.button-secondary(href="#") View Open Positions
+
+                .col-xl-7
+                    figure.spacing-top--xl
+                        img.img-style-1.mb-5(src="https://www.postman.com/assets/careers-page/comp-careerslandingpage-herophoto.png")
+
+
+    .container.spacing-below--xxl
+        .row.spacing-below--l
+            .col-xl-8
+                h2 About Postman
+
+                p.intro Postman is the collaboration platform for API development. Postman simplifies each step of building an API and streamlines collaboration so you can create better APIs—faster. But perhaps more importantly, Postman is a collection of the smartest, nicest, and most interesting people on planet Earth.
+
         .row.align-items-center
-            .col-xl-5.pad-right--xl
-                p.eyebrow Company
+            .col-xl-3
+                img.img-style-1.w-100(src="https://ca.slack-edge.com/T02G7V5JE-U013CMPRNLX-5ba4744f1ae2-512")
+            
 
-                h1 What’s it like to work at Postman?
+            .col-xl-8.offset-md-1
+                p.eyebrow Design
 
-                p.intro Great question. This page is designed to answer it by giving you a peek into who we are, what we do, and how we do it.
+                blockquote 
+                    span.l-quote “
 
-                a.button-secondary(href="#") View Open Positions
+                    | Everyone I have worked with is honest about what they know and what they don’t know. There is no pretending.
 
-            .col-xl-7
-                figure.spacing-top--xl
-                    img.img-style-1.mb-5(src="https://www.postman.com/assets/careers-page/comp-careerslandingpage-herophoto.png")
+                    span.r-quote ”
 
-hr
+                    footer
+                        strong Sanket Pathak
+                        | , Product Designer
 
 
-.container.spacing-below--xxl
-    .row
-        .col-xl-8
-            h2.spacing-top--xl About Postman
-
-            p.intro Postman is the collaboration platform for API development. Postman simplifies each step of building an API and streamlines collaboration so you can create better APIs—faster. But perhaps more importantly, Postman is a collection of the smartest, nicest, and most interesting people on planet Earth.
-
-    .row.spacing-top--xl.spacing-below--xl.align-items-center
-        .col-xl-3
-            img.img-style-1.w-100(src="https://ca.slack-edge.com/T02G7V5JE-U013CMPRNLX-5ba4744f1ae2-512")
+    .container.spacing-below--xxl
+        hr
         
 
-        .col-xl-8.offset-md-1
-            p.eyebrow Design
-
-            blockquote 
-                span.l-quote “
-
-                | Everyone I have worked with is honest about what they know and what they don’t know. There is no pretending.
-
-                span.r-quote ”
-
-                footer
-                    strong Sanket Pathak
-                    | , Product Designer
-
-
-
     
-
-.c-section.spacing-below--xxl
-    .container
+    .container.spacing-below--xxl
         .row.align-items-center.spacing-below--l
             .col-xl-8
                 h2 Our Values
@@ -108,47 +108,51 @@ hr
 
 
 
+    .container.spacing-below--xxl
+        hr
 
 
 
-.container.spacing-below--xxl
-    .row.align-items-center.spacing-below--l
-        .col-xl-8
-            h2 Benefits
+    .container.spacing-below--xxl
+        .row.align-items-center.spacing-below--l
+            .col-xl-8
+                h2 Benefits
 
-            p.intro We offer competitive salary and benefits, an informal and fun working environment, and provide lunch every day. (Yes, seriously. Every day.) We believe in autonomous small teams taking on big challenges, and we’re intentional about building an inclusive culture where everyone is able to do their best work and be the best version of themselves. We’re building a long-term company, and we want you to be part of it.
+                p.intro We offer competitive salary and benefits, an informal and fun working environment, and provide lunch every day. (Yes, seriously. Every day.) We believe in autonomous small teams taking on big challenges, and we’re intentional about building an inclusive culture where everyone is able to do their best work and be the best version of themselves. We’re building a long-term company, and we want you to be part of it.
 
-    .row
-        .col-xl-8    
-            .row
-                .col-xl-6.pad-right--l.spacing-below--l
-                    h3.heading-04 Medical   
+        .row
+            .col-xl-8    
+                .row
+                    .col-xl-6.pad-right--l.spacing-below--l
+                        h3.heading-04 Medical   
 
-                    p We offer company-subsidized medical plans to keep you healthy.
-
-
-                .col-xl-6.pad-right--l.spacing-below--l
-                    h3.heading-04 Dental  
-
-                    p We offer company-subsidized dental plans to keep you smiley.
+                        p We offer company-subsidized medical plans to keep you healthy.
 
 
-                .col-xl-6.pad-right--l.spacing-below--l
-                    h3.heading-04 Vision
+                    .col-xl-6.pad-right--l.spacing-below--l
+                        h3.heading-04 Dental  
 
-                    p We offer company-subsidized vision plans so you can see your brilliant colleagues.
-
-
-                .col-xl-6.pad-right--l
-                    h3.heading-04 Drums
-
-                    p There’s a drum set in the Bangalore office. If you’re ever there, you should play it.
+                        p We offer company-subsidized dental plans to keep you smiley.
 
 
+                    .col-xl-6.pad-right--l
+                        h3.heading-04 Vision
+
+                        p We offer company-subsidized vision plans so you can see your brilliant colleagues.
 
 
-.c-section.spacing-below--xxl
-    .container
+                    .col-xl-6.pad-right--l
+                        h3.heading-04 Drums
+
+                        p There’s a drum set in the Bangalore office. If you’re ever there, you should play it.
+
+
+    .container.spacing-below--xl
+        hr
+        
+
+    
+    .container.spacing-below--xxl
         .row.align-items-center.spacing-below--l
             .col-xl-8
                 h2 Teams
@@ -246,21 +250,23 @@ hr
 
 
 
+    .c-section.has-bg.spacing-below--xxl
+        .container
+            .row.align-items-center
+                .col-xl-5.pad-right--xl
+                    h2.heading-01 Join Postman
 
-.container.spacing-below--xxl
-        .row.align-items-center
-            .col-xl-5.pad-right--xl
-                h2.heading-01 Join Postman
+                    p.intro If you’ve read this far, we like you already. We’re always searching for smart, nice people in all fields, so feel free to take a peek at our open positions.
 
-                p.intro If you’ve read this far, we like you already. We’re always searching for smart, nice people in all fields, so feel free to take a peek at our open positions.
+                    a.button-secondary(href="#") View Open Positions
+                                    
 
-                a.button-secondary(href="#") View Open Positions
-                                
-
-            .col-xl-7
-                figure.spacing-top--xl
-                    img.img-style-1.mb-5(src="https://www.postman.com/assets/careers-page/img-team-join-postman.png")
+                .col-xl-7
+                    figure
+                        img.img-style-1(src="https://www.postman.com/assets/careers-page/img-team-join-postman.png")
 
 
+
+    include includes/footer.pug
 
 

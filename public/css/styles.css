@@ -7659,12 +7659,6 @@ main {
   padding-bottom: var(--spacing-xxl); }
   .c-doc h2:hover .anchor.before, .c-doc h3:hover .anchor.before {
     opacity: 1; }
-  .c-doc img {
-    border-radius: 8px;
-    border: 8px solid var(--grey-20);
-    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.32);
-    margin-bottom: var(--spacing-m);
-    width: 100%; }
   .c-doc .anchor.before {
     position: absolute;
     left: 0;

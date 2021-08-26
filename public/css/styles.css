@@ -10145,6 +10145,18 @@ select {
 .pad-right--xxl {
   padding-right: var(--spacing-xxl); }
 
+.pad-left--m {
+  padding-left: var(--spacing-m); }
+
+.pad-left--l {
+  padding-left: var(--spacing-l); }
+
+.pad-left--xl {
+  padding-left: var(--spacing-xl); }
+
+.pad-left--xxl {
+  padding-left: var(--spacing-xxl); }
+
 .pad-below--l {
   padding-bottom: var(--spacing-l); }
 

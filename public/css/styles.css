@@ -8774,10 +8774,6 @@ label {
   padding: calc(52px + var(--spacing-xxl)) 0 var(--spacing-xxl) 0; }
   .c-hero .container {
     height: 100%; }
-  .c-hero.has-bg {
-    background-color: #FFFDF6; }
-  .c-hero.has-bg--alt {
-    background-color: #FFFBF6; }
 
 .c-hero--dark {
   background-color: var(--grey-90); }
@@ -8796,12 +8792,16 @@ label {
   background-size: 3600px;
   height: 80vh; }
 
+.c-section.has-bg,
+.c-hero.has-bg {
+  background-color: var(--grey-10); }
+
+.c-section.has-bg--alt,
+.c-hero.has-bg--alt {
+  background-color: var(--grey-10); }
+
 .c-section {
-  padding: 128px 0; }
-  .c-section.has-bg {
-    background-color: #FFFDF6; }
-  .c-section.has-bg--alt {
-    background-color: #FFFBF6; }
+  padding: var(--spacing-xxl) 0; }
 
 .c-hero--downloads .app-screenshot {
   background: url("../i/screenshots/postman-app.png") no-repeat;

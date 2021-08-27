@@ -256,6 +256,12 @@ a {
         color: var(--blue-70);
         border-bottom: 1px solid;
         text-decoration: none;
+
+        .link-arrow {
+            display: inline-block;
+            transition: .3s ease;
+            margin-left: 5px;
+        }
     }
 
     .c-on_dark & {

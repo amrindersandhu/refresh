@@ -7834,15 +7834,15 @@ strong,
   font-weight: 600;
   font-size: 16px; }
 
-.c-doc ol li:before,
+.c-doc ol li,
 .list-ordered li {
   counter-increment: li; }
-  .c-doc ol li:before:before,
+  .c-doc ol li:before,
   .list-ordered li:before {
     color: var(--grey-70);
     content: counter(li);
     text-align: right; }
-  .c-doc ol li:before:after,
+  .c-doc ol li:after,
   .list-ordered li:after {
     color: var(--grey-70);
     content: ".";

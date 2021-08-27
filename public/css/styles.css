@@ -9157,6 +9157,11 @@ label {
   display: inline-block;
   margin: 0 var(--spacing-xxs); }
 
+.logo--footer {
+  width: 48px;
+  filter: grayscale(100%);
+  opacity: .64; }
+
 .sb-grid_marker {
   align-items: center;
   background: rgba(255, 0, 0, 0.24);
@@ -10268,3 +10273,13 @@ div[class*="border"] {
 
 .rounded {
   border-radius: 4px !important; }
+
+@media (max-width: 575.98px) {
+  .container,
+  .container-fluid,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl, .container-sm, .container-md, .container-lg, .container-xl {
+    padding-left: 24px !important;
+    padding-right: 24px !important; } }

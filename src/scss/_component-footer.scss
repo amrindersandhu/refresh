@@ -34,3 +34,10 @@
     display: inline-block;
     margin: 0 var(--spacing-xxs);
 }
+
+
+.logo--footer {
+    width: 48px;
+    filter: grayscale(100%);
+    opacity: .64;
+}

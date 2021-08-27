@@ -243,3 +243,10 @@ div[class*="border"] {
 .rounded {
     border-radius: 4px !important;
 }
+
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    @media (max-width: 575.98px) { 
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }    
+}

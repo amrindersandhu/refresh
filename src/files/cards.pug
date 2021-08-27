@@ -3,14 +3,20 @@ include includes/header.pug
 body
     include includes/nav.pug
 
-    
+    .c-hero.has-bg.spacing-below--xxl
+        .container
+            .row
+                .col-xl-12
+                    h1 Cards
+
+                    p.intro Content that should and shouldn’t be in cards.
+
+
+
+
 
     .container.spacing-below--xxl#card
-        .row
-            .col-xl-8
-                h2.spacing-below--l Cards all around
-
-        .row.spacing-below--m
+        //.row.spacing-below--m
             .col-xl-4
                 a.c-card.c-card--01(href="#")
                     span.c-card__date 
@@ -70,7 +76,7 @@ body
 
                         strong Learn more &rarr;
                 
-        .row
+        //.row.spacing-below--xl
             .col-xl-4
                 a.c-card.c-card--02(href="#")
                     .c-card__content
@@ -113,8 +119,85 @@ body
 
                         p.spacing-below--xxs Abhinav, the Co-founder and CEO of Postman, presents the opening Keynote address and demos exciting new tech.
 
+        .row.spacing-below--s
+            .col-xl-4
+                a.c-card.h-100(href="#")
+                    .c-card__cover(style="background-image:url(https://refresh-2021.www.postman-beta.com/assets/case-studies/companies/giant-machines/logo-frame-giant-machines.png);")
+                    
+                    .c-card__content
+                        p Giant Machines uses Postman collections, scripts, and mock servers keep API development fast and fluid
 
-    hr.spacing-top--xl.spacing-below--xxl
+                        span.c-card__link Learn more &rarr;
+
+
+            .col-xl-4
+                a.c-card.h-100(href="#")
+                    .c-card__cover(style="background-image:url(https://refresh-2021.www.postman-beta.com/assets/case-studies/companies/box/cs-box.svg); background-size: 50%")
+                    
+                    .c-card__content
+                        p Box transforms API onboarding with Postman automation tools
+
+                        span.c-card__link Learn more &rarr;
+
+
+            .col-xl-4
+                a.c-card.h-100(href="#")
+                    .c-card__cover(style="background-image:url(https://refresh-2021.www.postman-beta.com/assets/case-studies/companies/ping-identity/cs-ping.svg); background-size: 60%")
+                    
+                    .c-card__content
+                        p Postman’s Automation Tools Simplify Exploratory Testing at Ping Identity
+
+                        span.c-card__link Learn more &rarr;
+
+
+
+
+
+        .row.spacing-below--xl
+            .col-xl-4
+                a.c-card.h-100(href="#")
+                    .c-card__cover(style="background-image:url(https://refresh-2021.www.postman-beta.com/assets/automated-testing/astronaut-test.svg); background-size: 40%")
+                    
+                    .c-card__content
+                        h3.heading-04 Writing Tests in Postman
+
+                        p This video will teach you how to set up tests in Postman and provide real-world examples to show you how Postman tests work.
+
+                        span.c-card__link Watch Tutorial &rarr;
+
+
+            .col-xl-4
+                a.c-card.h-100(href="#")
+                    .c-card__cover(style="background-image:url(https://refresh-2021.www.postman-beta.com/assets/automated-testing/postman-training.svg); background-size: 40%")
+                    
+                    .c-card__content
+                        h3.heading-04 Test Examples in Postman
+
+                        p For a lot of people, Postman is synonymous with API testing. This public workspace contains examples of Postman tests.
+
+                        span.c-card__link See Examples &rarr;
+
+            .col-xl-4
+                a.c-card.h-100(href="#")
+                    .c-card__cover(style="background-image:url(https://refresh-2021.www.postman-beta.com/assets/automated-testing/automated-testing-whitepaper.svg); background-size: 50%")
+                    
+                    .c-card__content
+                        h3.heading-04 Testing Whitepaper
+
+                        p Learn how automated testing helps close the gap between development and QA, find bugs earlier on, and create scalable, more robust services.
+
+                        span.c-card__link Get the Whitepaper &rarr;
+
+
+            
+
+
+
+    .c-section.has-bg.spacing-below--xxl
+        .container
+            .row
+                .col-xl-12
+                    h1 Content that shouldn’t be Cards
 
 
     .container.spacing-below--xxl
@@ -187,7 +270,105 @@ body
                         |  and has evolved into today’s comprehensive Postman API Platform. 
 
     
-    .container
+    .container.spacing-below--xxl
         .row.spacing-below--m
             .col-xl-8.offset-2.text-center
-                h2 Featured Resources
+                h2 Additional Resources
+
+                p.intro Discover even more about automated API testing.
+
+
+        .row
+            .col-xl-4
+                h3.heading-04 Postman Docs
+
+                ul.list-unordered
+                    li
+                        a(href="#") View Test Script Docs
+
+                    li
+                        a(href="#") View Newman Docs
+
+
+            .col-xl-4
+                h3.heading-04 From the Blog
+
+                ul.list-unordered
+                    li
+                        a(href="#") Snapshot Testing for APIs Using Postman
+
+                    li
+                        a(href="#") Acing Your API Tests
+
+                    li
+                        a(href="#") Performance Testing for Your HTTP APIs
+
+                    li
+                        a(href="#") From Manual to Automated Testing
+
+                    li
+                        a(href="#") Consumer-Driven Contract Testing
+
+            
+
+            .col-xl-4
+                h3.heading-04 Case Studies
+
+                ul.list-unordered
+                    li
+                        a(href="#") Twitter Grows Its Developer Ecosystem with Postman and the Postman API Network
+
+                    li
+                        a(href="#") Imgur Ensures Consistency across Teams with Postman
+
+
+
+    
+    .container.spacing-below--xxl
+        .row.spacing-below--m
+            .col-xl-8
+                h2 Create Reliable, Shareable, and Easy-to-follow Documentation With Postman
+
+        .row.spacing-below--m
+            .col-xl-6
+                figure.spacing-below--s.w-20
+                        img(src="https://refresh-2021.www.postman-beta.com/assets/api-documentation-generator/documentation.svg")
+
+                h3.heading-04 Automatically Update your Documentation
+
+                p.pad-right--m Never let your documentation lag behind your service again. Postman automatically updates your documentation every time you make changes to your collection - in real-time. 
+
+
+            .col-xl-6
+                figure.spacing-below--s.w-20
+                        img(src="https://refresh-2021.www.postman-beta.com/assets/api-documentation-generator/documentation.svg")
+
+                h3.heading-04 Automatically Update your Documentation
+
+                p.pad-right--m Never let your documentation lag behind your service again. Postman automatically updates your documentation every time you make changes to your collection - in real-time. 
+
+
+        .row
+            .col-xl-6
+                figure.spacing-below--s.w-20
+                        img(src="https://refresh-2021.www.postman-beta.com/assets/api-documentation-generator/documentation.svg")
+
+                h3.heading-04 Automatically Update your Documentation
+
+                p.pad-right--m Never let your documentation lag behind your service again. Postman automatically updates your documentation every time you make changes to your collection - in real-time. 
+
+
+            .col-xl-6
+                figure.spacing-below--s.w-20
+                        img(src="https://refresh-2021.www.postman-beta.com/assets/api-documentation-generator/documentation.svg")
+
+                h3.heading-04 Automatically Update your Documentation
+
+                p.pad-right--m Never let your documentation lag behind your service again. Postman automatically updates your documentation every time you make changes to your collection - in real-time. 
+
+
+
+
+
+
+

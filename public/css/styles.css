@@ -8573,6 +8573,7 @@ button,
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   margin-bottom: 0px;
+  padding: 24px;
   --aspect-ratio:(2/1)
     ; }
 

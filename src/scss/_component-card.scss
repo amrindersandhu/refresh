@@ -34,6 +34,7 @@
     }
 }
 
+    .c-cover,
     .c-card__cover {
         height: 160px;
         display:block;
@@ -47,7 +48,12 @@
         border-top-right-radius:8px;
         margin-bottom:0px;
         padding: 24px;
-        --aspect-ratio:(2/1)
+        --aspect-ratio:(2/1);
+        transition: .2s ease-in-out;
+
+        &:hover {
+            border: none;
+        }
     }
 
     .c-card__link {

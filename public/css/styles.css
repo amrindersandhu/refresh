@@ -7691,6 +7691,13 @@ h1, h2, h3,
   .c-on_dark h1, .c-on_dark h2, .c-on_dark h3, .c-on_dark
   .heading-01, .c-on_dark .heading-02, .c-on_dark .heading-03 {
     color: var(--grey-10); }
+  h1 a, h2 a, h3 a,
+  .heading-01 a, .heading-02 a, .heading-03 a {
+    color: var(--grey-90); }
+    h1 a:hover, h2 a:hover, h3 a:hover,
+    .heading-01 a:hover, .heading-02 a:hover, .heading-03 a:hover {
+      border: none;
+      color: var(--blue-70); }
 
 h1,
 .heading-01 {
@@ -8561,6 +8568,7 @@ button,
     box-shadow: 0 0 1px var(--grey-70), 0 8px 16px -4px rgba(0, 0, 0, 0.08);
     transform: translateY(-4px); }
 
+.c-cover,
 .c-card__cover {
   height: 160px;
   display: block;
@@ -8574,8 +8582,11 @@ button,
   border-top-right-radius: 8px;
   margin-bottom: 0px;
   padding: 24px;
-  --aspect-ratio:(2/1)
-    ; }
+  --aspect-ratio:(2/1);
+  transition: .2s ease-in-out; }
+  .c-cover:hover,
+  .c-card__cover:hover {
+    border: none; }
 
 .c-card__link {
   margin-top: auto; }

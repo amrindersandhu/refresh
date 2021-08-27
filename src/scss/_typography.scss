@@ -17,6 +17,15 @@ h1, h2, h3,
     .c-on_dark & {
         color: var(--grey-10);
     }
+
+    a {
+        color: var(--grey-90);
+
+        &:hover {
+            border: none;
+            color: var(--blue-70);
+        }
+    }
 }
 
 

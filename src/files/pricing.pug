@@ -585,18 +585,22 @@ body
 
 
 
-    .c-section.has-bg
+    .c-section.has-bg.spacing-below--xxl
         .container
-            .row
-                .col-xl-8.offset-2.pad-right--xl.spacing-below--xl
-                    h2.text-center 500,000 Companies are using Postman Today
+            .row.spacing-below--xl
+                .col-xl-8.offset-2.text-center
+                    h2 500,000 Companies are using Postman Today
 
+                    p.intro Join these companies and more than 17 million developers who are already building, running, and distributing APIs with Postman.
+
+                    
+                    a.button-primary.spacing-right--xs(href="#") Buy Now
             
             .row
-                .col-xl-12.c-logo_wall--alt.spacing-below--xl
-                    .d-flex.justify-content-between
+                .col-xl-12.c-logo_wall--alt
+                    .d-flex.justify-content-between.spacing-below--m
                         img(src="../i/logos/logo-shopify.png")
-
+                        
                         img(src="../i/logos/logo-cisco.png")
 
                         img(src="../i/logos/logo-imgur.png")
@@ -605,15 +609,54 @@ body
 
                         img(src="../i/logos/logo-okta.png")
 
-                        img(src="../i/logos/logo-intuit.png")
+                        img(src="../i/logos/logo-intuit.png")          
 
-            .row.align-items-center
-                .col-xl-8.offset-2.pad-right--xl.text-center
-                    p.intro Join these companies and more than 17 million developers who are already building, running, and distributing APIs with Postman.
 
-                    a.button-primary(href="#") Buy now
-            
+
+    .container.spacing-below--xxl
+        .row
+            .col-xl-8.offset-2.text-center.spacing-below--l
+                h2 Case Studies Section title
+
+                p.intro Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur cras netus dapibus ac placerat cras in ac id.
+       
+        .row.spacing-below--xl
+            .col-xl-4
+                a.c-card.h-100(href="#")
+                    .c-card__cover(style="background-image:url(https://refresh-2021.www.postman-beta.com/assets/case-studies/companies/giant-machines/logo-frame-giant-machines.png);")
                     
+                    .c-card__content
+                        p Giant Machines uses Postman collections, scripts, and mock servers keep API development fast and fluid
 
+                        span.c-card__link Learn more &rarr;
+
+
+            .col-xl-4
+                a.c-card.h-100(href="#")
+                    .c-card__cover(style="background-image:url(https://refresh-2021.www.postman-beta.com/assets/case-studies/companies/box/cs-box.svg); background-size: 50%")
+                    
+                    .c-card__content
+                        p Box transforms API onboarding with Postman automation tools
+
+                        span.c-card__link Learn more &rarr;
+
+
+            .col-xl-4
+                a.c-card.h-100(href="#")
+                    .c-card__cover(style="background-image:url(https://refresh-2021.www.postman-beta.com/assets/case-studies/companies/ping-identity/cs-ping.svg); background-size: 60%")
+                    
+                    .c-card__content
+                        p Postman’s Automation Tools Simplify Exploratory Testing at Ping Identity
+
+                        span.c-card__link Learn more &rarr;
+
+                        
+
+
+        .row
+            .col-xl-8.offset-2.text-center
+                a.button-secondary(href="#") View All Case Studies
+
+    hr
 
     include includes/footer.pug

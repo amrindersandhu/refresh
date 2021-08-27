@@ -8543,8 +8543,9 @@ button,
 .c-card {
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 0 1px var(--grey-30);
-  display: block;
+  box-shadow: 0 0 1px var(--grey-50);
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   position: relative;
   transition: .2s ease-in-out; }
@@ -8557,11 +8558,35 @@ button,
     padding-right: var(--spacing-s); }
   .c-card:hover {
     border: none;
-    box-shadow: 0 0 1px var(--grey-50), 0 8px 16px -4px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 1px var(--grey-70), 0 8px 16px -4px rgba(0, 0, 0, 0.08);
     transform: translateY(-4px); }
 
+.c-card__cover {
+  height: 160px;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--grey-10);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: 0px;
+  --aspect-ratio:(2/1)
+    ; }
+
+.c-card__link {
+  margin-top: auto; }
+
 .c-card__content {
-  padding: var(--spacing-s); }
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: var(--spacing-s);
+  flex: 1 0 0; }
 
 .c-card__date {
   background-color: var(--grey-00);

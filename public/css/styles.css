@@ -7659,6 +7659,9 @@ main {
   padding-bottom: var(--spacing-xxl); }
   .c-doc h2:hover .anchor.before, .c-doc h3:hover .anchor.before {
     opacity: 1; }
+  .c-doc img {
+    margin-bottom: var(--spacing-m);
+    width: 100%; }
   .c-doc .anchor.before {
     position: absolute;
     left: 0;

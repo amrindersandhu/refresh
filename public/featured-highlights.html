@@ -22,100 +22,355 @@
   </head>
 </html>
 <body>
-  <div class="container-fluid fixed-top c-header">
-    <div class="row justify-content-between align-items-center">
-      <div class="col">
+  <!--.container-fluid.fixed-top.c-header
+  .row.justify-content-between.align-items-center
+      .col.flex-grow-1 
+          nav.d-flex.align-items-center
+              a.logo(href="/")
+                  .flip-container
+                      .flipper
+                          .front
+                              img(src="../i/logomark-postman.svg")
+                          
+                          .back
+                              img(src="../i/logo-flip-home.svg")
+  
+              
+              //ul.d-flex
+                  li 
+                      a(href="#") Product
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg>
+  
+                      .c-popover
+                          ul.c-menu
+                              li 
+                                  a(href="../enterprise.html") What is Postman?
+  
+                              li 
+                                  a(href="../learning-center.html") Tools
+  
+                              li 
+                                  a(href="../about.html") Repository
+  
+                              li 
+                                  a(href="../heros.html") Workspaces
+  
+                              li 
+                                  a(href="../careers.html") Intelligence
+  
+  
+                  li 
+                      a(href="../careers.html") Pricing
+  
+  
+                  li 
+                      a(href="../careers.html") Enterprise
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg>
+  
+                      .c-popover
+                          ul.c-menu
+                              li 
+                                  a(href="../#accordion") Postman Enterprise
+  
+                              li 
+                                  a(href="../#breadcrumb") Enterprise Case Studies
+  
+                              li 
+                                  a(href="../#buttons") Contact Us
+  
+                              
+  
+  
+                  li 
+                      a(href="../careers.html") Resources &amp; Support
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg>
+  
+                      .c-popover.c-popover--menu
+                          .c-menu__group
+                              h6 Learning
+  
+                              ul.c-menu
+                                  li 
+                                      a(href="../enterprise.html") Webinars
+  
+                                  li 
+                                      a(href="../learning-center.html") Breaking Changes Show
+  
+                                  li 
+                                      a(href="../about.html") Postman Space Camp
+  
+                                  li 
+                                      a(href="../careers.html") Case Studies
+  
+  
+                          
+                          .c-menu__group
+                              h6 Community &amp; Events
+  
+                              ul.c-menu
+                                  li 
+                                      a(href="../enterprise.html") Blog
+  
+                                  li 
+                                      a(href="../learning-center.html") Community
+  
+                                  li 
+                                      a(href="../about.html") Student Program
+  
+                                  li 
+                                      a(href="../careers.html") Student Summit
+  
+                                  li 
+                                      a(href="../careers.html") Postman Galaxy
+  
+                                  li 
+                                      a(href="../careers.html") Postman for Non-Profits
+  
+                                  li 
+                                      a(href="../careers.html") Postman Swag
+  
+  
+                          .c-menu__group
+                              h6 Support
+  
+                              ul.c-menu
+                                  li 
+                                      a(href="../enterprise.html") Support Center
+  
+                                  li 
+                                      a(href="../learning-center.html") Reseller Support
+  
+  
+  
+  
+                  li 
+                      a(href="../pricing.html") Explore
+  
+  
+      
+  
+      //.col.d-flex.justify-content-end.align-items-center.flex-grow-0.flex-sm-row
+          //.nav-search__wrap.spacing-right--s
+              label(for="search-01").m-0
+                  <svg class="nav-search__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.87147 9.16437C10.5768 8.30243 11 7.20063 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11C7.20063 11 8.30243 10.5768 9.16437 9.87147L9.89648 10.6036L9.64648 10.8536L13.5758 14.7829C13.8101 15.0172 14.19 15.0172 14.4243 14.7829L14.7829 14.4243C15.0172 14.19 15.0172 13.8101 14.7829 13.5758L10.8536 9.64648L10.6036 9.89648L9.87147 9.16437ZM6 10C8.20914 10 10 8.20914 10 6C10 3.79086 8.20914 2 6 2C3.79086 2 2 3.79086 2 6C2 8.20914 3.79086 10 6 10Z"></path></svg>
+  
+              input(type="text" id="search-01" name="search-01" placeholder="Search Postman")
+  
+  
+          a.button-secondary.button-small.spacing-right--xxs(href="#") Sign In
+  
+          a.button-primary.button-small(href="#") Create Account 
+  
+  -->
+  <div class="container-fluid fixed-top c-header c-header--mobile">
+    <div class="row justify-content-between">
+      <div class="col flex-grow-1"> 
         <nav class="d-flex align-items-center"><a class="logo" href="/">
             <div class="flip-container">
               <div class="flipper">
                 <div class="front"><img src="../i/logomark-postman.svg"/></div>
                 <div class="back"><img src="../i/logo-flip-home.svg"/></div>
               </div>
-            </div></a>
-          <ul class="d-flex">
-            <li> <a href="#">
-                Pages<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg></a>
-              <div class="c-popover">
-                <ul class="c-menu">
-                  <li> <a href="../enterprise.html">Enterprise<small>For companies that are huge</small></a></li>
-                  <li> <a href="../learning-center.html">Learning Center<small>Never stop learning or you will</small></a></li>
-                  <li> <a href="../about.html">About<small>It is all about us and us</small></a></li>
-                  <li> <a href="../heros.html">Hero variants<small>A few variants of the hero section </small></a></li>
-                  <li> <a href="../careers.html">Careers<small>We love working at Postman and you’ll too</small></a></li>
-                  <li> <a href="../downloads.html">Downloads<small>Download Postman app for Mac, Windows, and Linux</small></a></li>
-                  <li> <a href="../pricing.html">Pricing</a></li>
-                  <li> <a href="../security.html">Security</a></li>
-                  <li> <a href="../blog.html">Blog</a></li>
-                </ul>
-              </div>
-            </li>
-            <li> <a href="../careers.html">
-                Components<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg></a>
-              <div class="c-popover">
-                <ul class="c-menu">
-                  <li> <a href="../#accordion">Accordion</a></li>
-                  <li> <a href="../#breadcrumb">Breadcrumb</a></li>
-                  <li> <a href="../#buttons">Buttons</a></li>
-                  <li> <a href="../cards.html">Cards</a></li>
-                  <li> <a href="../feature-block.html">Feature Block</a></li>
-                  <li> <a href="../featured-highlights.html">Featured Highlights</a></li>
-                  <li> <a href="../#Form">Form</a></li>
-                  <li> <a href="../heros.html">Heros</a></li>
-                  <li> <a href="../logo-wall.html">Logo Wall</a></li>
-                  <li> <a href="../#modal">Modal</a></li>
-                  <li> <a href="../section.html">Section</a></li>
-                  <li> <a href="../#side-nav">Side Nav</a></li>
-                  <li> <a href="../#social-buttons">Social Buttons</a></li>
-                  <li> <a href="../#table">Table</a></li>
-                  <li> <a href="../#tabs">Tabs</a></li>
-                  <li> <a href="../#typography">Typography</a></li>
-                </ul>
-              </div>
-            </li>
-            <li> <a href="../careers.html">
-                Resources &amp; Support<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg></a>
-              <div class="c-popover c-popover--menu">
-                <div class="c-menu__group">
-                  <h6>Learning</h6>
-                  <ul class="c-menu">
-                    <li> <a href="../enterprise.html">Webinars</a></li>
-                    <li> <a href="../learning-center.html">Breaking Changes</a></li>
-                    <li> <a href="../about.html">Postman Space Camp</a></li>
-                    <li> <a href="../careers.html">Case Studies</a></li>
-                  </ul>
-                </div>
-                <div class="c-menu__group">
-                  <h6>Community &amp; Events</h6>
-                  <ul class="c-menu">
-                    <li> <a href="../enterprise.html">Blog</a></li>
-                    <li> <a href="../learning-center.html">Community</a></li>
-                    <li> <a href="../about.html">Student Program</a></li>
-                    <li> <a href="../careers.html">Student Summit</a></li>
-                    <li> <a href="../careers.html">Postman Galaxy</a></li>
-                    <li> <a href="../careers.html">Postman for Non-Profits</a></li>
-                    <li> <a href="../careers.html">Postman Swag</a></li>
-                  </ul>
-                </div>
-                <div class="c-menu__group">
-                  <h6>Support</h6>
-                  <ul class="c-menu">
-                    <li> <a href="../enterprise.html">Support Center</a></li>
-                    <li> <a href="../learning-center.html">Reseller Support</a></li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li> <a href="../pricing.html">Pricing</a></li>
-          </ul>
-        </nav>
+            </div></a></nav>
       </div>
-      <div class="col d-flex justify-content-end align-items-center">
-        <div class="col nav-search__wrap">
-          <label for="search-01"><svg class="nav-search__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.87147 9.16437C10.5768 8.30243 11 7.20063 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11C7.20063 11 8.30243 10.5768 9.16437 9.87147L9.89648 10.6036L9.64648 10.8536L13.5758 14.7829C13.8101 15.0172 14.19 15.0172 14.4243 14.7829L14.7829 14.4243C15.0172 14.19 15.0172 13.8101 14.7829 13.5758L10.8536 9.64648L10.6036 9.89648L9.87147 9.16437ZM6 10C8.20914 10 10 8.20914 10 6C10 3.79086 8.20914 2 6 2C3.79086 2 2 3.79086 2 6C2 8.20914 3.79086 10 6 10Z"></path></svg></label>
-          <input type="text" id="search-01" name="search-01" placeholder="Search Postman"/>
-        </div><a class="button-secondary button-small spacing-right--xxs" href="#">Sign In</a><a class="button-primary button-small" href="#">Create Account </a>
+      <div class="col flex-grow-0">
+        <button class="c-menu_button d-sm-none" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>menu-8</title><g stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill="none"><line x1="1" y1="12" x2="23" y2="12"></line> <line x1="1" y1="5" x2="23" y2="5"></line> <line x1="1" y1="19" x2="23" y2="19"></line></g></svg></button>
       </div>
     </div>
+  </div>
+  <!--nav.nav-mobile.d-sm-none
+  ul.d-flex
+      li 
+          a(href="#") Product
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg>
+  
+          .c-popover
+              ul.c-menu
+                  li 
+                      a(href="../enterprise.html") What is Postman?
+  
+                  li 
+                      a(href="../learning-center.html") Tools
+  
+                  li 
+                      a(href="../about.html") Repository
+  
+                  li 
+                      a(href="../heros.html") Workspaces
+  
+                  li 
+                      a(href="../careers.html") Intelligence
+  
+  
+      li 
+          a(href="../careers.html") Pricing
+  
+  
+      li 
+          a(href="../careers.html") Enterprise
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg>
+  
+          .c-popover
+              ul.c-menu
+                  li 
+                      a(href="../#accordion") Postman Enterprise
+  
+                  li 
+                      a(href="../#breadcrumb") Enterprise Case Studies
+  
+                  li 
+                      a(href="../#buttons") Contact Us
+  
+                  
+  
+  
+      li 
+          a(href="../careers.html") Resources &amp; Support
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg>
+  
+          .c-popover.c-popover--menu
+              .c-menu__group
+                  h6 Learning
+  
+                  ul.c-menu
+                      li 
+                          a(href="../enterprise.html") Webinars
+  
+                      li 
+                          a(href="../learning-center.html") Breaking Changes Show
+  
+                      li 
+                          a(href="../about.html") Postman Space Camp
+  
+                      li 
+                          a(href="../careers.html") Case Studies
+  
+  
+              
+              .c-menu__group
+                  h6 Community &amp; Events
+  
+                  ul.c-menu
+                      li 
+                          a(href="../enterprise.html") Blog
+  
+                      li 
+                          a(href="../learning-center.html") Community
+  
+                      li 
+                          a(href="../about.html") Student Program
+  
+                      li 
+                          a(href="../careers.html") Student Summit
+  
+                      li 
+                          a(href="../careers.html") Postman Galaxy
+  
+                      li 
+                          a(href="../careers.html") Postman for Non-Profits
+  
+                      li 
+                          a(href="../careers.html") Postman Swag
+  
+  
+              .c-menu__group
+                  h6 Support
+  
+                  ul.c-menu
+                      li 
+                          a(href="../enterprise.html") Support Center
+  
+                      li 
+                          a(href="../learning-center.html") Reseller Support
+  
+  
+  
+  
+      li 
+          a(href="../pricing.html") Explore
+  
+  .col
+      a.button-secondary.button-small.spacing-right--xxs(href="#") Sign In
+  
+      a.button-primary.button-small(href="#") Create Account 
+  
+  -->
+  <div class="c-sandbox__nav">
+    <ul class="d-flex">
+      <li> <a href="#">
+          Pages<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg></a>
+        <div class="c-popover">
+          <ul class="c-menu">
+            <li> <a href="../enterprise.html">Enterprise<small>For companies that are huge</small></a></li>
+            <li> <a href="../learning-center.html">Learning Center<small>Never stop learning or you will</small></a></li>
+            <li> <a href="../about.html">About<small>It is all about us and us</small></a></li>
+            <li> <a href="../heros.html">Hero variants<small>A few variants of the hero section </small></a></li>
+            <li> <a href="../careers.html">Careers<small>We love working at Postman and you’ll too</small></a></li>
+            <li> <a href="../downloads.html">Downloads<small>Download Postman app for Mac, Windows, and Linux</small></a></li>
+            <li> <a href="../pricing.html">Pricing</a></li>
+            <li> <a href="../security.html">Security</a></li>
+            <li> <a href="../blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </li>
+      <li> <a href="../careers.html">
+          Components<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg></a>
+        <div class="c-popover">
+          <ul class="c-menu">
+            <li> <a href="../#accordion">Accordion</a></li>
+            <li> <a href="../#breadcrumb">Breadcrumb</a></li>
+            <li> <a href="../#buttons">Buttons</a></li>
+            <li> <a href="../cards.html">Cards</a></li>
+            <li> <a href="../feature-block.html">Feature Block</a></li>
+            <li> <a href="../featured-highlights.html">Featured Highlights</a></li>
+            <li> <a href="../#Form">Form</a></li>
+            <li> <a href="../heros.html">Heros</a></li>
+            <li> <a href="../logo-wall.html">Logo Wall</a></li>
+            <li> <a href="../#modal">Modal</a></li>
+            <li> <a href="../section.html">Section</a></li>
+            <li> <a href="../#side-nav">Side Nav</a></li>
+            <li> <a href="../#social-buttons">Social Buttons</a></li>
+            <li> <a href="../#table">Table</a></li>
+            <li> <a href="../#tabs">Tabs</a></li>
+            <li> <a href="../#typography">Typography</a></li>
+          </ul>
+        </div>
+      </li>
+      <li> <a href="../careers.html">
+          Resources &amp; Support<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg></a>
+        <div class="c-popover c-popover--menu">
+          <div class="c-menu__group">
+            <h6>Learning</h6>
+            <ul class="c-menu">
+              <li> <a href="../enterprise.html">Webinars</a></li>
+              <li> <a href="../learning-center.html">Breaking Changes</a></li>
+              <li> <a href="../about.html">Postman Space Camp</a></li>
+              <li> <a href="../careers.html">Case Studies</a></li>
+            </ul>
+          </div>
+          <div class="c-menu__group">
+            <h6>Community &amp; Events</h6>
+            <ul class="c-menu">
+              <li> <a href="../enterprise.html">Blog</a></li>
+              <li> <a href="../learning-center.html">Community</a></li>
+              <li> <a href="../about.html">Student Program</a></li>
+              <li> <a href="../careers.html">Student Summit</a></li>
+              <li> <a href="../careers.html">Postman Galaxy</a></li>
+              <li> <a href="../careers.html">Postman for Non-Profits</a></li>
+              <li> <a href="../careers.html">Postman Swag</a></li>
+            </ul>
+          </div>
+          <div class="c-menu__group">
+            <h6>Support</h6>
+            <ul class="c-menu">
+              <li> <a href="../enterprise.html">Support Center</a></li>
+              <li> <a href="../learning-center.html">Reseller Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li> <a href="../pricing.html">Pricing</a></li>
+    </ul>
   </div>
   <div class="c-hero has-bg spacing-below--xxl">
     <div class="container">

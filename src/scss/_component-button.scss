@@ -66,6 +66,7 @@ button,
   transition: .2s ease-in-out;
   text-align: center;
   justify-content: center;
+  white-space: nowrap;
 
   &:hover {
     border: none; // for link buttons

@@ -331,7 +331,7 @@ nav {
     bottom: 0;
     right: 0;
     left: 0;
-    top: 84px;
+    top: 80px;
     overflow: auto;
     z-index: 9;
 
@@ -349,11 +349,11 @@ nav {
         margin: 0;
 
         a {
-            border-top: 1px solid rgba(black, .08);
+            //border-top: 1px solid rgba(black, .08);
             justify-content: space-between;
             display: flex;
             font-size: 16px;
-            line-height: 48px;
+            line-height: 32px;
             padding-left: 0;
             padding-right: var(--spacing-xxs);
 
@@ -397,7 +397,7 @@ nav {
 
     .is-expanded {
         > a {
-            border-bottom: 1px solid rgba(black, .08);
+            //border-bottom: 1px solid rgba(black, .08);
 
             svg {
                 transform: rotate(180deg);

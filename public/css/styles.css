@@ -8186,7 +8186,7 @@ nav .c-menu {
   bottom: 0;
   right: 0;
   left: 0;
-  top: 84px;
+  top: 80px;
   overflow: auto;
   z-index: 9; }
   .nav-mobile .row {
@@ -8198,11 +8198,10 @@ nav .c-menu {
   .nav-mobile ul {
     margin: 0; }
     .nav-mobile ul a {
-      border-top: 1px solid rgba(0, 0, 0, 0.08);
       justify-content: space-between;
       display: flex;
       font-size: 16px;
-      line-height: 48px;
+      line-height: 32px;
       padding-left: 0;
       padding-right: var(--spacing-xxs); }
       .nav-mobile ul a svg {
@@ -8225,10 +8224,8 @@ nav .c-menu {
   .nav-mobile .is-collapsed .c-menu,
   .nav-mobile .is-collapsed .c-menu__group {
     display: none; }
-  .nav-mobile .is-expanded > a {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
-    .nav-mobile .is-expanded > a svg {
-      transform: rotate(180deg); }
+  .nav-mobile .is-expanded > a svg {
+    transform: rotate(180deg); }
   .nav-mobile .is-expanded .c-menu li:first-child a {
     border-top: none; }
   .nav-mobile .c-popover {

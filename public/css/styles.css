@@ -10264,6 +10264,9 @@ select {
 .pad-below--l {
   padding-bottom: var(--spacing-l); }
 
+.pad-in--s {
+  padding: var(--spacing-s); }
+
 .pad-in--m {
   padding: var(--spacing-m); }
 

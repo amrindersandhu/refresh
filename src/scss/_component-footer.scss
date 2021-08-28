@@ -11,7 +11,7 @@
     ul li a {
         align-items: center;
         display: inline-flex;
-        font-size: 14px;
+        
         padding: 4px 0;
 
         svg {
@@ -20,6 +20,7 @@
     }
 
     a {
+        font-size: 14px;
         color: var(--grey-70);
 
         &:hover {
@@ -37,7 +38,7 @@
 
 
 .logo--footer {
-    width: 48px;
+    width: 32px;
     filter: grayscale(100%);
     opacity: .64;
 }

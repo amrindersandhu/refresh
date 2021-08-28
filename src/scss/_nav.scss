@@ -326,6 +326,7 @@ nav {
 .nav-mobile {
     //background-color: white;
     backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
     position: fixed;
     bottom: 0;
     right: 0;

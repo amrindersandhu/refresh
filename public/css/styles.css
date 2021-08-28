@@ -8181,6 +8181,7 @@ nav .c-menu {
 
 .nav-mobile {
   backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
   position: fixed;
   bottom: 0;
   right: 0;

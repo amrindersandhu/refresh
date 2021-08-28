@@ -8180,7 +8180,7 @@ nav .c-menu {
   stroke: var(--grey-70); }
 
 .nav-mobile {
-  backdrop-filter: blur(32px);
+  backdrop-filter: blur(48px);
   -webkit-backdrop-filter: blur(32px);
   position: fixed;
   bottom: 0;

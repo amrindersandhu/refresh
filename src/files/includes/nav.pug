@@ -142,134 +142,133 @@
         .col.flex-grow-1 
             nav.d-flex.align-items-center
                 a.logo(href="/")
-                    .flip-container
-                        .flipper
-                            .front
-                                img(src="../i/logomark-postman.svg")
+                    img(src="../i/logomark-postman.svg")
                             
-                            .back
-                                img(src="../i/logo-flip-home.svg")
-        .col.flex-grow-0
+                    
+        .col.flex-grow-0.flex.align-content-center
             button.c-menu_button.d-sm-none(type="button")
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>menu-8</title><g stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill="none"><line x1="1" y1="12" x2="23" y2="12"></line> <line x1="1" y1="5" x2="23" y2="5"></line> <line x1="1" y1="19" x2="23" y2="19"></line></g></svg>
 
 
 
-//nav.nav-mobile.d-sm-none
-    ul.d-flex
-        li 
-            a(href="#") Product
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg>
+nav.nav-mobile.d-sm-none
+    .container
+        .row.flex-column
+            .col
+                ul
+                    li.is-collapsed 
+                        a(href="#") Product
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg>
 
-            .c-popover
-                ul.c-menu
-                    li 
-                        a(href="../enterprise.html") What is Postman?
+                        
+                        ul.c-menu
+                            li 
+                                a(href="../enterprise.html") What is Postman?
 
-                    li 
-                        a(href="../learning-center.html") Tools
+                            li 
+                                a(href="../learning-center.html") Tools
 
-                    li 
-                        a(href="../about.html") Repository
+                            li 
+                                a(href="../about.html") Repository
 
-                    li 
-                        a(href="../heros.html") Workspaces
+                            li 
+                                a(href="../heros.html") Workspaces
 
-                    li 
-                        a(href="../careers.html") Intelligence
+                            li 
+                                a(href="../careers.html") Intelligence
 
-
-        li 
-            a(href="../careers.html") Pricing
-
-
-        li 
-            a(href="../careers.html") Enterprise
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg>
-
-            .c-popover
-                ul.c-menu
-                    li 
-                        a(href="../#accordion") Postman Enterprise
 
                     li 
-                        a(href="../#breadcrumb") Enterprise Case Studies
+                        a(href="../careers.html") Pricing
+
+
+                    li.is-collapsed 
+                        a(href="../careers.html") Enterprise
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg>
+
+                        
+                        ul.c-menu
+                            li 
+                                a(href="../#accordion") Postman Enterprise
+
+                            li 
+                                a(href="../#breadcrumb") Enterprise Case Studies
+
+                            li 
+                                a(href="../#buttons") Contact Us
+
+                                
+
+
+                    li.is-collapsed 
+                        a(href="../careers.html") Resources &amp; Support
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg>
+
+                        
+                        .c-menu__group
+                            h6 Learning
+
+                            ul.c-menu
+                                li 
+                                    a(href="../enterprise.html") Webinars
+
+                                li 
+                                    a(href="../learning-center.html") Breaking Changes Show
+
+                                li 
+                                    a(href="../about.html") Postman Space Camp
+
+                                li 
+                                    a(href="../careers.html") Case Studies
+
+
+                        
+                        .c-menu__group
+                            h6 Community &amp; Events
+
+                            ul.c-menu
+                                li 
+                                    a(href="../enterprise.html") Blog
+
+                                li 
+                                    a(href="../learning-center.html") Community
+
+                                li 
+                                    a(href="../about.html") Student Program
+
+                                li 
+                                    a(href="../careers.html") Student Summit
+
+                                li 
+                                    a(href="../careers.html") Postman Galaxy
+
+                                li 
+                                    a(href="../careers.html") Postman for Non-Profits
+
+                                li 
+                                    a(href="../careers.html") Postman Swag
+
+
+                        .c-menu__group
+                            h6 Support
+
+                            ul.c-menu
+                                li 
+                                    a(href="../enterprise.html") Support Center
+
+                                li 
+                                    a(href="../learning-center.html") Reseller Support
+
+
+
 
                     li 
-                        a(href="../#buttons") Contact Us
+                        a(href="../pricing.html") Explore
 
-                    
+            .col.fixed-bottom.pad-in--m.border-top
+                a.button-secondary.w-100.spacing-below--s(href="#") Sign In
 
-
-        li 
-            a(href="../careers.html") Resources &amp; Support
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><g><path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z"></path></g></svg>
-
-            .c-popover.c-popover--menu
-                .c-menu__group
-                    h6 Learning
-
-                    ul.c-menu
-                        li 
-                            a(href="../enterprise.html") Webinars
-
-                        li 
-                            a(href="../learning-center.html") Breaking Changes Show
-
-                        li 
-                            a(href="../about.html") Postman Space Camp
-
-                        li 
-                            a(href="../careers.html") Case Studies
-
-
-                
-                .c-menu__group
-                    h6 Community &amp; Events
-
-                    ul.c-menu
-                        li 
-                            a(href="../enterprise.html") Blog
-
-                        li 
-                            a(href="../learning-center.html") Community
-
-                        li 
-                            a(href="../about.html") Student Program
-
-                        li 
-                            a(href="../careers.html") Student Summit
-
-                        li 
-                            a(href="../careers.html") Postman Galaxy
-
-                        li 
-                            a(href="../careers.html") Postman for Non-Profits
-
-                        li 
-                            a(href="../careers.html") Postman Swag
-
-
-                .c-menu__group
-                    h6 Support
-
-                    ul.c-menu
-                        li 
-                            a(href="../enterprise.html") Support Center
-
-                        li 
-                            a(href="../learning-center.html") Reseller Support
-
-
-
-
-        li 
-            a(href="../pricing.html") Explore
-
-    .col
-        a.button-secondary.button-small.spacing-right--xxs(href="#") Sign In
-
-        a.button-primary.button-small(href="#") Create Account 
+                a.button-primary.w-100(href="#") Create Account 
 
 .c-sandbox__nav
     ul.d-flex

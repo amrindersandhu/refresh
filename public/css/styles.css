@@ -8179,6 +8179,39 @@ nav .c-menu {
 .c-menu_button svg {
   stroke: var(--grey-70); }
 
+.nav-mobile {
+  backdrop-filter: blur(32px);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 84px;
+  z-index: 9; }
+  .nav-mobile ul {
+    margin: 0; }
+    .nav-mobile ul a {
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      justify-content: space-between;
+      display: flex;
+      font-size: 16px;
+      line-height: 48px;
+      padding-left: 0; }
+      .nav-mobile ul a svg {
+        height: 16px;
+        width: 16px; }
+  .nav-mobile .c-menu__group {
+    padding-top: var(--spacing-s);
+    padding-left: var(--spacing-s); }
+  .nav-mobile .is-collapsed .c-menu,
+  .nav-mobile .is-collapsed .c-menu__group {
+    display: none; }
+  .nav-mobile .c-popover {
+    opacity: 1;
+    visibility: visible; }
+  .nav-mobile .fixed-bottom {
+    backdrop-filter: blur(32px);
+    z-index: 19; }
+
 .c-sandbox__nav {
   position: fixed;
   bottom: 16px;

@@ -8240,8 +8240,6 @@ nav .c-menu {
   position: fixed;
   bottom: 16px;
   right: 16px; }
-  .c-sandbox__nav ul {
-    display: none !important; }
 
 .c-avatar__wrap {
   position: relative; }

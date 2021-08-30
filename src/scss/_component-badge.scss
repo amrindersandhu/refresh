@@ -65,6 +65,16 @@
 
 
 .c-tag {
-  text-transform: uppercase;
+  border-bottom: 1px solid var(--grey-20);
+  color: var(--grey-70);
   font-size: 14px;
+  margin: 0 2px;
+  position: relative;
+
+  // + .c-tag:before {
+  //   content: "·";
+  //   color: var(--grey-30);
+  //   left: -4px;
+  //   position: absolute;
+  // }
 }

@@ -7795,6 +7795,14 @@ strong,
 .list-ordered {
   margin-left: 32px;
   margin-bottom: 24px; }
+  .c-doc ul ul, .c-doc ul ol,
+  .c-doc ol ul,
+  .c-doc ol ol,
+  .list-unordered ul,
+  .list-unordered ol,
+  .list-ordered ul,
+  .list-ordered ol {
+    margin: 8px 0 24px 32px; }
   .c-doc ul li,
   .c-doc ol li,
   .list-unordered li,
@@ -7923,9 +7931,10 @@ figcaption,
 .caption {
   color: var(--grey-70);
   font-size: 14px;
-  letter-spacing: 0.24px;
+  letter-spacing: 0;
   line-height: 20px;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 24px; }
 
 .intro {
   font-size: 22px;
@@ -7968,7 +7977,8 @@ blockquote {
   letter-spacing: -0.36px;
   padding-top: 16px;
   padding-left: 32px;
-  position: relative; }
+  position: relative;
+  margin-bottom: 48px; }
   @media (max-width: 575.98px) {
     blockquote {
       font-size: 20px; } }
@@ -8366,8 +8376,11 @@ nav .c-menu {
     transform: translateX(2px) translateY(0); }
 
 .c-tag {
-  text-transform: uppercase;
-  font-size: 14px; }
+  border-bottom: 1px solid var(--grey-20);
+  color: var(--grey-70);
+  font-size: 14px;
+  margin: 0 2px;
+  position: relative; }
 
 .banner {
   align-items: center;
@@ -8880,6 +8893,63 @@ label {
     cursor: not-allowed; }
   .input-checkbox:disabled + label:before {
     border-color: var(--grey-30); }
+
+.comment .avatar {
+  border-radius: 999px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px rgba(0, 0, 0, 0.16); }
+
+.comment cite {
+  font-size: 14px;
+  line-height: 1; }
+
+.comment .children .avatar {
+  left: 48px; }
+
+.comment .children .comment-author,
+.comment .children .comment-meta,
+.comment .children .comment-text {
+  padding-left: var(--spacing-xxl); }
+
+.comment hr {
+  margin: var(--spacing-m) 0; }
+
+.comment-author,
+.comment-meta {
+  padding-left: var(--spacing-l); }
+
+.comment-meta {
+  color: var(--grey-70);
+  font-size: 14px;
+  line-height: 1;
+  padding-bottom: var(--spacing-xs); }
+
+.wp_ulike_general_class {
+  border: 1px solid var(--grey-30);
+  border-radius: 4px;
+  display: inline-flex;
+  padding: 4px 8px 4px 4px; }
+
+.wp_ulike_btn {
+  position: relative;
+  margin: 0;
+  vertical-align: baseline; }
+
+.wpulike-heart .wp_ulike_put_image:after {
+  color: var(--grey-50);
+  content: '❤';
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+
+.count-box {
+  color: var(--grey-70); }
 
 .c-hero {
   align-items: center;
@@ -10236,6 +10306,9 @@ select {
 
 .spacing-top--xxl {
   margin-top: var(--spacing-xxl); }
+
+.spacing-left--xxs {
+  margin-left: var(--spacing-xxs); }
 
 .spacing-right--xxs {
   margin-right: var(--spacing-xxs); }

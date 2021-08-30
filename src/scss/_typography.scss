@@ -147,6 +147,10 @@ strong,
     margin-left: 32px;
     margin-bottom: 24px;
 
+    ul, ol {
+        margin: 8px 0 24px 32px;
+    }
+
     li {
         margin-bottom: 8px;
         position: relative;
@@ -298,9 +302,10 @@ figcaption,
 .caption {
     color: var(--grey-70);
     font-size: 14px;
-    letter-spacing: 0.24px;
+    letter-spacing: 0;
     line-height: 20px;
     text-align: center;
+    margin-bottom: 24px;
 }
 
 
@@ -354,6 +359,7 @@ blockquote {
     padding-top: 16px;
     padding-left: 32px;
     position: relative;
+    margin-bottom: 48px;
 
     @media (max-width: 575.98px) { 
         font-size: 20px;

@@ -8266,7 +8266,7 @@ nav .c-menu {
   padding: 0 var(--spacing-xs);
   z-index: 2; }
   .nav-secondary h3 {
-    margin-bottom: 4px; }
+    margin-bottom: 0px; }
   .nav-secondary li a {
     color: var(--grey-70);
     display: inline-flex;

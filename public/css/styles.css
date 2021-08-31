@@ -7680,7 +7680,7 @@ main {
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.32); }
 
 .has-nav-secondary {
-  padding-top: 128px; }
+  padding-top: 106px; }
 
 @font-face {
   font-family: 'Degular-Display-Semibold';
@@ -10393,6 +10393,9 @@ select {
 .pad-in--l {
   padding: var(--spacing-l); }
 
+.pad-top--xl {
+  padding-top: var(--spacing-xl); }
+
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -10446,7 +10449,8 @@ hr {
 .border {
   border: 1px solid var(--grey-20) !important; }
 
-div[class*="border"] {
+.border-top,
+.border-bottom {
   border-color: var(--grey-20) !important; }
 
 .rounded {

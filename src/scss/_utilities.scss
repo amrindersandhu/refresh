@@ -168,6 +168,10 @@
     padding: var(--spacing-l);
 }
 
+.pad-top--xl {
+    padding-top: var(--spacing-xl);
+}
+
 
 
 .sr-only:not(:focus):not(:active) {
@@ -250,7 +254,8 @@ hr {
     border: 1px solid var(--grey-20) !important;
 }
 
-div[class*="border"] {
+.border-top,
+.border-bottom {
     border-color: var(--grey-20) !important;
 }
 

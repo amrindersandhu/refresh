@@ -7679,6 +7679,9 @@ main {
   border: 8px solid var(--grey-20);
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.32); }
 
+.has-nav-secondary {
+  padding-top: 128px; }
+
 @font-face {
   font-family: 'Degular-Display-Semibold';
   src: url("../fonts/Degular_Display-Semibold.woff") format("woff"), url("../fonts/Degular_Display-Semibold.woff2") format("woff2"); }
@@ -7994,6 +7997,7 @@ blockquote {
     margin-top: 24px; }
 
 .c-header {
+  background-color: rgba(255, 255, 255, 0.32);
   backdrop-filter: blur(32px);
   padding: 8px 16px; }
 
@@ -8109,13 +8113,13 @@ nav .c-menu {
     width: 320px; }
     .nav-search__wrap input[type="text"]::placeholder {
       color: var(--grey-50); }
-
-.nav-search__icon {
-  position: absolute;
-  margin-left: 8px;
-  top: 8px; }
-  .nav-search__icon path {
-    fill: var(--grey-50); }
+  .nav-search__wrap label {
+    position: absolute;
+    margin-left: 8px;
+    top: 50%;
+    transform: translateY(-50%); }
+    .nav-search__wrap label path {
+      fill: var(--grey-50); }
 
 .nav-search--centered {
   max-width: 360px; }
@@ -8251,6 +8255,25 @@ nav .c-menu {
   bottom: 16px;
   right: 16px; }
 
+.nav-secondary {
+  background-color: rgba(255, 255, 255, 0.32);
+  backdrop-filter: blur(64px);
+  position: fixed;
+  margin-top: 52px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 var(--spacing-xs);
+  z-index: 2; }
+  .nav-secondary h3 {
+    margin-bottom: 4px; }
+  .nav-secondary li a {
+    color: var(--grey-70);
+    display: inline-flex;
+    font-size: 14px;
+    padding: 16px 16px;
+    font-weight: 400; }
+
 .c-avatar__wrap {
   position: relative; }
 
@@ -8279,8 +8302,8 @@ nav .c-menu {
   width: 32px; }
 
 .c-avatar--m {
-  height: 64px;
-  width: 64px; }
+  height: 48px;
+  width: 48px; }
   .c-avatar--m + .c-avatar--badge {
     bottom: -4px;
     left: -4px; }
@@ -9778,7 +9801,7 @@ label {
 .c-sidenav {
   background-color: var(--grey-10);
   height: 100%;
-  padding: var(--spacing-s) var(--spacing-s) var(--spacing-m); }
+  padding: var(--spacing-xl) var(--spacing-s) var(--spacing-m); }
   .c-sidenav button {
     font-size: 14px;
     width: 100%;
@@ -10309,6 +10332,9 @@ select {
 
 .spacing-left--xxs {
   margin-left: var(--spacing-xxs); }
+
+.spacing-left--xs {
+  margin-left: var(--spacing-xs); }
 
 .spacing-right--xxs {
   margin-right: var(--spacing-xxs); }

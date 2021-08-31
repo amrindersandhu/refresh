@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&amp;family=Inter:wght@400;600&amp;display=swap"/>
   </head>
 </html>
-<body class="has-nav-secondary">
+<body class="0position-fixed">
   <div class="container-fluid fixed-top c-header d-none d-sm-block">
     <div class="row justify-content-between align-items-center">
       <div class="col flex-grow-1"> 
@@ -177,121 +177,129 @@
       </div>
     </div>
   </nav>
-  <nav class="nav-secondary border-bottom border-top">
-    <div class="container-fluid p-0">
-      <div class="row justify-space-between align-content-center">
-        <div class="col nav-secondary__lhs align-items-center d-flex flex-grow-0">
-          <h3 class="heading-05"><a href="#">Blog</a></h3>
-        </div>
-        <div class="col justify-content-end text-right nav-secondary__rhs d-flex flex-grow-1">
-          <ul class="d-flex"> 
-            <li><a href="#">Product Updates</a></li>
-            <li><a href="#">Company News</a></li>
-            <li><a href="#">Tutorials</a></li>
-            <li><a href="#">Postman Culture </a></li>
-          </ul>
-          <div class="nav-search__wrap flex-grow-0 spacing-left--xs d-flex align-items-center">
-            <label for="search-01"><svg class="nav-search__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.87147 9.16437C10.5768 8.30243 11 7.20063 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11C7.20063 11 8.30243 10.5768 9.16437 9.87147L9.89648 10.6036L9.64648 10.8536L13.5758 14.7829C13.8101 15.0172 14.19 15.0172 14.4243 14.7829L14.7829 14.4243C15.0172 14.19 15.0172 13.8101 14.7829 13.5758L10.8536 9.64648L10.6036 9.89648L9.87147 9.16437ZM6 10C8.20914 10 10 8.20914 10 6C10 3.79086 8.20914 2 6 2C3.79086 2 2 3.79086 2 6C2 8.20914 3.79086 10 6 10Z"></path></svg></label>
-            <input type="text" id="search-01" name="search-01" placeholder="Search Postman Blog"/>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <div class="c-hero pad-top--xl">
+  <div class="c-hero has-bg spacing-below--xxl">
     <div class="container">
-      <div class="row">
-        <div class="col-xl-5 pad-right--xl">
-          <h1><a href="#">Postman’s Series D Funding and the API-First World</a></h1>
-          <div class="d-flex align-items-center spacing-below--s">
-            <div class="c-avatar__wrap spacing-right--xs"><img class="c-avatar--person c-avatar--s" src="https://secure.gravatar.com/avatar/6b851c64058d3e0bf20466730762bf70?s=70&amp;d=https%3A%2F%2Fblog.postman.com%2Fwp-content%2Fuploads%2F2020%2F06%2Fpostmanaut-avatar.png&amp;r=g"/></div>
-            <p class="text-small m-0">Abhinav Asthana<span class="c-sep">&middot;</span><small>August 25, 2021</small></p>
-          </div>
-          <p>I am excited to announce a huge milestone for Postman today: We’ve closed a Series D investment round of $225 million that values the company at $5.6 billion. The round was led by Insight Partners and joined by three new investors—Coatue, Battery Ventures, and BOND.</p><a href="../blog-post.html">Read More <span class="link-arrow">&rarr;</span></a>
+      <div class="row align-items-center">
+        <div class="col-xl-6">
+          <h1>Open Positions</h1>
         </div>
-        <div class="col-xl-7"><img class="w-100" src="https://blog.postman.com/wp-content/uploads/2021/08/blog-image-API-first-world-1.jpg"/></div>
-      </div>
-    </div>
-  </div>
-  <div class="c-section has-bg spacing-below--xxl">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12 spacing-below--m">
-          <h2>Editor’s Pick</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col ml-3 mr-3 ml-n1">
-          <div class="h-100"><a class="c-cover spacing-below--s" href="#" style="background-image: url(https://blog.postman.com/wp-content/uploads/2021/08/bann-200K-OpenAPI-files-768x432.png); height: 240px; background-size: cover;"></a>
-            <h3 class="heading-04 spacing-below--s"> <a href="#">What We Learned from 200,000 OpenAPI Files</a></h3>
-            <div class="d-flex align-items-center spacing-below--s">
-              <div class="c-avatar__wrap spacing-right--xs"><img class="c-avatar--person c-avatar--s" src="https://secure.gravatar.com/avatar/351407fcffce8c3cafbb33ce3c5ffbbb?s=70&amp;d=https%3A%2F%2Fblog.postman.com%2Fwp-content%2Fuploads%2F2020%2F06%2Fpostmanaut-avatar.png&amp;r=g"/></div>
-              <p class="text-small m-0">Mike Ralphson<span class="c-sep">&middot;</span><small>August 23, 2021</small></p>
-            </div>
-            <p>After attempting to collect as many publicly available OpenAPI Specification (OAS) files from the internet as possible, Assetnote—an Australian information security company—recently wrote a piece called “Contextual Content Discovery: You’ve Forgotten about the API Endpoints” and presented its work on a tool called Kiterunner at the 2021 BSides Canberra conference.</p><a href="#">Read More <span class="link-arrow">&rarr;</span></a>
-          </div>
-        </div>
-        <div class="col ml-3 mr-3">
-          <div class="h-100"><a class="c-cover spacing-below--s" href="#" style="background-image: url(../../i/bc-02.jpg); height: 240px; background-size: cover;"></a>
-            <h3 class="heading-04 spacing-below--s"> <a href="#">“Breaking Changes” Episode 3 Recap: BetterCloud’s Lorinda Brandon</a></h3>
-            <div class="d-flex align-items-center spacing-below--s">
-              <div class="c-avatar__wrap spacing-right--xs"><img class="c-avatar--person c-avatar--s" src="https://secure.gravatar.com/avatar/221f4b4c0b277cf0dfb0d0abbe94ad13?s=70&amp;d=https%3A%2F%2Fblog.postman.com%2Fwp-content%2Fuploads%2F2020%2F06%2Fpostmanaut-avatar.png&amp;r=g"/></div>
-              <p class="text-small m-0">Claire Froelich<span class="c-sep">&middot;</span><small>August 23, 2021</small></p>
-            </div>
-            <p>In Episode 3 of Breaking Changes—our weekly talk show where Postman Chief Evangelist Kin Lane hosts stellar guests from all across the API universe to discuss, debate, and solve the latest topics around APIs and API-first—BetterCloud VP of Engineering Lorinda Brandon shares her expertise. </p><a href="#">Read More <span class="link-arrow">&rarr;</span></a>
-          </div>
-        </div>
-        <div class="col ml-3 mr-3">
-          <div class="h-100"><a class="c-cover spacing-below--s" href="#" style="background-image: url(https://blog.postman.com/wp-content/uploads/2021/08/Bann_Public-Link-Governance-768x432.png); height: 240px; background-size: cover;"></a>
-            <h3 class="heading-04 spacing-below--s"> <a href="#">Govern Your Public API Collections More Effectively</a></h3>
-            <div class="d-flex align-items-center spacing-below--s">
-              <div class="c-avatar__wrap spacing-right--xs"><img class="c-avatar--person c-avatar--s" src="https://secure.gravatar.com/avatar/0970391195b6cf9819da754a80cf10d7?s=70&amp;d=https%3A%2F%2Fblog.postman.com%2Fwp-content%2Fuploads%2F2020%2F06%2Fpostmanaut-avatar.png&amp;r=g"/></div>
-              <p class="text-small m-0">Avinash Choudhary<span class="c-sep">&middot;</span><small>August 19, 2021</small></p>
-            </div>
-            <p>Visibility into your APIs is crucial for running a successful API program in any organization. Having visibility enables you to effectively govern what APIs your organization exposes publicly for external consumers. Today, millions of developers use public collection links, Postman public documentation, and public workspaces to share their public APIs with prospective consumers.</p><a href="#">Read More <span class="link-arrow">&rarr;</span></a>
-          </div>
+        <div class="col-xl-6">
+          <figure><img src="../../i/postman-careers.svg"/></figure>
         </div>
       </div>
     </div>
   </div>
   <div class="container spacing-below--xxl">
-    <div class="row">
-      <div class="col ml-3 mr-3 ml-n1">
-        <div class="h-100"><a class="c-cover spacing-below--s" href="#" style="background-image: url(https://blog.postman.com/wp-content/uploads/2021/08/blog-hackathon-winner-768x432.png); height: 240px; background-size: cover;"></a>
-          <h3 class="heading-04 spacing-below--s"> <a href="#">Announcing the “Visualize for the Prize” Student Hackathon Winners</a></h3>
-          <div class="d-flex align-items-center spacing-below--s">
-            <div class="c-avatar__wrap spacing-right--xs"><img class="c-avatar--person c-avatar--s" src="https://secure.gravatar.com/avatar/41d47b09adf033bd1d7eea1c7c000c75?s=70&amp;d=https%3A%2F%2Fblog.postman.com%2Fwp-content%2Fuploads%2F2020%2F06%2Fpostmanaut-avatar.png&amp;r=g"/></div>
-            <p class="text-small m-0">Joyce Lin<span class="c-sep">&middot;</span><small>August 23, 2021</small></p>
-          </div>
-          <p>This past weekend, on August 7-8, 2021, we hosted the inaugural Postman Student Summit. Thousands of students, educators, and API enthusiasts across the globe registered for a momentous two-day celebration of APIs.</p><a href="#">Read More <span class="link-arrow">&rarr;</span></a>
-        </div>
-      </div>
-      <div class="col ml-3 mr-3">
-        <div class="h-100"><a class="c-cover spacing-below--s" href="#" style="background-image: url(../../i/bc-03.jpg); height: 240px; background-size: cover;"></a>
-          <h3 class="heading-04 spacing-below--s"> <a href="#">“Breaking Changes” Episode 3 Recap: BetterCloud’s Lorinda Brandon</a></h3>
-          <div class="d-flex align-items-center spacing-below--s">
-            <div class="c-avatar__wrap spacing-right--xs"><img class="c-avatar--person c-avatar--s" src="https://secure.gravatar.com/avatar/5a2fc179134f7836d3ad4906d5cd5daa?s=70&amp;d=https%3A%2F%2Fblog.postman.com%2Fwp-content%2Fuploads%2F2020%2F06%2Fpostmanaut-avatar.png&amp;r=g"/></div>
-            <p class="text-small m-0">Shruti Duge<span class="c-sep">&middot;</span><small>August 23, 2021</small></p>
-          </div>
-          <p>In Episode 3 of Breaking Changes—our weekly talk show where Postman Chief Evangelist Kin Lane hosts stellar guests from all across the API universe to discuss, debate, and solve the latest topics around APIs and API-first—BetterCloud VP of Engineering Lorinda Brandon shares her expertise. </p><a href="#">Read More <span class="link-arrow">&rarr;</span></a>
-        </div>
-      </div>
-      <div class="col ml-3 mr-3">
-        <div class="h-100"><a class="c-cover spacing-below--s" href="#" style="background-image: url(https://blog.postman.com/wp-content/uploads/2021/08/Postman-largest-API-network-768x432.jpg); height: 240px; background-size: cover;"></a>
-          <h3 class="heading-04 spacing-below--s"> <a href="#">Postman Public API Network Is Now the World’s Largest Public API Hub</a></h3>
-          <div class="d-flex align-items-center spacing-below--s">
-            <div class="c-avatar__wrap spacing-right--xs"><img class="c-avatar--person c-avatar--s" src="https://secure.gravatar.com/avatar/1f428f234c27ef14bd862b133fbe0033?s=70&amp;d=https%3A%2F%2Fblog.postman.com%2Fwp-content%2Fuploads%2F2020%2F06%2Fpostmanaut-avatar.png&amp;r=g"/></div>
-            <p class="text-small m-0">The Postman Team<span class="c-sep">&middot;</span><small>August 19, 2021</small></p>
-          </div>
-          <p>We are proud to announce that the Postman Public API Network is now the largest API hub in the world, serving 17 million users and 500,000 organizations worldwide. The global directory hosts thousands of public APIs, connecting international developers and providing a central catalog of APIs built for discovery, exploration, and sharing.</p><a href="#">Read More <span class="link-arrow">&rarr;</span></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container spacing-below--xxl">
-    <div class="row">
+    <div class="row spacing-below--m">
       <div class="col">
-        <div class="c-pagination"><a class="c-pagination__item" href="#">&larr; Older Posts</a><a class="c-pagination__item" href="#">Newer Posts &rarr;</a></div>
+        <h2>Customer Org</h2>
+        <table class="w-100 table table-striped">
+          <tbody>
+            <tr>
+              <td><a href="/career-details.html">Business Analyst, Strategy and Operations</a></td>
+              <td class="w-20">Bangalore, India</td>
+              <td class="w-15"><a href="#">Apply &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Director, Revenue Operations</a></td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Apply &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Manager, Renewals</a></td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Apply &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Director of Customer Success, Advocacy & Renewals</a></td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Apply &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Business Analyst, Strategy and Operations</a></td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Apply &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Director, Revenue Operations</a></td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Apply &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Manager, Renewals</a></td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Apply &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Director of Customer Success, Advocacy & Renewals</a></td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Apply &rarr;</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row spacing-below--m">
+      <div class="col">
+        <h2>Data</h2>
+        <table class="w-100 table table-striped">
+          <tbody>
+            <tr>
+              <td><a href="#">Data Engineer I</a></td>
+              <td class="w-20">Bangalore, India</td>
+              <td class="w-15"><a href="#">Apply &rarr;</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row spacing-below--m">
+      <div class="col">
+        <h2>People Operations</h2>
+        <table class="w-100 table table-striped">
+          <tbody>
+            <tr>
+              <td><a href="#">Business Analyst, Strategy and Operations</a></td>
+              <td class="w-20">Bangalore, India</td>
+              <td class="w-15"><a href="#">Apply &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Director, Revenue Operations</a></td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Apply &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Manager, Renewals</a></td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Apply &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Director of Customer Success, Advocacy & Renewals</a></td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Apply &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Business Analyst, Strategy and Operations</a></td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Apply &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Director, Revenue Operations</a></td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Apply &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Manager, Renewals</a></td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Apply &rarr;</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Director of Customer Success, Advocacy & Renewals</a></td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Apply &rarr;</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>

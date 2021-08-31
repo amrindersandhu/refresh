@@ -7682,6 +7682,9 @@ main {
 .has-nav-secondary {
   padding-top: 106px; }
 
+.pg-rel-notes h2 {
+  margin-top: 96px; }
+
 @font-face {
   font-family: 'Degular-Display-Semibold';
   src: url("../fonts/Degular_Display-Semibold.woff") format("woff"), url("../fonts/Degular_Display-Semibold.woff2") format("woff2"); }
@@ -9822,6 +9825,8 @@ label {
     transform: rotate(0); }
   .c-sidenav .is-collapsed ul {
     display: none; }
+  .c-sidenav.has-no-childern ul {
+    margin-left: 0; }
 
 .icon-parent-indicator {
   stroke: var(--grey-70);

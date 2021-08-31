@@ -43,6 +43,10 @@
             display: none;
         }
     }
+
+    &.has-no-childern ul {
+        margin-left: 0;
+    }
 }
 
 

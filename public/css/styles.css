@@ -8110,7 +8110,7 @@ nav .c-menu {
     padding: 4px 24px 4px 28px;
     height: 32px;
     margin: 0;
-    width: 320px; }
+    width: 280px; }
     .nav-search__wrap input[type="text"]::placeholder {
       color: var(--grey-50); }
   .nav-search__wrap label {
@@ -9801,7 +9801,7 @@ label {
 .c-sidenav {
   background-color: var(--grey-10);
   height: 100%;
-  padding: var(--spacing-xl) var(--spacing-s) var(--spacing-m); }
+  padding: var(--spacing-s); }
   .c-sidenav button {
     font-size: 14px;
     width: 100%;

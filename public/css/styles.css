@@ -8004,22 +8004,26 @@ blockquote {
   backdrop-filter: blur(32px);
   padding: 8px 16px; }
 
-.c-header--dark {
+.c-header--dark .c-header {
   background-color: transparent;
   backdrop-filter: blur(0); }
-  .c-header--dark nav > ul > li > a {
-    color: var(--grey-20); }
-    .c-header--dark nav > ul > li > a svg path {
-      fill: var(--grey-40); }
-  .c-header--dark .nav-search__wrap input[type="text"] {
-    background-color: transparent;
-    border-color: transparent;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.32) inset; }
-  .c-header--dark .nav-search__icon path {
-    fill: var(--grey-50); }
-  .c-header--dark .button-secondary {
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.32) inset;
-    color: var(--grey-20); }
+
+.c-header--dark nav > ul > li > a {
+  color: var(--grey-20); }
+  .c-header--dark nav > ul > li > a svg path {
+    fill: var(--grey-40); }
+
+.c-header--dark .nav-search__wrap input[type="text"] {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.32) inset; }
+
+.c-header--dark .nav-search__icon path {
+  fill: var(--grey-50); }
+
+.c-header--dark .button-secondary {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.32) inset;
+  color: var(--grey-20); }
 
 .logo {
   align-items: center;
@@ -8999,6 +9003,15 @@ label {
   background-position-x: center;
   background-position-y: bottom;
   background-size: 3600px;
+  height: 80vh; }
+
+.c-hero--enterprise {
+  background-color: #081A37;
+  background-image: url("../i/enterprise.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 150vw;
   height: 80vh; }
 
 .c-section.has-bg,

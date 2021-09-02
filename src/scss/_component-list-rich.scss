@@ -1,0 +1,40 @@
+//////////////////
+// #LIST RICH /////////
+//////////////////
+
+
+.c-rich-list {
+    border-top: 1px solid var(--grey-20);
+
+    h4 {
+        margin-bottom: 0;
+    }
+
+    a {
+        border-bottom: 1px solid var(--grey-20);
+        color: var(--grey-90);
+        display: block;
+        padding: var(--spacing-s) var(--spacing-xxl) var(--spacing-s) 0;
+        position: relative;
+
+        &::after {
+            color: var(--grey-50);
+            content: "->";
+            display: block;
+            font-size: 24px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateX(-8px) translateY(-50%);
+            transition: transform .2s ease-in-out;
+        }
+
+        &:hover {
+            color: var(--blue-70);
+
+            &::after {
+                transform: translateX(0) translateY(-50%);
+            }
+        }
+    }
+}

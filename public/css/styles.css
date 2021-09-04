@@ -9595,9 +9595,14 @@ p:hover .link--subtle {
 
 .c-rich-list {
   border-top: 1px solid var(--grey-20); }
+  .c-rich-list figure img {
+    margin-right: var(--spacing-s);
+    height: 64px;
+    width: auto; }
   .c-rich-list h4 {
     margin-bottom: 0; }
   .c-rich-list a {
+    align-items: center;
     border-bottom: 1px solid var(--grey-20);
     color: var(--grey-90);
     display: block;

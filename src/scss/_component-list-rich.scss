@@ -5,15 +5,30 @@
 
 .c-rich-list {
     border-top: 1px solid var(--grey-20);
+    
+    figure {
+        //margin-bottom: 0;
+
+        img {
+            //background-color: var(--grey-10);
+            margin-right: var(--spacing-s);
+            //box-shadow: 4px 4px 0 rgba(black, .24);
+            //padding: 8px;
+            height: 64px;
+            width: auto;
+        }
+    }
 
     h4 {
         margin-bottom: 0;
     }
 
     a {
+        align-items: center;
         border-bottom: 1px solid var(--grey-20);
         color: var(--grey-90);
         display: block;
+        
         padding: var(--spacing-s) var(--spacing-xxl) var(--spacing-s) 0;
         position: relative;
 

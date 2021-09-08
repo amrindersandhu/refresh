@@ -1,11 +1,18 @@
 .container.c-footer.spacing-top--xxl.spacing-below--xl
-    .row.spacing-below--xl
-        .col-xl-4.col-6.mb-5
+    .row
+        .col-xl-4.d-flex.justify-content-between.flex-column
+            a.d-block.spacing-below--xxs(href="/")
+                img.logo--footer(src="../i/logomark-postman.svg")
+
+
+            small.spacing-below--xxs © Postman, Inc.
+
+        .col-xl-3.col-6
             h6 Product
 
             .row
                 .col-xl-6
-                    ul
+                    ul.m-0
                         li
                             a(href="#") What is Postman?
 
@@ -21,8 +28,6 @@
                         li 
                             a(href="../careers.html") Intelligence
 
-                .col-xl-6
-                    ul
                         li
                             a(href="#") Enterprise
 
@@ -37,10 +42,10 @@
 
 
 
-        .col-xl-2.offset-2.col-6
+        .col-xl-3.col-6
             h6 Company
 
-            ul
+            ul.spacing-below--m
                 li
                     a(href="#") About
 
@@ -54,11 +59,26 @@
                     a(href="#") Press &amp; Media
 
 
+ 
+            h6 Security &amp; Terms
 
-        .col-xl-1.offset-3.col-6
+            ul.m-0
+                li
+                    a(href="#") Security
+
+                li
+                    a(href="#") Privacy Policy
+
+                li
+                    a(href="#") Terms
+
+
+
+
+        .col-xl-2.col-6
             h6 Social
 
-            ul
+            ul.m-0
                 li
                     a(href="#") 
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>logo-facebook</title><g fill="#969696"><path d="M16,8.048a8,8,0,1,0-9.25,7.9V10.36H4.719V8.048H6.75V6.285A2.822,2.822,0,0,1,9.771,3.173a12.2,12.2,0,0,1,1.791.156V5.3H10.554a1.155,1.155,0,0,0-1.3,1.25v1.5h2.219l-.355,2.312H9.25v5.591A8,8,0,0,0,16,8.048Z" fill="#969696"></path></g></svg>
@@ -94,26 +114,7 @@
 
 
 
-    .row.align-items-center
-        h6.sr-only.sr-only-focusable Security and Terms
-
-        .col
-            a(href="#") Security
-
-            span.c-sep &middot;
-            
-            a(href="#") Privacy Policy
-
-            span.c-sep &middot;        
-            
-            a(href="#") Terms
-
-            span.c-sep &middot;
         
-            small © Postman, Inc.
-
-        a(href="/")
-            img.logo--footer(src="../i/logomark-postman.svg")
 
 
         

@@ -8901,7 +8901,7 @@ label {
     .input-checkbox + label:before {
       background: url("../icons/check.svg") no-repeat center center;
       background-size: 0;
-      border: 1px solid var(--grey-30);
+      border: 1px solid var(--grey-50);
       border-radius: 2px;
       content: "";
       display: inline-block;
@@ -8916,7 +8916,6 @@ label {
     border-color: var(--blue-60);
     background-size: 10px; }
   .input-checkbox:focus + label:before {
-    border-color: var(--blue-60);
     box-shadow: 0 0 0 2px var(--blue-20); }
   .input-checkbox:disabled + label {
     color: var(--content-color-tertiary);
@@ -9883,6 +9882,9 @@ label {
     margin-top: var(--spacing-xl);
     position: sticky;
     top: 160px; }
+
+.c-filters_list li {
+  margin-bottom: 8px; }
 
 .c-scroller {
   background-color: rgba(255, 255, 255, 0.48);

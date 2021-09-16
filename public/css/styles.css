@@ -7673,6 +7673,14 @@ main {
       border: none; }
       .c-doc .anchor.before:hover svg {
         color: var(--blue-60); }
+  .c-doc blockquote {
+    background-color: var(--grey-10);
+    border: 1px solid var(--grey-20);
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: var(--spacing-xs) var(--spacing-s); }
+    .c-doc blockquote p:last-child {
+      margin-bottom: 0; }
 
 .has-frame {
   border-radius: 8px;

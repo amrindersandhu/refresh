@@ -84,6 +84,18 @@ main {
       }
     }
   }
+
+  blockquote {
+    background-color: var(--grey-10);
+    border: 1px solid var(--grey-20);
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: var(--spacing-xs) var(--spacing-s);
+    
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 

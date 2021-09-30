@@ -6,13 +6,27 @@
 
 
 // 
-.banner {
+.c-banner {
   align-items: center;
-  background-color: var(--background-color-tertiary);
-  border-radius: var(--border-radius-default);
+  justify-content: space-around;
+  background-color: var(--blue-10);
   display: flex;
-  padding: var(--spacing-m);
+  padding: var(--spacing-xxs) var(--spacing-xs);
 }
+
+  .c-banner__body {
+    font-size: 14px;
+    margin-bottom: 0;
+    flex-grow: 1;
+    padding: 0 var(--spacing-s);
+    text-align: center;
+  }
+
+  .c-banner__close {
+    position: absolute;
+    right: var(--spacing-xs);
+  }
+
 
 .banner--success {
   background-color: var(--background-color-success);

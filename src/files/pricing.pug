@@ -6,7 +6,7 @@ body
 
 
 
-    .c-hero.has-bg
+    .c-hero
         .container
             .row.spacing-below--xs 
                 .col-xl-10.offset-md-1.text-center
@@ -25,7 +25,7 @@ body
                                 | $
                                 span.heading-01 0
 
-                        a.button-primary.w-100.spacing-below--m(href="#") Sign Up
+                        a.button-secondary.w-100.spacing-below--m(href="#") Sign Up
 
                         p.text-small All the basics for up to 3 team members
 
@@ -110,7 +110,7 @@ body
                             small per user/month, billed annually
 
 
-                        a.button-primary.w-100.spacing-below--m(href="#") Contact Sales
+                        a.button-secondary.w-100.spacing-below--m(href="#") Contact Sales
 
                         p.text-small.spacing-below--xxs Everything in Business, plus:
 
@@ -158,6 +158,11 @@ body
                     p.small Source: Enterprise Strategy Group (ESG) Report, “The Economic Benefits of the Postman Collaboration Platform for API Development”
 
     
+
+    .container
+        hr.m-0
+
+
 
     .c-section
         .container
@@ -400,13 +405,13 @@ body
                                 td.border-0
                                 
                                 td.border-0
-                                        a#free-sign-up-2.button-primary(data-test='free-sign-up-button-table' aria-label='Sign up for the Postman Free plan' href='https://identity.getpostman.com/signup?continue=https%3A%2F%2Fgo.postman.co%2Fbuild' target='_blank' title='Sign Up' rel='noopener') Sign Up
+                                        a#free-sign-up-2.button-secondary(data-test='free-sign-up-button-table' aria-label='Sign up for the Postman Free plan' href='https://identity.getpostman.com/signup?continue=https%3A%2F%2Fgo.postman.co%2Fbuild' target='_blank' title='Sign Up' rel='noopener') Sign Up
                                 td.border-0
                                         a#teams-buy-now-2.button-primary(data-test='teams-buy-now-button-table' aria-label='Sign up for the Postman Team plan' href='https://web.postman.co/buy?plan=team&quantity=5' target='_blank' title='Buy Now' rel='noopener') Buy Now
                                 td.border-0
                                         a#business-buy-now-2.button-primary(data-test='business-buy-now-button-table' aria-label='Sign up for the Postman Business plan' href='https://web.postman.co/buy?plan=business&quantity=5' target='_blank' title='Buy Now' rel='noopener') Buy Now
                                 td.border-0
-                                        a#enterprise-contact-sales-2.button-primary(data-test='enterprise-contact-sales-button-table' aria-label='Sign up for the Postman Enterprise plan' href='/pricing/get-started-postman-plans?utm_source=www&utm_medium=pricing&utm_campaign=two' title='Contact Sales') Contact Sales
+                                        a#enterprise-contact-sales-2.button-secondary(data-test='enterprise-contact-sales-button-table' aria-label='Sign up for the Postman Enterprise plan' href='/pricing/get-started-postman-plans?utm_source=www&utm_medium=pricing&utm_campaign=two' title='Contact Sales') Contact Sales
 
             
     .container.spacing-below--xxl
@@ -418,46 +423,46 @@ body
                     h2.text-center Add-ons
 
 
-            .row
-                .col-xl-4.offset-2
-                        h3 Monitoring
+            .row.spacing-below--l
+                .col-xl-4.offset-2.border-right
+                    h3 Monitoring
 
-                        .row
-                            .col-6
-                                p 
-                                    strong Pay-as-you-go
-                                    
-                                    br
+                    .row
+                        .col-6
+                            p 
+                                strong Pay-as-you-go
+                                
+                                br
 
-                                    span 1,000 calls
+                                span 1,000 calls
 
-                            .col-6
+                        .col-6
+                                span.d-flex.align-items-top
+                                    small $
 
-                                    span.d-flex.align-items-top
-                                        small $
+                                    span.heading-04.m-0 0.75
 
-                                        span.heading-03.m-0 0.75 
+                                small one time payment
 
-                                    small one time payment
-                        
-                        .row
-                            .col-6
-                                p 
-                                    strong Pre-purchased
-                                    
-                                    br
+                
+                    .row
+                        .col-6
+                            p 
+                                strong Pre-purchased
+                                
+                                br
 
-                                    span 50,000 calls
+                                span 50,000 calls
 
-                            .col-6
-                                    span.d-flex.align-items-top
-                                        small $
+                        .col-6
+                                span.d-flex.align-items-top
+                                    small $
 
-                                        span.heading-03.m-0 20
+                                    span.heading-04.m-0 20
 
-                                    small per block/month
+                                small per block/month
 
-                        a(href="#") Learn more
+                    a(href="#") Learn more
                         
 
                 .col-xl-4.offset-1
@@ -477,7 +482,7 @@ body
                                     span.d-flex.align-items-top
                                         small $
 
-                                        span.heading-03.m-0 0.75 
+                                        span.heading-04.m-0 0.75 
 
                                     small one time payment
 
@@ -494,13 +499,17 @@ body
                                     span.d-flex.align-items-top
                                         small $
 
-                                        span.heading-03.m-0 20
+                                        span.heading-04.m-0 20
 
                                     small per block/month
 
                         a(href="#") Learn more
 
-
+            .row
+                .col-xl-6.offset-3.text-center
+                    p.small Must be on Postman Team plan or higher to purchase add-ons. Monitoring add-ons may be selected when purchasing a plan; custom domain add-ons are available only by 
+                        a(aria-label="Contact sales to learn more" href="/pricing/get-started-postman-plans/") contacting sales
+                        | .
     .container
         hr.m-0
 
@@ -618,12 +627,12 @@ body
             .col-xl-8.offset-2.text-center.spacing-below--l
                 h2 Case Studies Section title
 
-                p.intro Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur cras netus dapibus ac placerat cras in ac id.
+                p.intro See a wide selection of detailed use cases from nearly every industry on the Postman case studies page.
        
         .row.spacing-below--xl
             .col-xl-4
                 a.c-card.h-100(href="#")
-                    .c-card__cover(style="background-image:url(https://refresh-2021.www.postman-beta.com/assets/case-studies/companies/giant-machines/logo-frame-giant-machines.png);")
+                    .c-card__cover(style="background-image:url(https://www.postman.com/assets/case-studies/companies/giant-machines/logo-frame-giant-machines.png);")
                     
                     .c-card__content
                         p Giant Machines uses Postman collections, scripts, and mock servers keep API development fast and fluid
@@ -633,7 +642,7 @@ body
 
             .col-xl-4
                 a.c-card.h-100(href="#")
-                    .c-card__cover(style="background-image:url(https://refresh-2021.www.postman-beta.com/assets/case-studies/companies/box/cs-box.svg); background-size: 50%")
+                    .c-card__cover(style="background-image:url(https://www.postman.com/assets/case-studies/companies/box/cs-box.svg); background-size: 50%")
                     
                     .c-card__content
                         p Box transforms API onboarding with Postman automation tools
@@ -643,7 +652,7 @@ body
 
             .col-xl-4
                 a.c-card.h-100(href="#")
-                    .c-card__cover(style="background-image:url(https://refresh-2021.www.postman-beta.com/assets/case-studies/companies/ping-identity/cs-ping.svg); background-size: 60%")
+                    .c-card__cover(style="background-image:url(https://www.postman.com/assets/case-studies/companies/ping-identity/cs-ping.svg); background-size: 60%")
                     
                     .c-card__content
                         p Postman’s Automation Tools Simplify Exploratory Testing at Ping Identity
